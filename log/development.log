@@ -1,0 +1,125 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 11:13:23 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (35.2ms)
+Completed 200 OK in 190ms (Views: 169.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.1.4.226 at 2015-05-13 11:13:51 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 10.1.4.226 at 2015-05-13 11:13:55 +0800
+Processing by Rails::InfoController#properties as */*
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/info/properties.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 16.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:15:04 +0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1227ms (Views: 1208.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:16:52 +0800
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.2ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:16:57 +0800
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
