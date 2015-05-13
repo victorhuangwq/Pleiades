@@ -3,6 +3,7 @@ Project Hours Log
 Format as follows:
 [date and time] [number of hours, Huang Weiqi] [number of hours, Chua Hou] [aspect] [comments]
 
-2015-05-11 8h 8h Lift-off Day-1
-2015-05-11 3h 0h Learning Basic HTML&CSS
-2015-05-12 8h 8h Lift-off Day-2
+2015-05-11 0830 8h 8h Lift-off Day-1
+2015-05-11 1900 3h 0h Learning Basic HTML&CSS
+2015-05-12 0830 8h 8h Lift-off Day-2
+2015-05-13 1000 0h 1h Learning how to use Heroku
