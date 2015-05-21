@@ -1,125 +1,1097 @@
 
 
-Started GET "/" for 127.0.0.1 at 2015-05-13 11:13:23 +0800
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (35.2ms)
-Completed 200 OK in 190ms (Views: 169.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:49:17 +0800
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/" for 10.1.4.226 at 2015-05-13 11:13:51 +0800
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
-Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.3ms)
 
 
-Started GET "/rails/info/properties" for 10.1.4.226 at 2015-05-13 11:13:55 +0800
-Processing by Rails::InfoController#properties as */*
-  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/info/properties.html.erb (0.5ms)
-Completed 200 OK in 38ms (Views: 16.4ms | ActiveRecord: 1.1ms)
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:50:46 +0800
 
-
-Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:15:04 +0800
-Processing by PagesController#home as HTML
-  Rendered pages/home.html.erb within layouts/application (1.0ms)
-Completed 200 OK in 1227ms (Views: 1208.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 11:15:05 +0800
-
-
-Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:16:52 +0800
-
-ArgumentError (Missing :action key on routes definition, please check your routes.):
-  config/routes.rb:3:in `block in <top (required)>'
-  config/routes.rb:1:in `<top (required)>'
+RuntimeError (YAML syntax error occurred while parsing /Users/davidson/Projects/Pleiades/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): could not find expected ':' while scanning a simple key at line 87 column 1):
+  railties (4.1.8) lib/rails/application/configuration.rb:110:in `rescue in database_configuration'
+  railties (4.1.8) lib/rails/application/configuration.rb:94:in `database_configuration'
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
-  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
-  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
-  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.5ms)
 
 
-Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:16:57 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:51:16 +0800
 
-ArgumentError (Missing :action key on routes definition, please check your routes.):
-  config/routes.rb:3:in `block in <top (required)>'
-  config/routes.rb:1:in `<top (required)>'
+RuntimeError (YAML syntax error occurred while parsing /Users/davidson/Projects/Pleiades/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): could not find expected ':' while scanning a simple key at line 23 column 3):
+  railties (4.1.8) lib/rails/application/configuration.rb:110:in `rescue in database_configuration'
+  railties (4.1.8) lib/rails/application/configuration.rb:94:in `database_configuration'
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:51:21 +0800
+
+RuntimeError (YAML syntax error occurred while parsing /Users/davidson/Projects/Pleiades/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): could not find expected ':' while scanning a simple key at line 23 column 3):
+  railties (4.1.8) lib/rails/application/configuration.rb:110:in `rescue in database_configuration'
+  railties (4.1.8) lib/rails/application/configuration.rb:94:in `database_configuration'
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:51:36 +0800
+
+RuntimeError (YAML syntax error occurred while parsing /Users/davidson/Projects/Pleiades/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): could not find expected ':' while scanning a simple key at line 87 column 1):
+  railties (4.1.8) lib/rails/application/configuration.rb:110:in `rescue in database_configuration'
+  railties (4.1.8) lib/rails/application/configuration.rb:94:in `database_configuration'
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:51:37 +0800
+
+RuntimeError (YAML syntax error occurred while parsing /Users/davidson/Projects/Pleiades/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): could not find expected ':' while scanning a simple key at line 87 column 1):
+  railties (4.1.8) lib/rails/application/configuration.rb:110:in `rescue in database_configuration'
+  railties (4.1.8) lib/rails/application/configuration.rb:94:in `database_configuration'
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:51:48 +0800
+
+RuntimeError (YAML syntax error occurred while parsing /Users/davidson/Projects/Pleiades/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): could not find expected ':' while scanning a simple key at line 86 column 3):
+  railties (4.1.8) lib/rails/application/configuration.rb:110:in `rescue in database_configuration'
+  railties (4.1.8) lib/rails/application/configuration.rb:94:in `database_configuration'
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
-  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
 
 
-Started GET "/pages/home" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
-Processing by PagesController#home as HTML
-  Rendered pages/home.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:52:28 +0800
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:localhost) instead. (called from service at /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:localhost) instead. (called from service at /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+DEPRECATION WARNING: Passing a string to ActiveRecord::Base.establish_connection for a configuration lookup is deprecated, please pass a symbol (:localhost) instead. (called from service at /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+
+ActiveRecord::AdapterNotSpecified ('localhost' database is not configured. Available: ["default", "development", "test", "production", "host"]):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:257:in `resolve_symbol_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:240:in `resolve_string_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:226:in `resolve_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:152:in `resolve'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:164:in `block in resolve_all'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:163:in `each'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:163:in `resolve_all'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:69:in `resolve'
+  activerecord (4.1.8) lib/active_record/core.rb:46:in `configurations='
+  activerecord (4.1.8) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.9ms)
 
 
-Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:53:13 +0800
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:53:56 +0800
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
 
 
-Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:54:09 +0800
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:07 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
 
 
-Started GET "/" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
-Processing by PagesController#home as HTML
-  Rendered pages/home.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2015-05-21 08:54:45 +0800
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 10:39:22 +0800
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (106.7ms)
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 10:39:28 +0800
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+Started GET "/" for 127.0.0.1 at 2015-05-21 10:40:02 +0800
+
+ActiveRecord::NoDatabaseError (FATAL:  database "pleiades_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
 
 
-Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-13 11:17:10 +0800
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 10:40:04 +0800
+
+ActiveRecord::NoDatabaseError (FATAL:  database "pleiades_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+  [1m[36m (49.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (20.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 11:39:39 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (11.2ms)
+Completed 200 OK in 149ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 11:49:35 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 1609ms (Views: 1586.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-21 11:49:37 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:04 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:21 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:42 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-21 11:51:53 +0800
