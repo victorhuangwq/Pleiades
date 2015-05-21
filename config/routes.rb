@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/home' # home page
-  get '/' => 'pages#home' # redirects original to home page
+  get 'pages/index'
+  get '/' => 'pages#index' # redirects original to home page
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
