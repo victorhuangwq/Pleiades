@@ -1149,3 +1149,907 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 16:50:03
 
 
 Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 16:50:03 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 20:50:29 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 231ms (Views: 206.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:30 +0800
+
+
+Started GET "/pages" for 127.0.0.1 at 2015-05-24 20:50:32 +0800
+
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (35.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2015-05-24 20:50:33 +0800
+
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:50:34 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:50:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:51:04 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:07 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:53:38 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:23 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 20:58:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:25 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:01:55 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:02:06 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:03:44 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:05:42 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:06:03 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:06:08 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:29 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:44 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:11:54 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:04 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:26 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:37 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:13:42 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:14:08 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:14:08 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:14:08 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:08 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:08 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:09 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:14:42 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:40 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:16:53 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:19:16 +0800
+
+
+Started GET "/pages" for 127.0.0.1 at 2015-05-24 21:23:42 +0800
+
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.6ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2015-05-24 21:23:42 +0800
+
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:23:46 +0800
