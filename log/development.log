@@ -2478,3 +2478,54 @@ Started GET "/pages/create" for 127.0.0.1 at 2015-05-24 21:30:49 +0800
 Processing by PagesController#create as HTML
   Rendered pages/create.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 220ms (Views: 194.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-24 21:41:00 +0800
+
+
+Started GET "/pages/create" for 127.0.0.1 at 2015-05-24 21:41:07 +0800
+Processing by PagesController#create as HTML
+  Rendered pages/create.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-05-24 21:41:10 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-05-24 21:41:11 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2015-05-24 21:41:12 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
