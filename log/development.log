@@ -2556,3 +2556,30 @@ Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-06-01 11:16:10 +0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-01 11:16:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-01 11:17:29 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 219ms (Views: 175.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-06-01 11:17:30 +0800
