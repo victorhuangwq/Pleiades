@@ -1,5 +1,11 @@
 Project Hours Log
 
+Total Hours for Huang Weiqi Victor: 29
+>> Github Contributions: https://github.com/XtrKiL
+
+Total Hours for Chua Hou: 26
+>> Github Contributions: https://github.com/chuahou
+
 Format as follows:
 [date and time] [number of hours, Huang Weiqi] [number of hours, Chua Hou] [aspect] [comments]
 
@@ -7,9 +13,10 @@ Format as follows:
 2015-05-11 1900 3h 0h Learning Basic HTML&CSS
 2015-05-12 0830 8h 8h Lift-off Day-2
 2015-05-13 1000 0h 1h Learning how to use Heroku
-2015-05-13 1100 1h 1h Setting up Heroku server
+2015-05-13 1100 0h 1h Setting up Heroku server
 2015-05-13 1200	1h 1h Brainstorming for new idea
 2015-05-20 1800 2h 2h Mission Control - Bootstrap
 2015-05-21 0800 0h 1h Fixing Rails application and setting up Bootstrap
 2015-05-24 1600 2h 2h Working on pitch after change of topic
 2015-05-24 2000 2h 2h Working on skeletal framework of website
+2015-05-31 2100	3h 0h Learning Ruby and Ruby on Rails
