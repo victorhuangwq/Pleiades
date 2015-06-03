@@ -1,6 +1,10 @@
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
 <div class="container-fluid">
     
     <nav class="navbar navbar-default">
@@ -17,49 +21,35 @@
             </ul>
         </div>
     </nav>
-	
-	 <script>
-	  $(function() {
-		$( "#draggable" ).draggable();
-		$( "#app" ).droppable({
-		  drop: function( event, ui ) {
-			$( this )
-			  .addClass( "ui-state-highlight" )
-			  .find( "p" )
-				.html( "Dropped!" );
-		  }
-		});
-	  });
-	 </script>
     
 	<div class="page-header text-center">
 		<h1>Create a QuikMap!</h1>
 	</div>
     <div class="row">
         <div id="toolbar" class="col-lg-2 col-md-2 col-sm-1 col-xs-1 text-center">
-            <button id="draggable" type="button" class="btn btn-info btn-lg" title="Select">
+            <button type="button" class="btn btn-info btn-lg" title="Select" data-toggle="tooltip" data-placement="bottom">
                 <span class="glyphicon glyphicon-hand-up" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Draw Line">
+            <button type="button" class="btn btn-info btn-lg" title="Draw Line" data-toggle="tooltip" data-placement="bottom">
                 <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Add Landmark">
+            <button type="button" class="btn btn-info btn-lg" title="Add Landmark" data-toggle="tooltip" data-placement="bottom">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Remove">
+            <button type="button" class="btn btn-info btn-lg" title="Remove" data-toggle="tooltip" data-placement="bottom">
                 <span class="glyphicon glyphicon-remove" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Undo">
+            <button type="button" class="btn btn-info btn-lg" title="Undo" data-toggle="tooltip" data-placement="bottom">
                 <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Redo">
+            <button type="button" class="btn btn-info btn-lg" title="Redo" data-toggle="tooltip" data-placement="bottom">
                 <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="font-size:36px"></span>
             </button>
             
             <hr/>
         </div>
         
-    	<div id="app" class="col-lg-6 col-md-6 col-sm-11 col-xs-11">
+    	<div id="app" class="col-lg-6 col-md-6 col-sm-11 col-xs-11 ui-widget-header">
             APP
     	</div>
 
