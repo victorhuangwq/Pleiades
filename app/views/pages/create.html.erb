@@ -1,3 +1,9 @@
+<style>
+.btn {
+    box-shadow: none;
+}
+</style>
+
 <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 <div class="container-fluid">
     
@@ -17,21 +23,45 @@
     </nav>
     
 	<div class="page-header text-center">
-		<h1> Create Map! </h1>
+		<h1>Create a QuikMap!</h1>
 	</div>
-	<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-		<p>Map Creating application here</p>
-	</div>
+    <div class="row">
+        <div id="toolbar" class="col-lg-2 col-md-2 col-sm-1 col-xs-1 text-center">
+            <button type="button" class="btn btn-info btn-lg" title="Select">
+                <span class="glyphicon glyphicon-hand-up" aria-hidden="true" style="font-size:36px"></span>
+            </button>
+            <button type="button" class="btn btn-info btn-lg" title="Draw Line">
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:36px"></span>
+            </button>
+            <button type="button" class="btn btn-info btn-lg" title="Add Landmark">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:36px"></span>
+            </button>
+            <button type="button" class="btn btn-info btn-lg" title="Remove">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true" style="font-size:36px"></span>
+            </button>
+            <button type="button" class="btn btn-info btn-lg" title="Undo">
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="font-size:36px"></span>
+            </button>
+            <button type="button" class="btn btn-info btn-lg" title="Redo">
+                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="font-size:36px"></span>
+            </button>
+            
+            <hr/>
+        </div>
+        
+    	<div id="app" class="col-lg-6 col-md-6 col-sm-11 col-xs-11">
+            APP
+    	</div>
 
-	<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-12 col-xs-12 well">
-		<h2>How to create a map!</h3>
-			<ul>
-				<li> Step 1! </li>
-				<li> Step 2! </li>
-				<li> Step 3! </li>
-			</ul>
-		<button type ="submit" class="btn btn-success">Done </button>
-	</div>
+    	<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12">
+    		<h2>How to create a map!</h2>
+    			<ul>
+    				<li>Step 1!</li>
+    				<li>Step 2!</li>
+    				<li>Step 3!</li>
+    			</ul>
+    	</div>
+    </div>
 </div>
 
 <!-- Latest compiled and minified CSS -->
