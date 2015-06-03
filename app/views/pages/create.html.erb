@@ -1,9 +1,5 @@
-<style>
-.btn {
-    box-shadow: none;
-}
-</style>
-
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 <div class="container-fluid">
     
@@ -21,13 +17,27 @@
             </ul>
         </div>
     </nav>
+	
+	 <script>
+	  $(function() {
+		$( "#draggable" ).draggable();
+		$( "#app" ).droppable({
+		  drop: function( event, ui ) {
+			$( this )
+			  .addClass( "ui-state-highlight" )
+			  .find( "p" )
+				.html( "Dropped!" );
+		  }
+		});
+	  });
+	 </script>
     
 	<div class="page-header text-center">
 		<h1>Create a QuikMap!</h1>
 	</div>
     <div class="row">
         <div id="toolbar" class="col-lg-2 col-md-2 col-sm-1 col-xs-1 text-center">
-            <button type="button" class="btn btn-info btn-lg" title="Select">
+            <button id="draggable" type="button" class="btn btn-info btn-lg" title="Select">
                 <span class="glyphicon glyphicon-hand-up" aria-hidden="true" style="font-size:36px"></span>
             </button>
             <button type="button" class="btn btn-info btn-lg" title="Draw Line">
