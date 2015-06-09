@@ -2,44 +2,26 @@
     
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
 <script>function buttoncontroller($scope) {
-    $scope.visible1 = false;
-    $scope.visible2 = false;
-    $scope.visible3 = false;
-    $scope.visible4 = false;
+    $scope.selected = 0;
     
     $scope.button1 = function() {
-        $scope.visible1 = true;
-        $scope.visible2 = false;
-        $scope.visible3 = false;
-        $scope.visible4 = false;
+        $scope.selected = 1;
     }
     
     $scope.button2 = function() {
-        $scope.visible1 = false;
-        $scope.visible2 = true;
-        $scope.visible3 = false;
-        $scope.visible4 = false;
+        $scope.selected = 2;
     }
     
     $scope.button3 = function() {
-        $scope.visible1 = false;
-        $scope.visible2 = false;
-        $scope.visible3 = true;
-        $scope.visible4 = false;
+        $scope.selected = 3;
     }
     
     $scope.button4 = function() {
-        $scope.visible1 = false;
-        $scope.visible2 = false;
-        $scope.visible3 = false;
-        $scope.visible4 = true;
+        $scope.selected = 4;
     }
     
     $scope.button5 = function() {
-        $scope.visible1 = false;
-        $scope.visible2 = false;
-        $scope.visible3 = false;
-        $scope.visible4 = false;
+        $scope.selected = 0;
     }
 }</script>
 
@@ -65,16 +47,16 @@
 	</div>
     <div class="row">
         <div id="toolbar" class="col-lg-2 col-md-2 col-sm-1 col-xs-1 text-center" ng-controller="buttoncontroller">
-            <button type="button" class="btn btn-info btn-lg" title="Select" ng-click="button1()" ng-disabled="visible1">
+            <button type="button" class="btn btn-info btn-lg" title="Select" ng-click="button1()" ng-disabled="selected == 1">
                 <span class="glyphicon glyphicon-hand-up" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Draw Line" ng-click="button2()" ng-disabled="visible2">
+            <button type="button" class="btn btn-info btn-lg" title="Draw Line" ng-click="button2()" ng-disabled="selected == 2">
                 <span class="glyphicon glyphicon-pencil" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Add Landmark" ng-click="button3()" ng-disabled="visible3">
+            <button type="button" class="btn btn-info btn-lg" title="Add Landmark" ng-click="button3()" ng-disabled="selected == 3">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            <button type="button" class="btn btn-info btn-lg" title="Remove" ng-click="button4()" ng-disabled="visible4">
+            <button type="button" class="btn btn-info btn-lg" title="Remove" ng-click="button4()" ng-disabled="selected == 4">
                 <span class="glyphicon glyphicon-remove" aria-hidden="true" style="font-size:36px"></span>
             </button>
             <button type="button" class="btn btn-info btn-lg" title="Undo" ng-click="button5()">
@@ -86,10 +68,10 @@
             
             <hr/>
             
-            <div ng-show="visible1">Select</div>
-            <div ng-show="visible2">Draw Line</div>
-            <div ng-show="visible3">Add Landmark</div>
-            <div ng-show="visible4">Remove</div>
+            <div ng-show="selected == 1">Select</div>
+            <div ng-show="selected == 2">Draw Line</div>
+            <div ng-show="selected == 3">Add Landmark</div>
+            <div ng-show="selected == 4">Remove</div>
         </div>
         
     	<div id="app" class="col-lg-6 col-md-6 col-sm-11 col-xs-11 ui-widget-header">
