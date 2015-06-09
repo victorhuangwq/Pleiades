@@ -8912,3 +8912,88 @@ Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-06-09 14:08:30 +0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-09 14:08:30 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-09 14:21:19 +0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 423ms (Views: 356.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/creatorapp.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-09 14:21:21 +0800
+
+
+Started GET "/pages/create" for 127.0.0.1 at 2015-06-09 14:21:23 +0800
+Processing by PagesController#create as HTML
+  Rendered pages/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/create" for 127.0.0.1 at 2015-06-09 14:21:40 +0800
+Processing by PagesController#create as HTML
+  Rendered pages/create.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 134ms
+
+ActionView::Template::Error (couldn't find file 'creatorapp.js'
+  (in /Users/davidson/Projects/Pleiades/app/assets/javascripts/application.js:17)):
+    3: <head>
+    4:   <title>Pleiades</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4215392006511914565_70358907181140'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/pages/create" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+Processing by PagesController#create as HTML
+  Rendered pages/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-09 14:21:54 +0800
