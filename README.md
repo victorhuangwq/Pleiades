@@ -1,15 +1,6 @@
 '''html
 <head>
     <title>Orbital Readme</title>
-    <style>
-    h3 {
-        text-decoration: underline;
-    }
-    h4 {
-        text-decoration: underline;
-        font-weight:normal;
-    }
-    </style>
 </head>
 <body>
     <h1>Project Readme</h1>
