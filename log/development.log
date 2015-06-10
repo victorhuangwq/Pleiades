@@ -1429,3 +1429,81 @@ Started GET "/welcome/index" for 127.0.0.1 at 2015-06-10 11:48:04 +0800
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 94ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 226ms (Views: 225.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:23 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:24 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-06-10 12:11:26 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 141ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-06-10 12:11:26 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-06-10 12:11:26 +0800
