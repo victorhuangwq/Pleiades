@@ -1,6 +1,6 @@
 #Orbital ReadMe
 ##Project ReadMe
-###Project Title: HowToGo
+###Project Title: _HowToGo_
 **Group name**: Pleiades
 **Group members**:Huang Weiqi Victor and Chua Hou
 
