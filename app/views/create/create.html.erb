@@ -1,19 +1,22 @@
-<meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
+<html>
+<head>
+    <title>HowToGo</title>
+</head>
+<body>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <%= javascript_include_tag "create" %>
 
-<%= javascript_include_tag 'application' %>
-
-<div class="container-fluid">
+    <div class="container-fluid">
     
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/pages/index">HOWTOGO</a>
+                <a class="navbar-brand" href="/welcome/index">HOWTOGO</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="/pages/create">Create</a></li>
-                <li><a href="/pages/search">Search</a></li>
+                <li><a href="/create/create">Create</a></li>
+                <li><a href="#">Search</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><p class="navbar-text">Pleiades Orbital 2015</p></li>
@@ -44,15 +47,15 @@
             <button id="createbutton6" type="button" class="btn btn-info btn-lg" title="Redo">
                 <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="font-size:36px"></span>
             </button>
-            
+        
             <hr/>
-            
+        
             <div id="creatediv1">Select</div>
             <div id="creatediv2">Draw Line</div>
             <div id="creatediv3">Add Landmark</div>
             <div id="creatediv4">Remove</div>
         </div>
-        
+    
     	<div id="app" class="col-lg-6 col-md-6 col-sm-11 col-xs-11 ui-widget-header">
             APP
     	</div>
@@ -67,12 +70,5 @@
     	</div>
     </div>
 </div>
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
