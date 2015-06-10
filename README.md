@@ -5,7 +5,8 @@
 <body>
     <h1>Project Readme</h1>
     <h2>Project Title: <em>HowToGo</em></h2>
-    
+'''
+'''html
     <h3>Group Information</h3>
     <p><strong>Group name:</strong> Pleiades</p>
     <p><strong>Group members:</strong> Huang Weiqi Victor and Chua Hou</p>
@@ -64,5 +65,7 @@
             </ul>
         </li>
     </ul>
+'''
+'''html
 </body>
 '''
