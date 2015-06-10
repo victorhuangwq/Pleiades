@@ -1,8 +1,8 @@
-#Orbital ReadMe
+Orbital ReadMe
+=======
 ##Project ReadMe
 ###Project Title: _HowToGo_
-**Group name**: Pleiades
-**Group members**:Huang Weiqi Victor and Chua Hou
+**Group name**: Pleiades  **Group members**:Huang Weiqi Victor and Chua Hou
 
 ####Table of contents
 1. Overview
@@ -13,8 +13,7 @@
 Our project aims to revolutionise the direction giving process by providing an online web app that allows event planners to quickly create customised maps and directions for guests to easily find their way. Our targeted level of achievement is Project Gemini.
 
 ####Ignition Links
-Our ignition slide:[SlideHere](http://puu.sh/i7TQv/c23bc5939d.png)
-Ignition Video:[VideoHere](https://www.youtube.com/watch?v=QKuLLNVGvow)
+Our ignition slide:[SlideHere](http://puu.sh/i7TQv/c23bc5939d.png)  Ignition Video:[VideoHere](https://www.youtube.com/watch?v=QKuLLNVGvow)
 
 ####Features
 #####Application Goals
