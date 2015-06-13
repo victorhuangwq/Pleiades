@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/search'
+
   get 'create/create'
 
   get 'welcome/index'
