@@ -6,70 +6,101 @@ $(document).ready(function() {
     $('#creatediv2').hide();
     $('#creatediv3').hide();
     $('#creatediv4').hide();
-
-    $('#createbutton1').click( function() {
-        $('#createbutton1').attr("disabled", true);
-        $('#createbutton2').attr("disabled", false);
-        $('#createbutton3').attr("disabled", false);
-        $('#createbutton4').attr("disabled", false);
+    var map_canvas = $("#canvas");
+    var ctx = canvas.getContext("2d");
+    
+    $('#selectbutton').click( function() {
+        $('#selectbutton').attr("disabled", true);
+        $('#drawbutton').attr("disabled", false);
+        $('#landmarkbutton').attr("disabled", false);
+        $('#removebutton').attr("disabled", false);
         $('#creatediv1').show();
         $('#creatediv2').hide();
         $('#creatediv3').hide();
         $('#creatediv4').hide();
     });
 
-    $('#createbutton2').click( function() {
-        $('#createbutton1').attr("disabled", false);
-        $('#createbutton2').attr("disabled", true);
-        $('#createbutton3').attr("disabled", false);
-        $('#createbutton4').attr("disabled", false);
+    $('#drawbutton').click( function() {
+        $('#selectbutton').attr("disabled", false);
+        $('#drawbutton').attr("disabled", true);
+        $('#landmarkbutton').attr("disabled", false);
+        $('#removebutton').attr("disabled", false);
         $('#creatediv1').hide();
         $('#creatediv2').show();
         $('#creatediv3').hide();
         $('#creatediv4').hide();
+        
+        //Canvas Manipulation
+        var penDown = false;
+        var x1,y1;
+    
+        $('map_canvas').on('mousedown',function(e){
+            if (penDown === false) {
+            penDown = true;
+            var pos = getMousePos(canvas, e);
+            x1 = pos.x;
+            y1 = pos.y;
+        }
+        });
+        
+        $('map_canvas').on('mousedown',function(e){
+            if (penDown === true) {
+            penDown = false;
+            var pos = getMousePos(canvas, e);
+            ctx.beginPath();
+            ctx.strokeStyle = "blue";
+            ctx.moveTo(x1,y1);
+            ctx.lineTo(pos.x,pos.y);
+            ctx.stroke();
+            ctx.closePath();
+        }
+        });
     });
 
-    $('#createbutton3').click( function() {
-        $('#createbutton1').attr("disabled", false);
-        $('#createbutton2').attr("disabled", false);
-        $('#createbutton3').attr("disabled", true);
-        $('#createbutton4').attr("disabled", false);
+    $('#landmarkbutton').click( function() {
+        $('#selectbutton').attr("disabled", false);
+        $('#drawbutton').attr("disabled", false);
+        $('#landmarkbutton').attr("disabled", true);
+        $('#removebutton').attr("disabled", false);
         $('#creatediv1').hide();
         $('#creatediv2').hide();
         $('#creatediv3').show();
         $('#creatediv4').hide();
     });
 
-    $('#createbutton4').click( function() {
-        $('#createbutton1').attr("disabled", false);
-        $('#createbutton2').attr("disabled", false);
-        $('#createbutton3').attr("disabled", false);
-        $('#createbutton4').attr("disabled", true);
+    $('#removebutton').click( function() {
+        $('#selectbutton').attr("disabled", false);
+        $('#drawbutton').attr("disabled", false);
+        $('#landmarkbutton').attr("disabled", false);
+        $('#removebutton').attr("disabled", true);
         $('#creatediv1').hide();
         $('#creatediv2').hide();
         $('#creatediv3').hide();
         $('#creatediv4').show();
     });
 
-    $('#createbutton5').click( function() {
-        $('#createbutton1').attr("disabled", false);
-        $('#createbutton2').attr("disabled", false);
-        $('#createbutton3').attr("disabled", false);
-        $('#createbutton4').attr("disabled", false);
+    $('#undobutton').click( function() {
+        $('#selectbutton').attr("disabled", false);
+        $('#drawbutton').attr("disabled", false);
+        $('#landmarkbutton').attr("disabled", false);
+        $('#removebutton').attr("disabled", false);
         $('#creatediv1').hide();
         $('#creatediv2').hide();
         $('#creatediv3').hide();
         $('#creatediv4').hide();
     });
 
-    $('#createbutton6').click( function() {
-        $('#createbutton1').attr("disabled", false);
-        $('#createbutton2').attr("disabled", false);
-        $('#createbutton3').attr("disabled", false);
-        $('#createbutton4').attr("disabled", false);
+    $('#redobutton').click( function() {
+        $('#selectbutton').attr("disabled", false);
+        $('#drawbutton').attr("disabled", false);
+        $('#landmarkbutton').attr("disabled", false);
+        $('#removebutton').attr("disabled", false);
         $('#creatediv1').hide();
         $('#creatediv2').hide();
         $('#creatediv3').hide();
         $('#creatediv4').hide();
     });
+    
+    //Canvas Manipulation
+    
 });
