@@ -60,7 +60,7 @@
             <div id="removediv">Remove</div>
         </div>
     
-    	<div id="app" class="col-lg-7 col-md-7 col-sm-11 col-xs-11 ui-widget-header">
+    	<div id="app" class="col-lg-8 col-md-8 col-sm-11 col-xs-11 ui-widget-header">
             <canvas id="canvas" height ="600" width ="800" style="border: 1px solid black;"></canvas>
     	</div>
 
@@ -73,8 +73,45 @@
     			</ul>
     	</div>
         
-        <div id="landmarkpopover" class="popover">Test popover content :)</div>
+        <div id="landmarkpopover" class="popover" style="width:170px">
+            <div class="text-center">
+                <div class="row">
+                    <button id="digitalbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("digital.svg", size:"50x50") %>
+                        <p style="font-size:13px">Digital</p>
+                    </button>
+                    <button id="lifestylebutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("lifestyle.svg", size:"50x50") %>
+                        <p style="font-size:13px">Lifestyle</p>
+                    </button>
+                </div>
+                <div class="row">
+                    <button id="foodbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("food.svg", size:"50x50") %>
+                        <p style="font-size:13px">F&B</p>
+                    </button>
+                    <button id="fashionbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("fashion.svg", size:"50x50") %>
+                        <p style="font-size:13px">Fashion</p>
+                    </button>
+                </div>
+                <div class="row">
+                    <button id="serviceslbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("services.svg", size:"50x50") %>
+                        <p style="font-size:13px">Services</p>
+                    </button>
+                    <button id="structuresbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("structures.svg", size:"50x50") %>
+                        <p style="font-size:13px">Stuctures</p>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="text-center">
+    <p>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
 </div>
 </body>
 </html>
