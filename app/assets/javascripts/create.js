@@ -130,32 +130,56 @@ $(document).ready(function() {// Javascript object to store all map data
     }
     
     $('#digitalbutton').click( function() {
-        createLandmark("digitalimg", $("#landmarkinput").val());
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Digital";
+        }
+        createLandmark("digitalimg", name);
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
     $('#lifestylebutton').click( function() {
-        createLandmark("lifestyleimg", $("#landmarkinput").val());
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Lifestyle";
+        }
+        createLandmark("lifestyleimg", name);
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
     $('#foodbutton').click( function() {
-        createLandmark("foodimg", $("#landmarkinput").val());
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "F&B";
+        }
+        createLandmark("foodimg", name);
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
     $('#fashionbutton').click( function() {
-        createLandmark("fashionimg", $("#landmarkinput").val());
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Fashion";
+        }
+        createLandmark("fashionimg", name);
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
     $('#servicesbutton').click( function() {
-        createLandmark("servicesimg", $("#landmarkinput").val());
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Service";
+        }
+        createLandmark("servicesimg", name);
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
     $('#structuresbutton').click( function() {
-        createLandmark("structuresimg", $("#landmarkinput").val());
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Structure";
+        }
+        createLandmark("structuresimg", name);
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
@@ -229,8 +253,13 @@ $(document).ready(function() {// Javascript object to store all map data
     
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        console.log(img);
         ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        var x = landmark.pos.x;
+        var y = landmark.pos.y + 40;
+        ctx.font = '12pt Helvetica';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'black';
+        ctx.fillText(landmark.landmarkname, x, y);
     }
     
     function update_canvas(obj) {
