@@ -1,8 +1,7 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
-$(document).ready(function() {
-    // Javascript object to store all map data
+$(document).ready(function() {// Javascript object to store all map data
     var map_data = {name:"Untitled", maxid: 0, lines:[]};
     
     var undo_stack = new Array();
@@ -98,6 +97,12 @@ $(document).ready(function() {
         }
     });
     
+    $(document).click( function() {
+        if (selected != 3) {
+            $("#landmarkpopover").hide();
+        }
+    });
+    
     // Canvas Manipulation
     
     var penDown = false;
@@ -131,6 +136,14 @@ $(document).ready(function() {
         }
     });
     
+    map_canvas.click(function(e) {
+        var pos = {x: e.pageX, y: e.pageY};
+        popover = $("#landmarkpopover");
+        popover.show();
+        popover.css('left', (pos.x + 5) + 'px');
+        popover.css('top', (pos.y + popover.height()/2) + 'px');
+    });
+    
     function addElement(elem) {
         if (elem.type == "line") {
             map_data.lines.push(elem);
@@ -153,7 +166,6 @@ $(document).ready(function() {
     };
     
     function update_canvas(obj) {
-        
         lines = obj.lines;
         clear_canvas(map_canvas, ctx);
         for (var i = 0; i < lines.length; i++) {
