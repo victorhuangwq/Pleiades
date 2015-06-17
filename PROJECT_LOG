@@ -30,3 +30,5 @@ Format as follows:
 2015-06-16 2100 1h   0h Reading up on HTML5 canvas
 2015-06-16 2200 0h   1h Reading up on JSON
 2015-06-17 0800 2h   2h Creating canvas and basic line drawing functionality
+2015-06-17 1000 2h   2h Undo and redo functionality
+2015-06-17 1300 3h   3h Landmarks functionality

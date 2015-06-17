@@ -76,6 +76,16 @@ $(document).ready(function() {// Javascript object to store all map data
             map_data.landmarks.splice(toremove, 1);
             redo_stack.push({action: "landmark", data: landmarkdata});
         }
+        if (actiontoundo.action == "delete") {
+            var datatoaddback = actiontoundo.data;
+            if (datatoaddback.type == "line") {
+                map_data.lines.push(datatoaddback);
+            }
+            else if (datatoaddback.type == "landmark") {
+                map_data.landmarks.push(datatoaddback);
+            }
+            redo_stack.push({action:"delete",data: datatoaddback});
+        }
         update_canvas(map_data);
     });
 
@@ -91,6 +101,16 @@ $(document).ready(function() {// Javascript object to store all map data
             var thisid = actiontoredo.data.id;
             undo_stack.push({action:"landmark", id:thisid});
             map_data.landmarks.push(actiontoredo.data);
+        }
+        if (actiontoredo.action == "delete") {
+            todelete = actiontoredo.data;
+            undo_stack.push({action:"delete",data:todelete});
+            if (todelete.type == "line") {
+                map_data.lines.splice(map_data.lines.indexOf(todelete),1)
+            }
+            if (todelete.type == "landmark") {
+                map_data.landmarks.splice(map_data.landmarks.indexOf(todelete),1)
+            }
         }
         update_canvas(map_data);
     });
@@ -229,13 +249,118 @@ $(document).ready(function() {// Javascript object to store all map data
     
     var landmarkpos;
     
+    //Area formulas for triangle
+    triAF = function(p1,p2,p3){
+        return 1/2*(p1.x*p2.y+p2.x*p3.y+p3.x*p1.y - p1.y*p2.x - p2.y*p3.x - p3.y*p1.x);
+    }
+    //Area formula for quadrilaterals
+    quadAF = function(p1,p2,p3,p4){
+        return 1/2*(p1.x*p2.y+p2.x*p3.y+p3.x*p4.y+p4.x*p1.y- p1.y*p2.x - p2.y*p3.x - p3.y*p4.x -p4.y*p1.x);
+    }
+    //shortest distance to a point formula
+    shrtD = function(p1,line){
+        return Math.abs(((line.start.y-line.end.y)/(line.end.x-line.start.x))*p1.x+p1.y+((line.start.y-line.end.y)/(line.end.x-line.start.x))*p1.x-p1.y)/(Math.sqrt(Math.pow((line.start.y-line.end.y)/(line.end.x-line.start.x),2)+1));
+    }
+    
     map_canvas.click(function(e) {
-        var pos = {x: e.pageX, y: e.pageY};
-        popover = $("#landmarkpopover");
-        popover.show();
-        popover.css('left', (pos.x + 5) + 'px');
-        popover.css('top', (pos.y) + 'px');
-        landmarkpos = getMousePos(e);
+        //Arbitrary number for rectangle approximation
+        var rectApprox = 20;
+        if (selected == 3) {
+            var pos = {x: e.pageX, y: e.pageY};
+            popover = $("#landmarkpopover");
+            popover.show();
+            popover.css('left', (pos.x + 5) + 'px');
+            popover.css('top', (pos.y) + 'px');
+            landmarkpos = getMousePos(e);
+        }
+        if (selected == 4) {
+            
+            var pos = getMousePos(e);
+            var todelete = null;
+            for (var i=0;i<map_data.landmarks.length;i++) {
+                var tl,tr,bl,br;
+                centre = map_data.landmarks[i].pos;
+                
+                //Magic Numbers here: Take note!
+                
+                console.log(pos);
+                
+                tl = {x:centre.x-25,y:centre.y-25};
+                tr = {x:centre.x-25,y:centre.y+25};
+                bl = {x:centre.x+38,y:centre.y-25};
+                br = {x:centre.x+38,y:centre.y+25};
+                
+                console.log(tl);
+                console.log(tr);
+                console.log(bl);
+                console.log(br);
+                
+                sum_of_area = triAF(pos,tl,tr)+triAF(tr,pos,br)+triAF(br,pos,bl)+triAF(pos,bl,tl);
+                quadArea = quadAF(tl,tr,bl,br);
+                
+                console.log(sum_of_area);
+                console.log(quadArea);
+                
+               if (quadArea - 0.1 < sum_of_area < quadArea + 0.1) {
+                    todelete = map_data.landmarks[i];
+                }            
+            }
+            
+            //If there are no landmarks to be removed then look for closest line
+            if (todelete == null) {
+                
+                var shortlistedlines = [];
+                //Checks if the point is in any lines' hitbox
+                for(var i =0; i <map_data.lines.length; i++){
+                    var t1,t2,b1,b2
+                    
+                    startp = map_data.lines[i].start;
+                    endp   = map_data.lines[i].end;
+                    console.log(startp);
+                    
+                    t1 = {x: (startp.x-rectApprox), y: (startp.y - (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox)};
+                    t2 = {x: startp.x+rectApprox, y:startp.y};
+                    b2 = {x: endp.x-rectApprox,y:endp.y};
+                    b1 = {x: endp.x +rectApprox, y:endp.y + (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox };
+                    
+                    console.log(t1);
+                    
+                    sum_of_area = triAF(pos,t1,b1)+triAF(b1,pos,b2)+triAF(b2,pos,t2)+triAF(pos,t2,t1);
+                    quadArea = quadAF(t1,t2,b2,b1);
+                    
+                    console.log(quadArea);
+                    console.log(sum_of_area);
+                    
+                    //Catches floating point errors
+                    if (quadArea - 0.1 < sum_of_area < quadArea + 0.1) {
+                        shortlistedlines.push(map_data.lines[i])
+                    }
+                }
+                
+                //Picks closest line
+                var shortestdistance = 999999;
+                for (var i =0;i<shortlistedlines.length;i++) {
+                    if (shrtD(pos,shortlistedlines[i]) < shortestdistance) {
+                        shortestdistance = shrtD(pos,shortlistedlines[i])
+                        todelete = shortlistedlines[i];
+                    }
+                }
+            }
+            
+            console.log(todelete);
+            
+            if (todelete != null) {
+                undo_stack.push({action:"delete",data:todelete});
+                if (todelete.type == "line") {
+                    map_data.lines.splice(map_data.lines.indexOf(todelete),1)
+                }
+                if (todelete.type == "landmark") {
+                    map_data.landmarks.splice(map_data.landmarks.indexOf(todelete),1)
+                }
+                update_canvas(map_data);
+            }
+            
+        }
     });
     
     function addElement(elem) {
