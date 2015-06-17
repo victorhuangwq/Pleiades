@@ -25,9 +25,9 @@
     
 	<div class="page-header text-center">
 		<h2>Create a QuikMap</h2>
-		<div class="input-group col-lg-7 col-md-7 text-center col-md-offset-2">
-	    <span class="input-group-addon" id="basic-addon1">QuikMap To:</span>
-	    <input type="text" class="form-control" placeholder="New Location Name" aria-describedby="basic-addon1">
+		<div class="input-group col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
+    	    <span class="input-group-addon" id="basic-addon1">QuikMap To:</span>
+    	    <input type="text" class="form-control" placeholder="New Location Name" aria-describedby="basic-addon1">
 		</div>
 	</div>
 	
@@ -75,33 +75,34 @@
         
         <div id="landmarkpopover" class="popover" style="width:170px">
             <div class="text-center">
+        	    <input id="landmarkinput" type="text" class="form-control" placeholder="Landmark Name" aria-describedby="basic-addon1"/>
                 <div class="row">
                     <button id="digitalbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
-                        <%= image_tag("digital.svg", size:"50x50") %>
+                        <%= image_tag("digital.svg", size:"50x50", id:"digitalimg") %>
                         <p style="font-size:13px">Digital</p>
                     </button>
                     <button id="lifestylebutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
-                        <%= image_tag("lifestyle.svg", size:"50x50") %>
+                        <%= image_tag("lifestyle.svg", size:"50x50", id:"lifestyleimg") %>
                         <p style="font-size:13px">Lifestyle</p>
                     </button>
                 </div>
                 <div class="row">
                     <button id="foodbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
-                        <%= image_tag("food.svg", size:"50x50") %>
+                        <%= image_tag("food.svg", size:"50x50", id:"foodimg") %>
                         <p style="font-size:13px">F&B</p>
                     </button>
                     <button id="fashionbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
-                        <%= image_tag("fashion.svg", size:"50x50") %>
+                        <%= image_tag("fashion.svg", size:"50x50", id:"fashionimg") %>
                         <p style="font-size:13px">Fashion</p>
                     </button>
                 </div>
                 <div class="row">
-                    <button id="serviceslbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
-                        <%= image_tag("services.svg", size:"50x50") %>
+                    <button id="servicesbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
+                        <%= image_tag("services.svg", size:"50x50", id:"servicesimg") %>
                         <p style="font-size:13px">Services</p>
                     </button>
                     <button id="structuresbutton" type="button" class="btn btn-default btn-lg text-center" style="width:80px; height:80px">
-                        <%= image_tag("structures.svg", size:"50x50") %>
+                        <%= image_tag("structures.svg", size:"50x50", id:"structuresimg") %>
                         <p style="font-size:13px">Stuctures</p>
                     </button>
                 </div>
