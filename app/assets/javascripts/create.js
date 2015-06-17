@@ -3,13 +3,18 @@
 
 $(document).ready(function() {
     // Javascript object to store all map data
-    var map_data = {name:"Untitled", elements:[]};
+    var map_data = {name:"Untitled", maxid: 0, lines:[]};
+    
+    var undo_stack = new Array();
+    var redo_stack = new Array();
     
     var selected = 0;
     $('#selectdiv').hide();
     $('#drawdiv').hide();
     $('#landmarkdiv').hide();
     $('#removediv').hide();
+    $('#undobutton').attr("disabled", true);
+    $('#redobutton').attr("disabled", true);
     
     //map_canvas properties
     var map_canvas = $('#canvas');
@@ -35,13 +40,29 @@ $(document).ready(function() {
 
     $('#undobutton').click( function() {
         selected = 0;
+        var actiontoundo = undo_stack.pop();
+        if (actiontoundo.action == "line") {
+            var linedata;
+            var toremove = 0;
+            for (i = 0; i < map_data.lines.length; i++) {
+                if (map_data.lines[i].id == actiontoundo.id) {
+                    linedata = map_data.lines[i];
+                    toremove = i;
+                    break;
+                }
+            }
+            map_data.lines.splice(toremove, 1);
+            redo_stack.push({action: "line", data: linedata});
+        }
+        update_canvas(map_data);
     });
 
     $('#redobutton').click( function() {
         selected = 0;
+        update_canvas(map_data);
     });
     
-    $(document).click( function() {
+    $('#toolbar').click( function() {
         $('#selectbutton').attr("disabled", false);
         $('#drawbutton').attr("disabled", false);
         $('#landmarkbutton').attr("disabled", false);
@@ -96,16 +117,53 @@ $(document).ready(function() {
         if (penDown === true && selected == 2) {
             penDown = false;
             var pos = getMousePos(e);
-            ctx.beginPath();
-            ctx.strokeStyle = "blue";
-            ctx.moveTo(x1,y1);
-            console.log("Start:"+x1+","+y1);
-            ctx.lineTo(pos.x,pos.y);
-            console.log("End:"+pos.x+","+pos.y);
-            ctx.stroke();
-            ctx.closePath();
-            map_data['elements'].push({type: "line", start: {x: x1, y: y1}, end: {x: pos.x, y: pos.y}});
+            var thisid = map_data.maxid;
+            undo_stack.push({action: "line", id: thisid});
+            redo_stack.splice(0, redo_stack.length);
+            addElement({type: "line", id: thisid, start: {x: x1, y: y1}, end:{x: pos.x, y: pos.y}});
+            map_data.maxid += 1;
         }
     });
+    
+    function addElement(elem) {
+        if (elem.type == "line") {
+            map_data.lines.push(elem);
+        }
+        update_canvas(map_data);
+    }
+    
+    function clear_canvas(canvas, ctx) {
+        console.log("clear_canvas()");
+        ctx.clearRect(0, 0, canvas.width(), canvas.height());
+    }
+    
+    function drawLine(line, ctx) {
+        ctx.beginPath();
+        ctx.strokeStyle = "blue";
+        ctx.moveTo(line.start.x, line.start.y);
+        ctx.lineTo(line.end.x, line.end.y);
+        ctx.stroke();
+        ctx.closePath();
+    };
+    
+    function update_canvas(obj) {
+        
+        lines = obj.lines;
+        clear_canvas(map_canvas, ctx);
+        for (var i = 0; i < lines.length; i++) {
+            drawLine(lines[i], ctx);
+        }
+        
+        if (redo_stack.length == 0) {
+            $("#redobutton").attr("disabled", true);
+        } else {
+            $("#redobutton").attr("disabled", false);
+        }
+        if (undo_stack.length == 0) {
+            $("#undobutton").attr("disabled", true);
+        } else {
+            $("#undobutton").attr("disabled", false);
+        }
+    }
     
 });
