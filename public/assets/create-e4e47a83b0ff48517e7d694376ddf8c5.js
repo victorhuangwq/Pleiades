@@ -1,9 +1,8 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
-$(document).ready(function() {
-    // Javascript object to store all map data
-    var map_data = {name:"Untitled", maxid: 0, lines:[]};
+$(document).ready(function() {// Javascript object to store all map data
+    var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
     
     var undo_stack = new Array();
     var redo_stack = new Array();
@@ -54,11 +53,35 @@ $(document).ready(function() {
             map_data.lines.splice(toremove, 1);
             redo_stack.push({action: "line", data: linedata});
         }
+        if (actiontoundo.action == "landmark") {
+            var landmarkdata;
+            var toremove = 0;
+            for (i = 0; i < map_data.landmarks.length; i++) {
+                if (map_data.landmarks[i].id == actiontoundo.id) {
+                    landmarkdata = map_data.landmarks[i];
+                    toremove = i;
+                    break;
+                }
+            }
+            map_data.landmarks.splice(toremove, 1);
+            redo_stack.push({action: "landmark", data: landmarkdata});
+        }
         update_canvas(map_data);
     });
 
     $('#redobutton').click( function() {
         selected = 0;
+        var actiontoredo = redo_stack.pop();
+        if (actiontoredo.action == "line") {
+            var thisid = actiontoredo.data.id;
+            undo_stack.push({action:"line", id:thisid});
+            map_data.lines.push(actiontoredo.data);
+        }
+        if (actiontoredo.action == "landmark") {
+            var thisid = actiontoredo.data.id;
+            undo_stack.push({action:"landmark", id:thisid});
+            map_data.landmarks.push(actiontoredo.data);
+        }
         update_canvas(map_data);
     });
     
@@ -90,6 +113,75 @@ $(document).ready(function() {
             $('#removediv').show();
             break;
         }
+    });
+    
+    $(document).click( function() {
+        if (selected != 3) {
+            $("#landmarkpopover").hide();
+        }
+    });
+    
+    function createLandmark(img, name) {
+        var thisid = map_data.maxid;
+        map_data.maxid += 1;
+        undo_stack.push({action: "landmark", id: thisid});
+        redo_stack.splice(0, redo_stack.length);
+        addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
+    }
+    
+    $('#digitalbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Digital";
+        }
+        createLandmark("digitalimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#lifestylebutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Lifestyle";
+        }
+        createLandmark("lifestyleimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#foodbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "F&B";
+        }
+        createLandmark("foodimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#fashionbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Fashion";
+        }
+        createLandmark("fashionimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#servicesbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Service";
+        }
+        createLandmark("servicesimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#structuresbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Structure";
+        }
+        createLandmark("structuresimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
     });
     
     // Canvas Manipulation
@@ -125,15 +217,28 @@ $(document).ready(function() {
         }
     });
     
+    var landmarkpos;
+    
+    map_canvas.click(function(e) {
+        var pos = {x: e.pageX, y: e.pageY};
+        popover = $("#landmarkpopover");
+        popover.show();
+        popover.css('left', (pos.x + 5) + 'px');
+        popover.css('top', (pos.y) + 'px');
+        landmarkpos = getMousePos(e);
+    });
+    
     function addElement(elem) {
         if (elem.type == "line") {
             map_data.lines.push(elem);
+        }
+        if (elem.type == "landmark") {
+            map_data.landmarks.push(elem);
         }
         update_canvas(map_data);
     }
     
     function clear_canvas(canvas, ctx) {
-        console.log("clear_canvas()");
         ctx.clearRect(0, 0, canvas.width(), canvas.height());
     }
     
@@ -144,14 +249,28 @@ $(document).ready(function() {
         ctx.lineTo(line.end.x, line.end.y);
         ctx.stroke();
         ctx.closePath();
-    };
+    }
+    
+    function drawLandmark(landmark, ctx) {
+        var img = document.getElementById(landmark.img);
+        ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        var x = landmark.pos.x;
+        var y = landmark.pos.y + 40;
+        ctx.font = '12pt Helvetica';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'black';
+        ctx.fillText(landmark.landmarkname, x, y);
+    }
     
     function update_canvas(obj) {
-        
         lines = obj.lines;
+        landmarks = obj.landmarks;
         clear_canvas(map_canvas, ctx);
         for (var i = 0; i < lines.length; i++) {
             drawLine(lines[i], ctx);
+        }
+        for (var i = 0; i < landmarks.length; i++) {
+            drawLandmark(landmarks[i], ctx);
         }
         
         if (redo_stack.length == 0) {
