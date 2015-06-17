@@ -58,7 +58,15 @@ $(document).ready(function() {
     });
 
     $('#redobutton').click( function() {
+        console.log(redo_stack);
         selected = 0;
+        var actiontoredo = redo_stack.pop();
+        console.log(actiontoredo);
+        if (actiontoredo.action == "line") {
+            var thisid = actiontoredo.data.id;
+            undo_stack.push({action:"line", id:thisid});
+            map_data.lines.push(actiontoredo.data);
+        }
         update_canvas(map_data);
     });
     
