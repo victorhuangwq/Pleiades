@@ -2,7 +2,7 @@
 // All this logic will automatically be available in application.js.
 
 $(document).ready(function() {// Javascript object to store all map data
-    var map_data = {name:"Untitled", maxid: 0, lines:[]};
+    var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
     
     var undo_stack = new Array();
     var redo_stack = new Array();
@@ -17,8 +17,18 @@ $(document).ready(function() {// Javascript object to store all map data
     
     //map_canvas properties
     var map_canvas = $('#canvas');
-    map_canvas.width($('#app').width());
-    map_canvas.height($('#app').height());
+    cwidth = $('#app').width();
+    nwidth = map_canvas.width();
+    cheight = 600;
+    nheight = map_canvas.height();
+    function scalex(x) {
+        return x * nwidth / cwidth;
+    }
+    function scaley(y) {
+        return y * nheight / cheight;
+    }
+    map_canvas.width(cwidth);
+    map_canvas.height(cheight);
     var ctx = canvas.getContext("2d");
     
     $('#selectbutton').click( function() {
@@ -53,6 +63,19 @@ $(document).ready(function() {// Javascript object to store all map data
             map_data.lines.splice(toremove, 1);
             redo_stack.push({action: "line", data: linedata});
         }
+        if (actiontoundo.action == "landmark") {
+            var landmarkdata;
+            var toremove = 0;
+            for (i = 0; i < map_data.landmarks.length; i++) {
+                if (map_data.landmarks[i].id == actiontoundo.id) {
+                    landmarkdata = map_data.landmarks[i];
+                    toremove = i;
+                    break;
+                }
+            }
+            map_data.landmarks.splice(toremove, 1);
+            redo_stack.push({action: "landmark", data: landmarkdata});
+        }
         update_canvas(map_data);
     });
 
@@ -63,6 +86,11 @@ $(document).ready(function() {// Javascript object to store all map data
             var thisid = actiontoredo.data.id;
             undo_stack.push({action:"line", id:thisid});
             map_data.lines.push(actiontoredo.data);
+        }
+        if (actiontoredo.action == "landmark") {
+            var thisid = actiontoredo.data.id;
+            undo_stack.push({action:"landmark", id:thisid});
+            map_data.landmarks.push(actiontoredo.data);
         }
         update_canvas(map_data);
     });
@@ -103,6 +131,69 @@ $(document).ready(function() {// Javascript object to store all map data
         }
     });
     
+    function createLandmark(img, name) {
+        var thisid = map_data.maxid;
+        map_data.maxid += 1;
+        undo_stack.push({action: "landmark", id: thisid});
+        redo_stack.splice(0, redo_stack.length);
+        addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
+    }
+    
+    $('#digitalbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Digital";
+        }
+        createLandmark("digitalimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#lifestylebutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Lifestyle";
+        }
+        createLandmark("lifestyleimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#foodbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "F&B";
+        }
+        createLandmark("foodimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#fashionbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Fashion";
+        }
+        createLandmark("fashionimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#servicesbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Service";
+        }
+        createLandmark("servicesimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    $('#structuresbutton').click( function() {
+        name = $("#landmarkinput").val();
+        if (name == "") {
+            name = "Structure";
+        }
+        createLandmark("structuresimg", name);
+        $("#landmarkinput").val("");
+        $("#landmarkpopover").hide();
+    });
+    
     // Canvas Manipulation
     
     var penDown = false;
@@ -136,40 +227,60 @@ $(document).ready(function() {// Javascript object to store all map data
         }
     });
     
+    var landmarkpos;
+    
     map_canvas.click(function(e) {
         var pos = {x: e.pageX, y: e.pageY};
         popover = $("#landmarkpopover");
         popover.show();
         popover.css('left', (pos.x + 5) + 'px');
-        popover.css('top', (pos.y + popover.height()/2) + 'px');
+        popover.css('top', (pos.y) + 'px');
+        landmarkpos = getMousePos(e);
     });
     
     function addElement(elem) {
         if (elem.type == "line") {
             map_data.lines.push(elem);
         }
+        if (elem.type == "landmark") {
+            map_data.landmarks.push(elem);
+        }
         update_canvas(map_data);
     }
     
     function clear_canvas(canvas, ctx) {
-        console.log("clear_canvas()");
         ctx.clearRect(0, 0, canvas.width(), canvas.height());
     }
     
     function drawLine(line, ctx) {
         ctx.beginPath();
         ctx.strokeStyle = "blue";
-        ctx.moveTo(line.start.x, line.start.y);
-        ctx.lineTo(line.end.x, line.end.y);
+        ctx.moveTo(scalex(line.start.x), scaley(line.start.y));
+        ctx.lineTo(scalex(line.end.x), scaley(line.end.y));
         ctx.stroke();
         ctx.closePath();
-    };
+    }
+    
+    function drawLandmark(landmark, ctx) {
+        var img = document.getElementById(landmark.img);
+        ctx.drawImage(img, scalex(landmark.pos.x - 25), scaley(landmark.pos.y - 25), scalex(50), scaley(50));
+        var x = scalex(landmark.pos.x);
+        var y = scaley(landmark.pos.y + 40);
+        ctx.font = '' + (scaley(13)) + 'pt Helvetica';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'black';
+        ctx.fillText(landmark.landmarkname, x, y);
+    }
     
     function update_canvas(obj) {
         lines = obj.lines;
+        landmarks = obj.landmarks;
         clear_canvas(map_canvas, ctx);
         for (var i = 0; i < lines.length; i++) {
             drawLine(lines[i], ctx);
+        }
+        for (var i = 0; i < landmarks.length; i++) {
+            drawLandmark(landmarks[i], ctx);
         }
         
         if (redo_stack.length == 0) {

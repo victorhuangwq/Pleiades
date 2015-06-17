@@ -17,8 +17,18 @@ $(document).ready(function() {// Javascript object to store all map data
     
     //map_canvas properties
     var map_canvas = $('#canvas');
-    map_canvas.width($('#app').width());
-    map_canvas.height($('#app').height());
+    cwidth = $('#app').width();
+    nwidth = map_canvas.width();
+    cheight = 600;
+    nheight = map_canvas.height();
+    function scalex(x) {
+        return x * nwidth / cwidth;
+    }
+    function scaley(y) {
+        return y * nheight / cheight;
+    }
+    map_canvas.width(cwidth);
+    map_canvas.height(cheight);
     var ctx = canvas.getContext("2d");
     
     $('#selectbutton').click( function() {
@@ -245,18 +255,18 @@ $(document).ready(function() {// Javascript object to store all map data
     function drawLine(line, ctx) {
         ctx.beginPath();
         ctx.strokeStyle = "blue";
-        ctx.moveTo(line.start.x, line.start.y);
-        ctx.lineTo(line.end.x, line.end.y);
+        ctx.moveTo(scalex(line.start.x), scaley(line.start.y));
+        ctx.lineTo(scalex(line.end.x), scaley(line.end.y));
         ctx.stroke();
         ctx.closePath();
     }
     
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
-        var x = landmark.pos.x;
-        var y = landmark.pos.y + 40;
-        ctx.font = '12pt Helvetica';
+        ctx.drawImage(img, scalex(landmark.pos.x - 25), scaley(landmark.pos.y - 25), scalex(50), scaley(50));
+        var x = scalex(landmark.pos.x);
+        var y = scaley(landmark.pos.y + 40);
+        ctx.font = '' + (scaley(13)) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
         ctx.fillText(landmark.landmarkname, x, y);
