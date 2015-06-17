@@ -1,9 +1,9 @@
 Project Hours Log
 
-Total Hours for Huang Weiqi Victor: 43.5
+Total Hours for Huang Weiqi Victor: 48.5
 >> Github Contributions: https://github.com/XtrKiL
 
-Total Hours for Chua Hou: 38
+Total Hours for Chua Hou: 43
 >> Github Contributions: https://github.com/chuahou
 
 Format as follows:
@@ -26,3 +26,7 @@ Format as follows:
 2015-06-03 1930 2h   2h Mission Control - JQuery							Will decide between using JQuery and AngularJS
 2015-06-09 1330 2h   2h Debugging JS
 2015-06-10 1000 3h   3h Re-setup server / Debugging Rails
+2015-06-10 1800 2h   2h Mission Control - Google
+2015-06-16 2100 1h   0h Reading up on HTML5 canvas
+2015-06-16 2200 0h   1h Reading up on JSON
+2015-06-17 0800 2h   2h Creating canvas and basic line drawing functionality
