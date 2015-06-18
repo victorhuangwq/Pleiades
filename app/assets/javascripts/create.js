@@ -2,11 +2,13 @@
 // All this logic will automatically be available in application.js.
 
 $(document).ready(function() {// Javascript object to store all map data
+    
     var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
     
     var undo_stack = new Array();
     var redo_stack = new Array();
     
+    //button properties
     var selected = 0;
     $('#selectdiv').hide();
     $('#drawdiv').hide();
@@ -17,19 +19,45 @@ $(document).ready(function() {// Javascript object to store all map data
     
     //map_canvas properties
     var map_canvas = $('#canvas');
-    cwidth = $('#app').width();
-    nwidth = map_canvas.width();
-    cheight = 600;
-    nheight = map_canvas.height();
-    function scalex(x) {
-        return x * nwidth / cwidth;
-    }
-    function scaley(y) {
-        return y * nheight / cheight;
-    }
-    map_canvas.width(cwidth);
-    map_canvas.height(cheight);
     var ctx = canvas.getContext("2d");
+    var container = $("#app");
+    
+    cwidth = container.width();
+    nwidth = map_canvas.width();
+    cheight = container.height();
+    nheight = map_canvas.height();
+    
+    function scalex(x) {
+        return x;
+    }
+    
+    function scaley(y) {
+        return y;
+    }
+    
+    console.log("Canvas Properties");
+    console.log(cwidth);
+    console.log(cheight);
+    console.log(nwidth);
+    console.log(nheight);
+    
+    map_canvas.attr("width",cwidth);
+    map_canvas.attr("height",cheight);
+    
+    //Responsive canvas
+    $(window).resize(function(){
+        
+        cwidth = container.width();
+        nwidth = map_canvas.width();
+        cheight = container.height();
+        nheight = map_canvas.height();
+        map_canvas.attr("width",cwidth);
+        map_canvas.attr("height",cheight);
+        
+        update_canvas(map_data);
+        
+    });
+    
     
     $('#selectbutton').click( function() {
         selected = 1;
@@ -251,11 +279,11 @@ $(document).ready(function() {// Javascript object to store all map data
     
     //Area formulas for triangle
     triAF = function(p1,p2,p3){
-        return 1/2*(p1.x*p2.y+p2.x*p3.y+p3.x*p1.y - p1.y*p2.x - p2.y*p3.x - p3.y*p1.x);
+        return Math.abs(1/2*(p1.x*p2.y+p2.x*p3.y+p3.x*p1.y - p1.y*p2.x - p2.y*p3.x - p3.y*p1.x));
     }
     //Area formula for quadrilaterals
     quadAF = function(p1,p2,p3,p4){
-        return 1/2*(p1.x*p2.y+p2.x*p3.y+p3.x*p4.y+p4.x*p1.y- p1.y*p2.x - p2.y*p3.x - p3.y*p4.x -p4.y*p1.x);
+        return Math.abs(1/2*(p1.x*p2.y+p2.x*p3.y+p3.x*p4.y+p4.x*p1.y- p1.y*p2.x - p2.y*p3.x - p3.y*p4.x -p4.y*p1.x));
     }
     //shortest distance to a point formula
     shrtD = function(p1,line){
@@ -295,13 +323,13 @@ $(document).ready(function() {// Javascript object to store all map data
                 console.log(bl);
                 console.log(br);
                 
-                sum_of_area = triAF(pos,tl,tr)+triAF(tr,pos,br)+triAF(br,pos,bl)+triAF(pos,bl,tl);
-                quadArea = quadAF(tl,tr,bl,br);
+                sum_of_area = triAF(tl,pos,bl)+triAF(bl,pos,br)+triAF(br,pos,tr)+triAF(pos,tr,tl);
+                quadArea = quadAF(tr,tl,bl,br);
                 
                 console.log(sum_of_area);
                 console.log(quadArea);
                 
-               if (quadArea - 0.1 < sum_of_area < quadArea + 0.1) {
+                if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
                     todelete = map_data.landmarks[i];
                 }            
             }
@@ -312,27 +340,31 @@ $(document).ready(function() {// Javascript object to store all map data
                 var shortlistedlines = [];
                 //Checks if the point is in any lines' hitbox
                 for(var i =0; i <map_data.lines.length; i++){
-                    var t1,t2,b1,b2
+                    var tl,tr,bl,br
                     
                     startp = map_data.lines[i].start;
                     endp   = map_data.lines[i].end;
-                    console.log(startp);
                     
-                    t1 = {x: (startp.x-rectApprox), y: (startp.y - (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox)};
-                    t2 = {x: startp.x+rectApprox, y:startp.y};
-                    b2 = {x: endp.x-rectApprox,y:endp.y};
-                    b1 = {x: endp.x +rectApprox, y:endp.y + (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox };
+                    console.log(pos);
                     
-                    console.log(t1);
+                    tl = {x: (startp.x-rectApprox), y: (startp.y - (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox)};
+                    tr = {x: startp.x+rectApprox, y:startp.y};
+                    bl = {x: endp.x-rectApprox,y:endp.y};
+                    br = {x: endp.x +rectApprox, y:endp.y + (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox };
                     
-                    sum_of_area = triAF(pos,t1,b1)+triAF(b1,pos,b2)+triAF(b2,pos,t2)+triAF(pos,t2,t1);
-                    quadArea = quadAF(t1,t2,b2,b1);
+                    console.log(tl);
+                    console.log(tr);
+                    console.log(bl);
+                    console.log(br);
+                    
+                    sum_of_area = triAF(tl,pos,bl)+triAF(bl,pos,br)+triAF(br,pos,tr)+triAF(pos,tr,tl);
+                    quadArea = quadAF(tl,tr,br,bl);
                     
                     console.log(quadArea);
                     console.log(sum_of_area);
                     
                     //Catches floating point errors
-                    if (quadArea - 0.1 < sum_of_area < quadArea + 0.1) {
+                    if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
                         shortlistedlines.push(map_data.lines[i])
                     }
                 }

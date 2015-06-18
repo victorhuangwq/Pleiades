@@ -32,3 +32,5 @@ Format as follows:
 2015-06-17 0800 2h   2h Creating canvas and basic line drawing functionality
 2015-06-17 1000 2h   2h Undo and redo functionality
 2015-06-17 1300 3h   3h Landmarks functionality
+2015-06-17 1400 2h   1h Delete Functionality
+2015-06-18 1600 1h   0h Canvas app bug fixing
