@@ -421,9 +421,14 @@ $(document).ready(function() {// Javascript object to store all map data
     
     function drawLine(line, ctx) {
         ctx.beginPath();
-        ctx.strokeStyle = "blue";
         ctx.moveTo(line.start.x, line.start.y);
         ctx.lineTo(line.end.x, line.end.y);
+        ctx.lineWidth= 7;
+        ctx.lineCap ='round';
+        ctx.linejoin ="round";
+        ctx.strokeStyle = "rgba(0, 153, 255, 0.5)";
+        ctx.shadowColor = 'rgba(224,255,255,1)';
+        ctx.shadowBlur = 30;
         ctx.stroke();
         ctx.closePath();
     }
