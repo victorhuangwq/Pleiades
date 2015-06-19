@@ -25585,3 +25585,201 @@ Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-06-18 19:18:35 +0800
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-06-18 19:18:35 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-19 10:49:37 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 1142ms (Views: 1102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 279ms (Views: 271.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:40 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:41 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-06-19 10:49:49 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (144.1ms)
+Completed 200 OK in 458ms (Views: 456.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-06-19 10:49:50 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (67.1ms)
+Completed 200 OK in 350ms (Views: 349.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:50 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-06-19 11:41:51 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-06-19 11:41:51 +0800

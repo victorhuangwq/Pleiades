@@ -3,12 +3,40 @@
 
 $(document).ready(function() {// Javascript object to store all map data
     
-    var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
+    //map_canvas properties
+    var map_canvas = $('#canvas');
+    var ctx = canvas.getContext("2d");
+    var container = $("#app"); //container of map_canvas
     
+    cwidth = container.width();
+    cheight = container.height();
+    
+    //canvas Debugging
+    console.log("Canvas Properties");
+    console.log("canvas container:" + cwidth);
+    console.log("canvas container:" + cheight);
+    
+    map_canvas.attr("width",cwidth);
+    map_canvas.attr("height",cheight);
+    
+    //canvas resizing on window resize
+    $(window).resize(function(){
+        cwidth = container.width();
+        cheight = container.height();
+        map_canvas.attr("width",cwidth);
+        map_canvas.attr("height",cheight);
+        update_canvas(map_data);
+    });
+    
+    //map_data properties
+    var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
     var undo_stack = new Array();
     var redo_stack = new Array();
     
-    //button properties
+    /**
+     *Toolbar controller.
+     *controls all buttons in toolbar
+     */
     var selected = 0;
     $('#selectdiv').hide();
     $('#drawdiv').hide();
@@ -16,48 +44,6 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#removediv').hide();
     $('#undobutton').attr("disabled", true);
     $('#redobutton').attr("disabled", true);
-    
-    //map_canvas properties
-    var map_canvas = $('#canvas');
-    var ctx = canvas.getContext("2d");
-    var container = $("#app");
-    
-    cwidth = container.width();
-    nwidth = map_canvas.width();
-    cheight = container.height();
-    nheight = map_canvas.height();
-    
-    function scalex(x) {
-        return x;
-    }
-    
-    function scaley(y) {
-        return y;
-    }
-    
-    console.log("Canvas Properties");
-    console.log(cwidth);
-    console.log(cheight);
-    console.log(nwidth);
-    console.log(nheight);
-    
-    map_canvas.attr("width",cwidth);
-    map_canvas.attr("height",cheight);
-    
-    //Responsive canvas
-    $(window).resize(function(){
-        
-        cwidth = container.width();
-        nwidth = map_canvas.width();
-        cheight = container.height();
-        nheight = map_canvas.height();
-        map_canvas.attr("width",cwidth);
-        map_canvas.attr("height",cheight);
-        
-        update_canvas(map_data);
-        
-    });
-    
     
     $('#selectbutton').click( function() {
         selected = 1;
@@ -78,32 +64,36 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#undobutton').click( function() {
         selected = 0;
         var actiontoundo = undo_stack.pop();
-        if (actiontoundo.action == "line") {
-            var linedata;
-            var toremove = 0;
+        
+        if (actiontoundo.action == "line") {    
+            var line_data;
+            var to_remove = 0;
+            
             for (i = 0; i < map_data.lines.length; i++) {
                 if (map_data.lines[i].id == actiontoundo.id) {
-                    linedata = map_data.lines[i];
-                    toremove = i;
+                    line_data = map_data.lines[i];
+                    to_remove = i;
                     break;
                 }
             }
-            map_data.lines.splice(toremove, 1);
-            redo_stack.push({action: "line", data: linedata});
+            map_data.lines.splice(to_remove, 1);
+            redo_stack.push({action: "line", data: line_data});
         }
+        
         if (actiontoundo.action == "landmark") {
             var landmarkdata;
-            var toremove = 0;
+            var to_remove = 0;
             for (i = 0; i < map_data.landmarks.length; i++) {
                 if (map_data.landmarks[i].id == actiontoundo.id) {
                     landmarkdata = map_data.landmarks[i];
-                    toremove = i;
+                    to_remove = i;
                     break;
                 }
             }
-            map_data.landmarks.splice(toremove, 1);
+            map_data.landmarks.splice(to_remove, 1);
             redo_stack.push({action: "landmark", data: landmarkdata});
         }
+        
         if (actiontoundo.action == "delete") {
             var datatoaddback = actiontoundo.data;
             if (datatoaddback.type == "line") {
@@ -134,16 +124,17 @@ $(document).ready(function() {// Javascript object to store all map data
             todelete = actiontoredo.data;
             undo_stack.push({action:"delete",data:todelete});
             if (todelete.type == "line") {
-                map_data.lines.splice(map_data.lines.indexOf(todelete),1)
+                map_data.lines.splice(map_data.lines.indexOf(todelete),1);
             }
             if (todelete.type == "landmark") {
-                map_data.landmarks.splice(map_data.landmarks.indexOf(todelete),1)
+                map_data.landmarks.splice(map_data.landmarks.indexOf(todelete),1);
             }
         }
         update_canvas(map_data);
     });
     
     $('#toolbar').click( function() {
+        
         $('#selectbutton').attr("disabled", false);
         $('#drawbutton').attr("disabled", false);
         $('#landmarkbutton').attr("disabled", false);
@@ -173,6 +164,13 @@ $(document).ready(function() {// Javascript object to store all map data
         }
     });
     
+    /**
+     * Toolbar button code ends here
+     */
+    
+    /**
+     * Landmark popup code
+     */
     $(document).click( function() {
         if (selected != 3) {
             $("#landmarkpopover").hide();
@@ -196,6 +194,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
+    
     $('#lifestylebutton').click( function() {
         name = $("#landmarkinput").val();
         if (name == "") {
@@ -205,6 +204,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
+    
     $('#foodbutton').click( function() {
         name = $("#landmarkinput").val();
         if (name == "") {
@@ -214,6 +214,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
+    
     $('#fashionbutton').click( function() {
         name = $("#landmarkinput").val();
         if (name == "") {
@@ -223,6 +224,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
+    
     $('#servicesbutton').click( function() {
         name = $("#landmarkinput").val();
         if (name == "") {
@@ -232,6 +234,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
+    
     $('#structuresbutton').click( function() {
         name = $("#landmarkinput").val();
         if (name == "") {
@@ -241,6 +244,10 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#landmarkinput").val("");
         $("#landmarkpopover").hide();
     });
+    
+    /**
+     * Landmark popup code ends here
+     */
     
     // Canvas Manipulation
     
@@ -293,6 +300,8 @@ $(document).ready(function() {// Javascript object to store all map data
     map_canvas.click(function(e) {
         //Arbitrary number for rectangle approximation
         var rectApprox = 20;
+        
+        //Adding landmarks
         if (selected == 3) {
             var pos = {x: e.pageX, y: e.pageY};
             popover = $("#landmarkpopover");
@@ -301,6 +310,7 @@ $(document).ready(function() {// Javascript object to store all map data
             popover.css('top', (pos.y) + 'px');
             landmarkpos = getMousePos(e);
         }
+        
         if (selected == 4) {
             
             var pos = getMousePos(e);
@@ -370,7 +380,7 @@ $(document).ready(function() {// Javascript object to store all map data
                 }
                 
                 //Picks closest line
-                var shortestdistance = 999999;
+                var shortestdistance = 999999999;
                 for (var i =0;i<shortlistedlines.length;i++) {
                     if (shrtD(pos,shortlistedlines[i]) < shortestdistance) {
                         shortestdistance = shrtD(pos,shortlistedlines[i])
@@ -412,18 +422,18 @@ $(document).ready(function() {// Javascript object to store all map data
     function drawLine(line, ctx) {
         ctx.beginPath();
         ctx.strokeStyle = "blue";
-        ctx.moveTo(scalex(line.start.x), scaley(line.start.y));
-        ctx.lineTo(scalex(line.end.x), scaley(line.end.y));
+        ctx.moveTo(line.start.x, line.start.y);
+        ctx.lineTo(line.end.x, line.end.y);
         ctx.stroke();
         ctx.closePath();
     }
     
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        ctx.drawImage(img, scalex(landmark.pos.x - 25), scaley(landmark.pos.y - 25), scalex(50), scaley(50));
-        var x = scalex(landmark.pos.x);
-        var y = scaley(landmark.pos.y + 40);
-        ctx.font = '' + (scaley(13)) + 'pt Helvetica';
+        ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        var x = landmark.pos.x;
+        var y = landmark.pos.y + 40;
+        ctx.font = '' + (13) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
         ctx.fillText(landmark.landmarkname, x, y);
