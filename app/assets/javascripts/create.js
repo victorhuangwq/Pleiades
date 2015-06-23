@@ -32,6 +32,7 @@ $(document).ready(function() {// Javascript object to store all map data
     var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
     var undo_stack = new Array();
     var redo_stack = new Array();
+    var tochangeindex = null;
     
     /**
      *Toolbar controller.
@@ -104,6 +105,19 @@ $(document).ready(function() {// Javascript object to store all map data
             }
             redo_stack.push({action:"delete",data: datatoaddback});
         }
+        
+        if (actiontoundo.action == "changelandmark") {
+            for (i = 0; i < map_data.landmarks.length; i++) {
+                if (map_data.landmarks[i].id == actiontoundo.id) {
+                    var newlandmarkname = map_data.landmarks[i].landmarkname;
+                    var newlandmarkimg = map_data.landmarks[i].img;
+                    map_data.landmarks[i].landmarkname = actiontoundo.oldname;
+                    map_data.landmarks[i].img = actiontoundo.oldimg;
+                    redo_stack.push({action: "changelandmark", id: actiontoundo.id, newname: newlandmarkname, newimg: newlandmarkimg});
+                    break;
+                }
+            }
+        }
         update_canvas(map_data);
     });
 
@@ -128,6 +142,18 @@ $(document).ready(function() {// Javascript object to store all map data
             }
             if (todelete.type == "landmark") {
                 map_data.landmarks.splice(map_data.landmarks.indexOf(todelete),1);
+            }
+        }
+        if (actiontoredo.action == "changelandmark") {
+            for (i = 0; i < map_data.landmarks.length; i++) {
+                if (map_data.landmarks[i].id == actiontoredo.id) {
+                    var oldname = map_data.landmarks[i].landmarkname;
+                    var oldimg = map_data.landmarks[i].img;
+                    map_data.landmarks[i].landmarkname = actiontoredo.newname;
+                    map_data.landmarks[i].img = actiontoredo.newimg;
+                    undo_stack.push({action: "changelandmark", id: actiontoredo.id, oldname: oldname, oldimg: oldimg});
+                    break;
+                }
             }
         }
         update_canvas(map_data);
@@ -172,17 +198,28 @@ $(document).ready(function() {// Javascript object to store all map data
      * Landmark popup code
      */
     $(document).click( function() {
-        if (selected != 3) {
+        if (selected != 3 && selected != 1) {
             $("#landmarkpopover").hide();
         }
     });
     
     function createLandmark(img, name) {
-        var thisid = map_data.maxid;
-        map_data.maxid += 1;
-        undo_stack.push({action: "landmark", id: thisid});
-        redo_stack.splice(0, redo_stack.length);
-        addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
+        if (selected == 1) {
+            // edit landmark
+            var oldname = map_data.landmarks[tochangeindex].landmarkname;
+            var oldimg = map_data.landmarks[tochangeindex].img;
+            map_data.landmarks[tochangeindex].landmarkname = name;
+            map_data.landmarks[tochangeindex].img = img;
+            undo_stack.push({action: "changelandmark", id: map_data.landmarks[tochangeindex].id, oldname: oldname, oldimg: oldimg});
+            redo_stack.splice(0, redo_stack.length);
+            update_canvas(map_data);
+        } else { // new landmark   
+            var thisid = map_data.maxid;
+            map_data.maxid += 1;
+            undo_stack.push({action: "landmark", id: thisid});
+            redo_stack.splice(0, redo_stack.length);
+            addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
+        }
     }
     
     $('#digitalbutton').click( function() {
@@ -311,12 +348,38 @@ $(document).ready(function() {// Javascript object to store all map data
             landmarkpos = getMousePos(e);
         }
         
-        if (selected == 4) {
+        // Selecting landmarks
+        if (selected == 1) {
+            var pagepos = {x: e.pageX, y: e.pageY};
+            var pos = getMousePos(e);
+            tochangeindex = -1;
+            for (var i = 0; i < map_data.landmarks.length; i++) {
+                var tl, br;
+                center = map_data.landmarks[i].pos;
+                tl = {x: center.x - 25, y: center.y - 25};
+                br = {x: center.x + 25, y: center.y + 38};
+                
+                if (pos.x < br.x && pos.x > tl.x) {
+                    if (pos.y < br.y && pos.y > tl.y) {
+                        tochangeindex = i;
+                    }
+                }
+            }
             
+            if (tochangeindex != -1) {
+                popover = $("#landmarkpopover");
+                popover.show();
+                popover.css('left', (pagepos.x + 5) + 'px');
+                popover.css('top', (pagepos.y) + 'px');
+            }
+        }
+        
+        //Remove
+        if (selected == 4) {            
             var pos = getMousePos(e);
             var todelete = null;
-            for (var i=0;i<map_data.landmarks.length;i++) {
-                var tl,tr,bl,br;
+            for (var i = 0; i < map_data.landmarks.length; i++) {
+                var tl, tr, bl, br;
                 centre = map_data.landmarks[i].pos;
                 
                 //Magic Numbers here: Take note!
@@ -325,8 +388,8 @@ $(document).ready(function() {// Javascript object to store all map data
                 
                 tl = {x:centre.x-25,y:centre.y-25};
                 tr = {x:centre.x-25,y:centre.y+25};
-                bl = {x:centre.x+38,y:centre.y-25};
-                br = {x:centre.x+38,y:centre.y+25};
+                bl = {x:centre.x+25,y:centre.y-38};
+                br = {x:centre.x+25,y:centre.y+38};
                 
                 console.log(tl);
                 console.log(tr);
@@ -344,7 +407,7 @@ $(document).ready(function() {// Javascript object to store all map data
                 }            
             }
             
-            //If there are no landmarks to be removed then look for closest line
+            // If there are no landmarks to be removed then look for closest line
             if (todelete == null) {
                 
                 var shortlistedlines = [];
@@ -381,15 +444,13 @@ $(document).ready(function() {// Javascript object to store all map data
                 
                 //Picks closest line
                 var shortestdistance = 999999999;
-                for (var i =0;i<shortlistedlines.length;i++) {
+                for (var i = 0;i<shortlistedlines.length;i++) {
                     if (shrtD(pos,shortlistedlines[i]) < shortestdistance) {
                         shortestdistance = shrtD(pos,shortlistedlines[i])
                         todelete = shortlistedlines[i];
                     }
                 }
             }
-            
-            console.log(todelete);
             
             if (todelete != null) {
                 undo_stack.push({action:"delete",data:todelete});
