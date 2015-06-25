@@ -5,9 +5,9 @@
 <body>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <%= javascript_include_tag "create" %>
+  <%= javascript_include_tag "create" %>
 
-    <div class="container-fluid">
+  <div class="container-fluid">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -22,7 +22,7 @@
             </ul>
         </div>
     </nav>
-    
+
 	<div class="page-header text-center">
 		<h2>Create a QuikMap</h2>
 		<div class="input-group col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
@@ -30,9 +30,10 @@
     	    <input type="text" class="form-control" placeholder="New Location Name" aria-describedby="basic-addon1">
 		</div>
 	</div>
-	
+
     <div class="row">
         <div id="toolbar" class="col-lg-2 col-md-2 col-sm-1 col-xs-1 text-center">
+
             <button id="selectbutton" type="button" class="btn btn-info btn-lg" title="Select">
                 <span class="glyphicon glyphicon-hand-up" aria-hidden="true" style="font-size:36px"></span>
             </button>
@@ -51,20 +52,21 @@
             <button id="redobutton" type="button" class="btn btn-info btn-lg" title="Redo">
                 <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="font-size:36px"></span>
             </button>
-        
+
             <hr/>
-        
+
             <div id="selectdiv">Select</div>
             <div id="drawdiv">Draw Line</div>
             <div id="landmarkdiv">Add Landmark</div>
             <div id="removediv">Remove</div>
-        </div>
-    
+
+		</div>
+
     	<div id="app" class="col-lg-8 col-md-8 col-sm-11 col-xs-11 ui-widget-header" style = "height:500px" >
-            <canvas id="canvas" height ="1200px" width ="1200px" style="border: 2px solid #DFDFDF; background-color: #F7F7F7"></canvas>
+            <canvas id="canvas" height ="1200px" width ="1200px"></canvas>
     	</div>
 
-    	<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+    	<div id="instructions" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
     		<h2>How to create a map!</h2>
     			<ul>
     				<li>Step 1!</li>
@@ -72,7 +74,7 @@
     				<li>Step 3!</li>
     			</ul>
     	</div>
-        
+
         <div id="landmarkpopover" class="popover" style="width:170px">
             <div class="text-center">
         	    <input id="landmarkinput" type="text" class="form-control" placeholder="Landmark Name" aria-describedby="basic-addon1"/>
@@ -114,5 +116,5 @@
 <div class="text-center">
     <p>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
 </div>
-</body>
+</body>b
 </html>
