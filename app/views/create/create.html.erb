@@ -6,7 +6,6 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <%= javascript_include_tag "create" %>
-
   <div class="container-fluid">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -23,11 +22,11 @@
         </div>
     </nav>
 
-	<div class="page-header text-center">
+    <div class="page-header text-center">
 		<h2>Create a QuikMap</h2>
 		<div class="input-group col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
     	    <span class="input-group-addon" id="basic-addon1">QuikMap To:</span>
-    	    <input type="text" class="form-control" placeholder="New Location Name" aria-describedby="basic-addon1">
+    	    <input id="titleinput" type="text" class="form-control" placeholder="New Location Name" aria-describedby="basic-addon1">
 		</div>
 	</div>
 
@@ -68,11 +67,15 @@
 
     	<div id="instructions" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
     		<h2>How to create a map!</h2>
-    			<ul>
-    				<li>Step 1!</li>
-    				<li>Step 2!</li>
-    				<li>Step 3!</li>
-    			</ul>
+			<ul>
+				<li>Step 1!</li>
+				<li>Step 2!</li>
+				<li>Step 3!</li>
+			</ul>
+            <form action="/create/submit" method="post" id="submitform">
+                <input id="mapdatainput" type="hidden" name="map_data" value=""/>
+                <button id="submitbutton" type="submit" class="btn btn-default btn-success text-center">Submit!</button>
+            </form>
     	</div>
 
         <div id="landmarkpopover" class="popover" style="width:170px">

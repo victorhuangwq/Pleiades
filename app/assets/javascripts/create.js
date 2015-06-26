@@ -544,7 +544,12 @@ $(document).ready(function() {// Javascript object to store all map data
             $("#undobutton").attr("disabled", true);
         } else {
             $("#undobutton").attr("disabled", false);
-        }
+        };
     }
+    
+    $("#submitbutton").click(function() {
+        map_data.name = $("#titleinput").val();
+        console.log(JSON.stringify(map_data));
+    });
 
 });

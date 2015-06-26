@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'search/search'
 
   get 'create/create'
+  post 'create/submit'
 
   get 'welcome/index'
   root 'welcome#index'
