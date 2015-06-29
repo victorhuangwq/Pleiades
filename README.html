@@ -15,38 +15,87 @@
 <body>
     <h1>Project Readme</h1>
     <h2>Project Title: <em>HowToGo</em></h2>
-    
+
     <h3>Group Information</h3>
     <p><strong>Group name:</strong> Pleiades</p>
     <p><strong>Group members:</strong> Huang Weiqi Victor and Chua Hou</p>
-    
-    <h3>Table of contents</h3>
+
+    <h2>Table of contents</h2>
     <ol>
         <li>Overview</li>
         <li>Links</li>
-        <li>Features</li>
         <li>User Stories</li>
+        <li>Features</li>
     </ol>
-    
-    <h3>Overview</h3>
-    <p>Our project aims to revolutionise the direction giving process by providing an online web app that allows event planners to quickly create customised maps and directions for guests to easily find their way. Our targeted level of achievement is Project Gemini.</p>
-    
-    <h3>Links</h3>
+
+    <h2>Overview</h2>
+    <p>
+       Our project aims to revolutionise the direction giving process by
+       providing an online web app that allows event planners to quickly
+       create customised maps and directions for guests to easily find
+       their way.
+       Our targeted level of achievement is Project Gemini.
+    </p>
+
+    <h2>Ideology</h2>
+    <p>
+      When people are navigating, especially in an indoors area, be it an office building, chalet or a shopping mall,
+      all they need is a single route, with landmarks on the way to guide them. The interface forces the user to make succinct maps,
+      such that the maps can be easily understood.
+    </p>
+    <p>
+      In addition, large maps like Google Maps can only provide directions to a general location. For example, to ABC Road
+      but Google Map does not display the location of any shop around there, and this is where HowToGo comes in. It directs people to <b>specific</b>
+      locations.(Provided that they can get to the general location, like a MRT Station)
+    </p>
+
+
+    <h2>Links</h2>
+    <p style="font-weight:bold">Our application: <a href="http://pleiadesorbital.herokuapp.com">http://pleiadesorbital.herokuapp.com</a></p>
     <p>Our ignition slide: <a href="http://puu.sh/i7TQv/c23bc5939d.png">http://puu.sh/i7TQv/c23bc5939d.png</a></p>
     <p>Ignition video: <a href="https://www.youtube.com/watch?v=QKuLLNVGvow">https://www.youtube.com/watch?v=QKuLLNVGvow</a></p>
-    <p style="font-weight:bold">Our application: <a href="http://pleiadesorbital.herokuapp.com">http://pleiadesorbital.herokuapp.com</a></p>
-    
-    <h3>Features</h3>
-    <h4>Application Goals</h4>
+
+    <h2>User Stories</h2>
+    <p>Also located in our GitHub Issues: <a href="https://github.com/XtrKiL/Pleiades/issues">Pleiades Issues</a></p>
+    <p style="font-style:italic">Italics refer to implemented user stories.</p>
+    <ul>
+        <li><b>Give Directions Clearly</b><br>As an event planner, I want to give directions to visitors in a clear way easily.
+            <ul>
+                <li>The ability to create such a map has been implemented, but sharing has not been completely implemented yet.</li>
+            </ul>
+        </li>
+        <li><b>Shorten Link</b><br>As an event planner, I want to be able to shorten my links easily to distribute them to people.</li>
+        <li><b>Locate without GPS</b><br>As a map user, I want to be able to locate myself without the use of GPS.</li>
+        <li><b>Offline Access</b><br>As a user, I want to be able to download the information easily for access offline.</li>
+        <li><b>Good Mobile Interface</b><br>As a user, I want to be able to view the information on my phone with a suitable layout.</li>
+        <li style="font-style:italic"><b>Select Scale of Map</b><br>As an event planner, I want to select the scale of the map I'm creating.
+            <ul>
+                <li>QuikMaps do not have a built in scale so event planners are able to freely create a map of any scale.</li>
+            </ul>
+        </li>
+        <li style="font-style:italic"><b>No Additional Downloads</b><br>As a user, I want to be able to receive information without downloading anything else.
+            <ul>
+                <li>Being a web app, users do not need to download any apps to use the application.</li>
+            </ul>
+        </li>
+        <li style="font-style:italic"><b>Fast Loading</b><br>As a user, I want the page to load fast so I can access them easily when walking around.
+            <ul>
+                <li>Currently, the page is implemented with minimal content needing to be loaded, only consisting of Bootstrap, JQuery and minimal images.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Features</h2>
+    <h3>Application Goals</h3>
     <ul>
         <li>Able to create any QuikMap in under 5 minutes by reducing map complexity</li>
         <li>Able to be viewed easily on mobile for on-the-go viewing</li>
     </ul>
-    
-    <h4>Up to Now - Milestone One</h4>
+
+    <h3>Up to Now - Milestone One</h3>
     <p>As of now, there are no major features implemented. Only the skeleton of our website has been set up.</p>
-    
-    <h4>Up to Now - Milestone Two</h4>
+
+    <h3>Up to Now - Milestone Two</h3>
     <p>The creation application has been implemented with the following features:</p>
     <ul>
         <li>Core features
@@ -55,16 +104,21 @@
                     <ul>
                         <li>Drawing of straight lines</li>
                         <li>Placement and editing of landmarks</li>
-                        <li>Deleting items</li>
+                        <li>Deleting items (hitbox detection)</li>
                         <li>Editing title</li>
                         <li>Undo and Redo</li>
                     </ul>
                 </li>
+                <li>Online sharing
+                  <ul>
+                    <li>Saving QuikMap in heroku Postgres database</li>
+                  </ul>
+                </li>
             </ul>
         </li>
     </ul>
-    
-    <h4>Planned Features</h4>
+
+    <h3>Planned Features</h3>
     <ul>
         <li>Core features (will definitely be implemented)
             <ul>
@@ -94,34 +148,6 @@
             </ul>
         </li>
     </ul>
-    
-    <h3>User Stories</h3>
-    <p style="font-style:italic">Italics refer to completed user stories.</p>
-    <ul>
-        <li>Give Directions Clearly - As an event planner, I want to give directions to visitors in a clear way easily.
-            <ul>
-                <li>The ability to create such a map has been implemented, but sharing has not been completely implemented yet.</li>
-            </ul>
-        </li>
-        <li>Shorten Link - As an event planner, I want to be able to shorten my links easily to distribute them to people.</li>
-        <li>Locate without GPS - As a map user, I want to be able to locate myself without the use of GPS.</li>
-        <li>Offline Access - As a user, I want to be able to download the information easily for access offline.</li>
-        <li>Good Mobile Interface - As a user, I want to be able to view the information on my phone with a suitable layout.</li>
-        <li style="font-style:italic">Select Scale of Map - As an event planner, I want to select the scale of the map I'm creating.
-            <ul>
-                <li>QuikMaps do not have a built in scale so event planners are able to freely create a map of any scale.</li>
-            </ul>
-        </li>
-        <li style="font-style:italic">No Additional Downloads - As a user, I want to be able to receive information without downloading anything else.
-            <ul>
-                <li>Being a web app, users do not need to download any apps to use the application.</li>
-            </ul>
-        </li>
-        <li style="font-style:italic">Fast Loading - As a user, I want the page to load fast so I can access them easily when walking around.
-            <ul>
-                <li>Currently, the page is implemented with minimal content needing to be loaded, only consisting of Bootstrap, JQuery and minimal images.</li>
-            </ul>
-        </li>
-    </ul>
+
 </body>
 </html>
