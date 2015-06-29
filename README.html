@@ -23,16 +23,18 @@
     <h3>Table of contents</h3>
     <ol>
         <li>Overview</li>
-        <li>Ignition Links</li>
+        <li>Links</li>
         <li>Features</li>
+        <li>User Stories</li>
     </ol>
     
     <h3>Overview</h3>
     <p>Our project aims to revolutionise the direction giving process by providing an online web app that allows event planners to quickly create customised maps and directions for guests to easily find their way. Our targeted level of achievement is Project Gemini.</p>
     
-    <h3>Ignition Links</h3>
+    <h3>Links</h3>
     <p>Our ignition slide: <a href="http://puu.sh/i7TQv/c23bc5939d.png">http://puu.sh/i7TQv/c23bc5939d.png</a></p>
     <p>Ignition video: <a href="https://www.youtube.com/watch?v=QKuLLNVGvow">https://www.youtube.com/watch?v=QKuLLNVGvow</a></p>
+    <p style="font-weight:bold">Our application: <a href="http://pleiadesorbital.herokuapp.com">http://pleiadesorbital.herokuapp.com</a></p>
     
     <h3>Features</h3>
     <h4>Application Goals</h4>
@@ -41,14 +43,32 @@
         <li>Able to be viewed easily on mobile for on-the-go viewing</li>
     </ul>
     
-    <h4>Up to Now</h4>
+    <h4>Up to Now - Milestone One</h4>
     <p>As of now, there are no major features implemented. Only the skeleton of our website has been set up.</p>
+    
+    <h4>Up to Now - Milestone Two</h4>
+    <p>The creation application has been implemented with the following features:</p>
+    <ul>
+        <li>Core features
+            <ul>
+                <li>QuikMap Creation
+                    <ul>
+                        <li>Drawing of straight lines</li>
+                        <li>Placement and editing of landmarks</li>
+                        <li>Deleting items</li>
+                        <li>Editing title</li>
+                        <li>Undo and Redo</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
     
     <h4>Planned Features</h4>
     <ul>
         <li>Core features (will definitely be implemented)
             <ul>
-                <li>QuikMap Creation
+                <li style="text-decoration:line-through">QuikMap Creation
                     <ul>
                         <li>QuikMaps contain a roughly drawn map and direction info that can be easily shared</li>
                     </ul>
@@ -71,6 +91,35 @@
             <ul>
                 <li>Account creation, mainly for those who creates many QuikMaps and wants to keep track of them</li>
                 <li>A way to make QuikMaps on the go, on the phones</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>User Stories</h3>
+    <p style="font-style:italic">Italics refer to completed user stories.</p>
+    <ul>
+        <li>Give Directions Clearly - As an event planner, I want to give directions to visitors in a clear way easily.
+            <ul>
+                <li>The ability to create such a map has been implemented, but sharing has not been completely implemented yet.</li>
+            </ul>
+        </li>
+        <li>Shorten Link - As an event planner, I want to be able to shorten my links easily to distribute them to people.</li>
+        <li>Locate without GPS - As a map user, I want to be able to locate myself without the use of GPS.</li>
+        <li>Offline Access - As a user, I want to be able to download the information easily for access offline.</li>
+        <li>Good Mobile Interface - As a user, I want to be able to view the information on my phone with a suitable layout.</li>
+        <li style="font-style:italic">Select Scale of Map - As an event planner, I want to select the scale of the map I'm creating.
+            <ul>
+                <li>QuikMaps do not have a built in scale so event planners are able to freely create a map of any scale.</li>
+            </ul>
+        </li>
+        <li style="font-style:italic">No Additional Downloads - As a user, I want to be able to receive information without downloading anything else.
+            <ul>
+                <li>Being a web app, users do not need to download any apps to use the application.</li>
+            </ul>
+        </li>
+        <li style="font-style:italic">Fast Loading - As a user, I want the page to load fast so I can access them easily when walking around.
+            <ul>
+                <li>Currently, the page is implemented with minimal content needing to be loaded, only consisting of Bootstrap, JQuery and minimal images.</li>
             </ul>
         </li>
     </ul>
