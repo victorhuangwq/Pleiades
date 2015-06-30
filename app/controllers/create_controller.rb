@@ -3,5 +3,6 @@ class CreateController < ApplicationController
   def create
   end
   def submit
+    @map_data = params[:map_data]
   end
 end

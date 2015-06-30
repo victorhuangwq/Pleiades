@@ -547,9 +547,11 @@ $(document).ready(function() {// Javascript object to store all map data
         };
     }
     
-    $("#submitbutton").click(function() {
+    $("#submitbutton").click(function(e) {
+        e.preventDefault();
         map_data.name = $("#titleinput").val();
-        console.log(JSON.stringify(map_data));
+        $("#mapdatainput").val(JSON.stringify(map_data));
+        $("#submitform").submit();
     });
 
 });
