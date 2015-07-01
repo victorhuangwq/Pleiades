@@ -4,5 +4,7 @@ class CreateController < ApplicationController
   end
   def submit
     @map_data = params[:map_data]
+    @m = Map.create map_data: @map_data
+    @mid = @m.id
   end
 end
