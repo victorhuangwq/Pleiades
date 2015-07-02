@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'view/view'
+
   get 'search/search'
 
   get 'create/create'

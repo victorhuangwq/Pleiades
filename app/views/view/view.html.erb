@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>HowToGo</title>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <%= javascript_tag do %>
+        mapdata = $('<div />').html('<%= @map_data %>').text();
+    <% end %>
+    
+    <%= javascript_include_tag "view" %>
+    
+    <div class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/welcome/index">HOWTOGO</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/create/create">Create</a></li>
+                <li><a href="/search/search">Search</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><p class="navbar-text">Pleiades Orbital 2015</p></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header text-center">
+        <h1>Map of <div id="mapname"></div></h1>
+    </div>
+    
+    <div id="app" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ui-widget-header" style="height:500px">
+        <canvas id="canvas" height="1200px" width="1200px"></canvas>
+    </div>
+    
+    <div class="hidden">
+        <%= image_tag("digital.svg", size:"50x50", id:"digitalimg") %>
+        <%= image_tag("lifestyle.svg", size:"50x50", id:"lifestyleimg") %>
+        <%= image_tag("food.svg", size:"50x50", id:"foodimg") %>
+        <%= image_tag("fashion.svg", size:"50x50", id:"fashionimg") %>
+        <%= image_tag("services.svg", size:"50x50", id:"servicesimg") %>
+        <%= image_tag("structures.svg", size:"50x50", id:"structuresimg") %>
+    </div>
+
+</div>
+
+</body>
+</html>

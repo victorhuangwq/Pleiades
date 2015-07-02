@@ -49843,3 +49843,3327 @@ Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 21:52:08 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 22:37:02 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3865ms (Views: 3837.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:07 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 189ms (Views: 188.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:12 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:13 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:24 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:36 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:37:37 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:37 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:38 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:55 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:37:58 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 93ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:37:59 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 107ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:38:08 +0800
+
+
+Started GET "/view/viewmap" for 127.0.0.1 at 2015-07-02 22:38:40 +0800
+
+ActionController::RoutingError (No route matches [GET] "/view/viewmap"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (40.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (250.4ms)
+
+
+Started GET "/view/viewmap" for 127.0.0.1 at 2015-07-02 22:39:11 +0800
+
+ActionController::RoutingError (No route matches [GET] "/view/viewmap"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.5ms)
+
+
+Started GET "/view/viewmap" for 127.0.0.1 at 2015-07-02 22:39:13 +0800
+
+ActionController::RoutingError (No route matches [GET] "/view/viewmap"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.1ms)
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:15 +0800
+
+
+Started GET "/view/viewmap?mapid=13" for 127.0.0.1 at 2015-07-02 22:39:18 +0800
+
+ActionController::RoutingError (No route matches [GET] "/view/viewmap"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.1ms)
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 121ms (Views: 120.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:39:36 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 222ms (Views: 220.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:06 +0800
+
+
+Started GET "/view/view" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+Processing by ViewController#view as HTML
+  Rendered view/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 124ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:19 +0800
+
+
+Started GET "/view/view&mapid=3" for 127.0.0.1 at 2015-07-02 22:41:24 +0800
+
+ActionController::RoutingError (No route matches [GET] "/view/view&mapid=3"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.8ms)
+
+
+Started GET "/view/view&mapid=3" for 127.0.0.1 at 2015-07-02 22:41:35 +0800
+
+ActionController::RoutingError (No route matches [GET] "/view/view&mapid=3"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/davidson/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.3ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:41:42 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  Rendered view/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 111ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:41:43 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:42:52 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (20.4ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 385ms (Views: 110.2ms | ActiveRecord: 35.5ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:42:53 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.5ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 105ms (Views: 95.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:43:13 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:43:36 +0800
+
+SyntaxError (/Users/davidson/Projects/Pleiades/app/controllers/view_controller.rb:5: syntax error, unexpected tIVAR, expecting ')'
+    @map_name = @map.name
+             ^):
+  app/controllers/view_controller.rb:5: syntax error, unexpected tIVAR, expecting ')'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.4ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:43:47 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.4ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `name' for #<Map:0x007fc17f5710c8>):
+  app/controllers/view_controller.rb:5:in `view'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.8ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:44:00 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.7ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `name' for #<Hash:0x007fc17f326318>):
+  app/controllers/view_controller.rb:5:in `view'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.7ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.5ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 195ms (Views: 179.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:46:11 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:46:46 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:55:09 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (1.1ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 46ms
+
+SyntaxError (/Users/davidson/Projects/Pleiades/app/views/view/view.html.erb:10: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/Users/davidson/Projects/Pleiades/app/views/view/view.html.erb:41: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/davidson/Projects/Pleiades/app/views/view/view.html.erb:43: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/view/view.html.erb:10: syntax error, unexpected keyword_end
+  app/views/view/view.html.erb:41: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/view/view.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.3ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:55:25 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.7ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 254ms (Views: 251.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:55:26 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.5ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 155ms (Views: 135.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:39 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.5ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:43 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.7ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:56:55 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:17 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:17 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:17 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:17 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:17 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:57:20 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.5ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 97.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:00 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.7ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:39 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.6ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 22:59:51 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:06:36 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 232ms (Views: 216.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:06:36 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:06:36 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:06:37 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:11:47 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.6ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (53.9ms)
+Completed 500 Internal Server Error in 105ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( view.js )` to `config/initializers/assets.rb` and restart your server):
+     9:         mapdata = $('<div />').html('<%= @map_data %>').text();
+    10:     <% end %>
+    11:     
+    12:     <%= javascript_include_tag "view" %>
+    13:     
+    14:     <div class="container-fluid">
+    15:     <nav class="navbar navbar-default">
+  app/views/view/view.html.erb:12:in `_app_views_view_view_html_erb__3126551217897698785_70234518623500'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.5ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:12:10 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( view.js )` to `config/initializers/assets.rb` and restart your server):
+     9:         mapdata = $('<div />').html('<%= @map_data %>').text();
+    10:     <% end %>
+    11:     
+    12:     <%= javascript_include_tag "view" %>
+    13:     
+    14:     <div class="container-fluid">
+    15:     <nav class="navbar navbar-default">
+  app/views/view/view.html.erb:12:in `_app_views_view_view_html_erb__3126551217897698785_70234518623500'
+
+
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/davidson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.2ms)
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:12:41 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.7ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 909ms (Views: 845.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:12:43 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 195ms (Views: 193.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:13:07 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:14:18 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[35mMap Load (0.5ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (363.4ms)
+Completed 200 OK in 515ms (Views: 513.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:19 +0800
+
+
+Started GET "/view/view?mapid=3" for 127.0.0.1 at 2015-07-02 23:14:40 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"3"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 3 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 175ms (Views: 173.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:41 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 23:14:48 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (160.6ms)
+Completed 200 OK in 326ms (Views: 325.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 23:14:48 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 23:14:48 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 23:14:49 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:14:49 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 23:14:49 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 23:14:49 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 23:14:49 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 23:14:49 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 23:15:05 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"Orbital\",\"maxid\":3,\"lines\":[],\"landmarks\":[{\"type\":\"landmark\",\"id\":0,\"landmarkname\":\"I\",\"img\":\"digitalimg\",\"pos\":{\"x\":219,\"y\":143}},{\"type\":\"landmark\",\"id\":1,\"landmarkname\":\"love\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":366,\"y\":162}},{\"type\":\"landmark\",\"id\":2,\"landmarkname\":\"orbital\",\"img\":\"servicesimg\",\"pos\":{\"x\":554,\"y\":155}}]}"}
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 15:15:05.787396"], ["map_data", "{\"name\":\"Orbital\",\"maxid\":3,\"lines\":[],\"landmarks\":[{\"type\":\"landmark\",\"id\":0,\"landmarkname\":\"I\",\"img\":\"digitalimg\",\"pos\":{\"x\":219,\"y\":143}},{\"type\":\"landmark\",\"id\":1,\"landmarkname\":\"love\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":366,\"y\":162}},{\"type\":\"landmark\",\"id\":2,\"landmarkname\":\"orbital\",\"img\":\"servicesimg\",\"pos\":{\"x\":554,\"y\":155}}]}"], ["updated_at", "2015-07-02 15:15:05.787396"]]
+  [1m[35m (571.4ms)[0m  COMMIT
+  Rendered create/submit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 781ms (Views: 91.0ms | ActiveRecord: 580.9ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:06 +0800
+
+
+Started GET "/view/view?mapid=8" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"8"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 8 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:13 +0800
+
+
+Started GET "/view/view?mapid=8" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"8"}
+  [1m[35mMap Load (0.6ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 8 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:15:17 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:40 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:40 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:40 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:15:40 +0800
+
+
+Started GET "/view/view?mapid=8" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"8"}
+  [1m[36mMap Load (0.6ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 8 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 160ms (Views: 158.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:16:10 +0800
+
+
+Started GET "/view/view?mapid=8" for 127.0.0.1 at 2015-07-02 23:17:20 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"8"}
+  [1m[35mMap Load (0.6ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 8 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 104ms (Views: 102.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 23:17:21 +0800
+
+
+Started GET "/view/view?mapid=8" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"8"}
+  [1m[36mMap Load (0.5ms)[0m  [1mSELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 8 LIMIT 1[0m
+  Rendered view/view.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 140ms (Views: 138.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 23:17:48 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:18:12 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:18:13 +0800
+
+
+Started GET "/view/view?mapid=8" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"8"}
+  [1m[35mMap Load (0.5ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 8 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 23:19:06 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 23:19:07 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:07 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 23:19:07 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"WHEEEEE\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":92,\"y\":58},\"end\":{\"x\":495,\"y\":58}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":495,\"y\":58},\"end\":{\"x\":490,\"y\":287}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":490,\"y\":287},\"end\":{\"x\":117,\"y\":280}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":117,\"y\":280},\"end\":{\"x\":116,\"y\":114}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":116,\"y\":114},\"end\":{\"x\":380,\"y\":114}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":383,\"y\":117},\"end\":{\"x\":383,\"y\":219}}],\"landmarks\":[{\"type\":\"landmark\",\"id\":6,\"landmarkname\":\"FOOD\",\"img\":\"foodimg\",\"pos\":{\"x\":272,\"y\":188}}]}"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-07-02 15:19:27.328573"], ["map_data", "{\"name\":\"WHEEEEE\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":92,\"y\":58},\"end\":{\"x\":495,\"y\":58}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":495,\"y\":58},\"end\":{\"x\":490,\"y\":287}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":490,\"y\":287},\"end\":{\"x\":117,\"y\":280}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":117,\"y\":280},\"end\":{\"x\":116,\"y\":114}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":116,\"y\":114},\"end\":{\"x\":380,\"y\":114}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":383,\"y\":117},\"end\":{\"x\":383,\"y\":219}}],\"landmarks\":[{\"type\":\"landmark\",\"id\":6,\"landmarkname\":\"FOOD\",\"img\":\"foodimg\",\"pos\":{\"x\":272,\"y\":188}}]}"], ["updated_at", "2015-07-02 15:19:27.328573"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered create/submit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 136ms (Views: 131.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:27 +0800
+
+
+Started GET "/view/view?mapid=9" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+Processing by ViewController#view as HTML
+  Parameters: {"mapid"=>"9"}
+  [1m[35mMap Load (0.5ms)[0m  SELECT  "maps".* FROM "maps"  WHERE "maps"."id" = 9 LIMIT 1
+  Rendered view/view.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/view.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/view.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 23:19:33 +0800
