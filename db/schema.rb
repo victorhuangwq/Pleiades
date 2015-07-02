@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150701143535) do
   enable_extension "plpgsql"
 
   create_table "maps", force: true do |t|
-    t.string   "map_data"
+    t.json     "map_data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

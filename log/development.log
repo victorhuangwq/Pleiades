@@ -48029,3 +48029,1328 @@ Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-01 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-01 22:59:56 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 10:44:35 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (161.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.8) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1631.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMaps (20150701143535)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (1256.9ms)[0m  [1mCREATE TABLE "maps" ("id" serial primary key, "map_data" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150701143535"]]
+  [1m[36m (97.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 10:48:13 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1703ms (Views: 1573.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 10:48:16 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 272ms (Views: 271.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 10:48:16 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 10:48:16 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 10:48:16 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 10:48:16 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:17 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (205.1ms)
+Completed 200 OK in 515ms (Views: 514.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 10:48:20 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 10:48:33 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"chinatown!\",\"maxid\":4,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":109,\"y\":126},\"end\":{\"x\":420,\"y\":30}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":148,\"y\":245},\"end\":{\"x\":349,\"y\":113}}],\"landmarks\":[{\"type\":\"landmark\",\"id\":2,\"landmarkname\":\"Lifestyle\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":217,\"y\":234}},{\"type\":\"landmark\",\"id\":3,\"landmarkname\":\"Digital\",\"img\":\"digitalimg\",\"pos\":{\"x\":400,\"y\":180}}]}"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (248.2ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 02:48:33.128938"], ["map_data", "{\"name\":\"chinatown!\",\"maxid\":4,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":109,\"y\":126},\"end\":{\"x\":420,\"y\":30}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":148,\"y\":245},\"end\":{\"x\":349,\"y\":113}}],\"landmarks\":[{\"type\":\"landmark\",\"id\":2,\"landmarkname\":\"Lifestyle\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":217,\"y\":234}},{\"type\":\"landmark\",\"id\":3,\"landmarkname\":\"Digital\",\"img\":\"digitalimg\",\"pos\":{\"x\":400,\"y\":180}}]}"], ["updated_at", "2015-07-02 02:48:33.128938"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[35m (1.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 361ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1229.9ms)
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 10:52:13 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"chinatown!\",\"maxid\":1,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":166,\"y\":243},\"end\":{\"x\":503,\"y\":55}}],\"landmarks\":[]}"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-07-02 02:52:13.644737"], ["map_data", "{\"name\":\"chinatown!\",\"maxid\":1,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":166,\"y\":243},\"end\":{\"x\":503,\"y\":55}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 02:52:13.644737"]]
+  [1m[36m (137.2ms)[0m  [1mCOMMIT[0m
+  Rendered create/submit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 483ms (Views: 332.5ms | ActiveRecord: 141.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:14 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 10:52:17 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 10:52:22 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"chinatown!2\",\"maxid\":2,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":111,\"y\":173},\"end\":{\"x\":355,\"y\":65}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":179,\"y\":244},\"end\":{\"x\":502,\"y\":111}}],\"landmarks\":[]}"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 02:52:22.923483"], ["map_data", "{\"name\":\"chinatown!2\",\"maxid\":2,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":111,\"y\":173},\"end\":{\"x\":355,\"y\":65}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":179,\"y\":244},\"end\":{\"x\":502,\"y\":111}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 02:52:22.923483"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  Rendered create/submit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 344ms (Views: 332.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 10:52:23 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 10:52:25 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 10:52:36 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"chinatown!3\",\"maxid\":6,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":203,\"y\":148},\"end\":{\"x\":519,\"y\":54}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":201,\"y\":241},\"end\":{\"x\":520,\"y\":115}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":321,\"y\":325},\"end\":{\"x\":311,\"y\":74}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":390,\"y\":124},\"end\":{\"x\":458,\"y\":237}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":386,\"y\":299},\"end\":{\"x\":591,\"y\":195}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":269,\"y\":267},\"end\":{\"x\":407,\"y\":141}}],\"landmarks\":[]}"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-07-02 02:52:36.641492"], ["map_data", "{\"name\":\"chinatown!3\",\"maxid\":6,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":203,\"y\":148},\"end\":{\"x\":519,\"y\":54}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":201,\"y\":241},\"end\":{\"x\":520,\"y\":115}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":321,\"y\":325},\"end\":{\"x\":311,\"y\":74}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":390,\"y\":124},\"end\":{\"x\":458,\"y\":237}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":386,\"y\":299},\"end\":{\"x\":591,\"y\":195}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":269,\"y\":267},\"end\":{\"x\":407,\"y\":141}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 02:52:36.641492"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 20ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1273.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 11:22:32 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 666ms (Views: 634.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 11:22:33 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 300ms (Views: 299.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:34 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:22:35 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 11:32:08 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 995ms (Views: 956.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:32:10 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:32:10 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:32:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:32:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:11 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 339ms (Views: 338.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 11:32:15 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:32:25 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"testing123\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":147,\"y\":125},\"end\":{\"x\":451,\"y\":166}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":331,\"y\":172},\"end\":{\"x\":422,\"y\":170}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":273,\"y\":227},\"end\":{\"x\":422,\"y\":203}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":319,\"y\":315},\"end\":{\"x\":313,\"y\":299}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":183,\"y\":348},\"end\":{\"x\":371,\"y\":128}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":108,\"y\":339},\"end\":{\"x\":332,\"y\":34}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":175,\"y\":267},\"end\":{\"x\":365,\"y\":61}}],\"landmarks\":[]}"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 03:32:25.370776"], ["map_data", "{\"name\":\"testing123\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":147,\"y\":125},\"end\":{\"x\":451,\"y\":166}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":331,\"y\":172},\"end\":{\"x\":422,\"y\":170}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":273,\"y\":227},\"end\":{\"x\":422,\"y\":203}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":319,\"y\":315},\"end\":{\"x\":313,\"y\":299}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":183,\"y\":348},\"end\":{\"x\":371,\"y\":128}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":108,\"y\":339},\"end\":{\"x\":332,\"y\":34}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":175,\"y\":267},\"end\":{\"x\":365,\"y\":61}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:32:25.370776"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 51ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1556.1ms)
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:34:11 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"testing123\",\"maxid\":6,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":141,\"y\":95},\"end\":{\"x\":268,\"y\":267}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":295,\"y\":244},\"end\":{\"x\":575,\"y\":153}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":308,\"y\":253},\"end\":{\"x\":431,\"y\":232}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":476,\"y\":277},\"end\":{\"x\":572,\"y\":274}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":241,\"y\":202},\"end\":{\"x\":252,\"y\":194}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":273,\"y\":155},\"end\":{\"x\":433,\"y\":167}}],\"landmarks\":[]}"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 03:34:18.717440"], ["map_data", "{\"name\":\"testing123\",\"maxid\":6,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":141,\"y\":95},\"end\":{\"x\":268,\"y\":267}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":295,\"y\":244},\"end\":{\"x\":575,\"y\":153}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":308,\"y\":253},\"end\":{\"x\":431,\"y\":232}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":476,\"y\":277},\"end\":{\"x\":572,\"y\":274}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":241,\"y\":202},\"end\":{\"x\":252,\"y\":194}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":273,\"y\":155},\"end\":{\"x\":433,\"y\":167}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:34:18.717440"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 94ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1278.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/create/submit" for 127.0.0.1 at 2015-07-02 11:39:35 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/create/submit"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (98.1ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1807.3ms)
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:39:39 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"testing123\",\"maxid\":3,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":156,\"y\":79},\"end\":{\"x\":351,\"y\":79}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":263,\"y\":182},\"end\":{\"x\":574,\"y\":102}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":362,\"y\":230},\"end\":{\"x\":700,\"y\":138}}],\"landmarks\":[]}"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 03:39:39.236195"], ["map_data", "{\"name\":\"testing123\",\"maxid\":3,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":156,\"y\":79},\"end\":{\"x\":351,\"y\":79}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":263,\"y\":182},\"end\":{\"x\":574,\"y\":102}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":362,\"y\":230},\"end\":{\"x\":700,\"y\":138}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:39:39.236195"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 85ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1406.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 11:42:36 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 921ms (Views: 875.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:38 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:38 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:38 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 11:42:39 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:42:53 +0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.9ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"asdsasa\",\"maxid\":1,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":174,\"y\":125},\"end\":{\"x\":260,\"y\":147}}],\"landmarks\":[]}"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-07-02 03:42:53.698073"], ["map_data", "{\"name\":\"asdsasa\",\"maxid\":1,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":174,\"y\":125},\"end\":{\"x\":260,\"y\":147}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:42:53.698073"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  Rendered create/submit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 362ms (Views: 308.7ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:42:54 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 11:42:56 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:43:00 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"asdsasa\",\"maxid\":5,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":210,\"y\":161},\"end\":{\"x\":406,\"y\":218}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":344,\"y\":228},\"end\":{\"x\":601,\"y\":164}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":345,\"y\":319},\"end\":{\"x\":558,\"y\":175}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":351,\"y\":366},\"end\":{\"x\":636,\"y\":137}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":427,\"y\":353},\"end\":{\"x\":686,\"y\":212}}],\"landmarks\":[]}"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 03:43:00.388901"], ["map_data", "{\"name\":\"asdsasa\",\"maxid\":5,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":210,\"y\":161},\"end\":{\"x\":406,\"y\":218}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":344,\"y\":228},\"end\":{\"x\":601,\"y\":164}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":345,\"y\":319},\"end\":{\"x\":558,\"y\":175}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":351,\"y\":366},\"end\":{\"x\":636,\"y\":137}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":427,\"y\":353},\"end\":{\"x\":686,\"y\":212}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:43:00.388901"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[35m (1.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1415.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 11:44:23 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 722ms (Views: 690.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:25 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 11:44:26 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 11:45:16 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 833ms (Views: 792.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:45:18 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:45:18 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:45:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:19 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 11:45:20 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:45:31 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"dasd\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":201,\"y\":135},\"end\":{\"x\":511,\"y\":220}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":219,\"y\":240},\"end\":{\"x\":575,\"y\":198}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":299,\"y\":281},\"end\":{\"x\":569,\"y\":148}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":250,\"y\":130},\"end\":{\"x\":636,\"y\":120}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":254,\"y\":265},\"end\":{\"x\":596,\"y\":186}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":368,\"y\":318},\"end\":{\"x\":562,\"y\":162}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":545,\"y\":270},\"end\":{\"x\":730,\"y\":234}}],\"landmarks\":[]}"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 03:45:31.093811"], ["map_data", "{\"name\":\"dasd\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":201,\"y\":135},\"end\":{\"x\":511,\"y\":220}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":219,\"y\":240},\"end\":{\"x\":575,\"y\":198}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":299,\"y\":281},\"end\":{\"x\":569,\"y\":148}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":250,\"y\":130},\"end\":{\"x\":636,\"y\":120}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":254,\"y\":265},\"end\":{\"x\":596,\"y\":186}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":368,\"y\":318},\"end\":{\"x\":562,\"y\":162}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":545,\"y\":270},\"end\":{\"x\":730,\"y\":234}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:45:31.093811"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 60ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1357.0ms)
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:45:33 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"dasd\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":201,\"y\":135},\"end\":{\"x\":511,\"y\":220}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":219,\"y\":240},\"end\":{\"x\":575,\"y\":198}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":299,\"y\":281},\"end\":{\"x\":569,\"y\":148}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":250,\"y\":130},\"end\":{\"x\":636,\"y\":120}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":254,\"y\":265},\"end\":{\"x\":596,\"y\":186}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":368,\"y\":318},\"end\":{\"x\":562,\"y\":162}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":545,\"y\":270},\"end\":{\"x\":730,\"y\":234}}],\"landmarks\":[]}"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-07-02 03:45:33.056238"], ["map_data", "{\"name\":\"dasd\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":201,\"y\":135},\"end\":{\"x\":511,\"y\":220}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":219,\"y\":240},\"end\":{\"x\":575,\"y\":198}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":299,\"y\":281},\"end\":{\"x\":569,\"y\":148}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":250,\"y\":130},\"end\":{\"x\":636,\"y\":120}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":254,\"y\":265},\"end\":{\"x\":596,\"y\":186}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":368,\"y\":318},\"end\":{\"x\":562,\"y\":162}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":545,\"y\":270},\"end\":{\"x\":730,\"y\":234}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:45:33.056238"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 25ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"):
+  app/controllers/create_controller.rb:7:in `submit'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1358.0ms)
+  [1m[36m (20.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (10.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMaps (20150701143535)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (25.1ms)[0m  [1mCREATE TABLE "maps" ("id" serial primary key, "map_data" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150701143535"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 11:57:24 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"dasdsdadasas\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":103,\"y\":116},\"end\":{\"x\":429,\"y\":145}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":210,\"y\":224},\"end\":{\"x\":501,\"y\":184}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":366,\"y\":82},\"end\":{\"x\":302,\"y\":358}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":449,\"y\":134},\"end\":{\"x\":459,\"y\":360}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":463,\"y\":370},\"end\":{\"x\":638,\"y\":244}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":42,\"y\":458},\"end\":{\"x\":431,\"y\":275}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":484,\"y\":226},\"end\":{\"x\":219,\"y\":355}}],\"landmarks\":[]}"}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 03:57:25.923138"], ["map_data", "{\"name\":\"dasdsdadasas\",\"maxid\":7,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":103,\"y\":116},\"end\":{\"x\":429,\"y\":145}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":210,\"y\":224},\"end\":{\"x\":501,\"y\":184}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":366,\"y\":82},\"end\":{\"x\":302,\"y\":358}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":449,\"y\":134},\"end\":{\"x\":459,\"y\":360}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":463,\"y\":370},\"end\":{\"x\":638,\"y\":244}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":42,\"y\":458},\"end\":{\"x\":431,\"y\":275}},{\"type\":\"line\",\"id\":6,\"start\":{\"x\":484,\"y\":226},\"end\":{\"x\":219,\"y\":355}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 03:57:25.923138"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  Rendered create/submit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 719ms (Views: 625.7ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 11:57:26 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 11:57:26 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 11:57:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 11:57:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 11:57:27 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (11.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (18.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMaps (20150701143535)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (25.0ms)[0m  [1mCREATE TABLE "maps" ("id" serial primary key, "map_data" json, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150701143535"]]
+  [1m[36m (14.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 12:00:57 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 686ms (Views: 656.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 12:00:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:00 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 12:01:02 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 363ms (Views: 361.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 12:01:03 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 12:01:23 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"NDsadjasjd\",\"maxid\":10,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":131,\"y\":144},\"end\":{\"x\":367,\"y\":193}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":340,\"y\":128},\"end\":{\"x\":169,\"y\":329}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":175,\"y\":113},\"end\":{\"x\":258,\"y\":389}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":121,\"y\":148},\"end\":{\"x\":166,\"y\":229}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":55,\"y\":231},\"end\":{\"x\":201,\"y\":315}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":47,\"y\":260},\"end\":{\"x\":171,\"y\":67}}],\"landmarks\":[{\"type\":\"landmark\",\"id\":6,\"landmarkname\":\"Lifestyle\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":248,\"y\":154}},{\"type\":\"landmark\",\"id\":7,\"landmarkname\":\"Lifestyle\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":443,\"y\":234}},{\"type\":\"landmark\",\"id\":8,\"landmarkname\":\"Digital\",\"img\":\"digitalimg\",\"pos\":{\"x\":555,\"y\":211}},{\"type\":\"landmark\",\"id\":9,\"landmarkname\":\"Structure\",\"img\":\"structuresimg\",\"pos\":{\"x\":585,\"y\":99}}]}"}
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 04:01:23.828641"], ["map_data", "{\"name\":\"NDsadjasjd\",\"maxid\":10,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":131,\"y\":144},\"end\":{\"x\":367,\"y\":193}},{\"type\":\"line\",\"id\":1,\"start\":{\"x\":340,\"y\":128},\"end\":{\"x\":169,\"y\":329}},{\"type\":\"line\",\"id\":2,\"start\":{\"x\":175,\"y\":113},\"end\":{\"x\":258,\"y\":389}},{\"type\":\"line\",\"id\":3,\"start\":{\"x\":121,\"y\":148},\"end\":{\"x\":166,\"y\":229}},{\"type\":\"line\",\"id\":4,\"start\":{\"x\":55,\"y\":231},\"end\":{\"x\":201,\"y\":315}},{\"type\":\"line\",\"id\":5,\"start\":{\"x\":47,\"y\":260},\"end\":{\"x\":171,\"y\":67}}],\"landmarks\":[{\"type\":\"landmark\",\"id\":6,\"landmarkname\":\"Lifestyle\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":248,\"y\":154}},{\"type\":\"landmark\",\"id\":7,\"landmarkname\":\"Lifestyle\",\"img\":\"lifestyleimg\",\"pos\":{\"x\":443,\"y\":234}},{\"type\":\"landmark\",\"id\":8,\"landmarkname\":\"Digital\",\"img\":\"digitalimg\",\"pos\":{\"x\":555,\"y\":211}},{\"type\":\"landmark\",\"id\":9,\"landmarkname\":\"Structure\",\"img\":\"structuresimg\",\"pos\":{\"x\":585,\"y\":99}}]}"], ["updated_at", "2015-07-02 04:01:23.828641"]]
+  [1m[35m (377.3ms)[0m  COMMIT
+  Rendered create/submit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 755ms (Views: 317.3ms | ActiveRecord: 391.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:24 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800

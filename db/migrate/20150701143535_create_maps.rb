@@ -1,7 +1,7 @@
 class CreateMaps < ActiveRecord::Migration
   def change
     create_table :maps do |t|
-      t.string :map_data
+      t.json :map_data
 
       t.timestamps
     end
