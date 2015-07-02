@@ -49354,3 +49354,176 @@ Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 12:01:25 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-02 21:20:13 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 746ms (Views: 715.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:14 +0800
+
+
+Started GET "/create/create" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+Processing by CreateController#create as HTML
+  Rendered create/create.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 221ms (Views: 221.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/digital.svg" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/lifestyle.svg" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/food.svg" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/fashion.svg" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/services.svg" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started GET "/assets/structures.svg" for 127.0.0.1 at 2015-07-02 21:20:16 +0800
+
+
+Started POST "/create/submit" for 127.0.0.1 at 2015-07-02 21:20:19 +0800
+Processing by CreateController#submit as HTML
+  Parameters: {"map_data"=>"{\"name\":\"Test\",\"maxid\":1,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":75,\"y\":84},\"end\":{\"x\":479,\"y\":221}}],\"landmarks\":[]}"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "maps" ("created_at", "map_data", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-07-02 13:20:20.076326"], ["map_data", "{\"name\":\"Test\",\"maxid\":1,\"lines\":[{\"type\":\"line\",\"id\":0,\"start\":{\"x\":75,\"y\":84},\"end\":{\"x\":479,\"y\":221}}],\"landmarks\":[]}"], ["updated_at", "2015-07-02 13:20:20.076326"]]
+  [1m[35m (539.0ms)[0m  COMMIT
+  Rendered create/submit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 748ms (Views: 113.4ms | ActiveRecord: 570.3ms)
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/create.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-02 21:20:20 +0800
