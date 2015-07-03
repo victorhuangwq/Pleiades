@@ -514,9 +514,7 @@ $(document).ready(function() {// Javascript object to store all map data
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        img.onload = function() {
-            ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
-        }
+        ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
         var x = landmark.pos.x;
         var y = landmark.pos.y + 40;
         ctx.font = '' + (13) + 'pt Helvetica';
