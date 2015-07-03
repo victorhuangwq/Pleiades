@@ -31,11 +31,15 @@
         <h1>Map of <div id="mapname"></div></h1>
     </div>
     
-    <div id="app" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ui-widget-header" style="height:500px">
-        <canvas id="canvas" height="1200px" width="1200px"></canvas>
+    <div class="row">
+        <div id="left" class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+        <div id="app" class="col-lg-8 col-md-8 col-sm-11 col-xs-11 ui-widget-header" style="height:500px">
+            <canvas id="canvas" height="1200px" width="1200px"></canvas>
+        </div>
+        <div id="right" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
     </div>
     
-    <div class="hidden">
+    <div id="images">
         <%= image_tag("digital.svg", size:"50x50", id:"digitalimg") %>
         <%= image_tag("lifestyle.svg", size:"50x50", id:"lifestyleimg") %>
         <%= image_tag("food.svg", size:"50x50", id:"foodimg") %>

@@ -3,10 +3,12 @@
 
 $(document).ready(function() {
     
+    $("#images").hide();
+    
     map_data = JSON.parse(mapdata);
     
     var map_canvas = $("#canvas");
-    var ctx = canvas.getContext("2d");
+    var ctx = document.getElementById("canvas").getContext("2d");
     var container = $("#app");
     
     $("#mapname").html(map_data.name);
@@ -16,6 +18,18 @@ $(document).ready(function() {
     
     map_canvas.attr("width",cwidth);
     map_canvas.attr("height",cheight);
+    
+    $(window).resize(function(){
+        cwidth = container.width();
+        cheight = container.height();
+        map_canvas.attr("width",cwidth);
+        map_canvas.attr("height",cheight);
+        update_canvas(map_data);
+    });
+    
+    function clear_canvas(canvas, ctx) {
+        ctx.clearRect(0, 0, canvas.width(), canvas.height());
+    }
     
     function drawLine(line, ctx) {
         ctx.beginPath();
@@ -33,7 +47,9 @@ $(document).ready(function() {
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        img.onload = function() { 
+            ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        }
         var x = landmark.pos.x;
         var y = landmark.pos.y + 40;
         ctx.font = '' + (13) + 'pt Helvetica';
@@ -42,9 +58,10 @@ $(document).ready(function() {
         ctx.fillText(landmark.landmarkname, x, y);
     }
     
-    function draw(obj) {
+    function update_canvas(obj) {
         lines = obj.lines;
         landmarks = obj.landmarks;
+        clear_canvas(map_canvas, ctx);
 
         for (var i = 0; i < lines.length; i++) {
             drawLine(lines[i], ctx);
@@ -54,6 +71,6 @@ $(document).ready(function() {
         }
     }
     
-    draw(map_data);
+    update_canvas(map_data);
     
 });
