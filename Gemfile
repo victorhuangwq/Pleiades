@@ -43,3 +43,6 @@ gem 'autoprefixer-rails'
 
 # TZinfo-data
 gem "tzinfo-data"
+
+# Bitly
+gem "bitly"

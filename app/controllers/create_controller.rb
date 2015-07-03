@@ -6,5 +6,9 @@ class CreateController < ApplicationController
     @map_data = params[:map_data]
     @m = Map.create map_data: @map_data
     @mid = @m.id
+
+    client = Bitly.client
+    @url = client.shorten("http://pleiadesorbital.herokuapp.com/view/view?mapid="+String(@mid))
+    @m.shortURL = @url
   end
 end
