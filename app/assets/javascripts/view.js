@@ -2,23 +2,23 @@
 // All this logic will automatically be available in application.js.
 
 $(document).ready(function() {
-    
+
     $("#images").hide();
-    
+
     map_data = JSON.parse(mapdata);
-    
+
     var map_canvas = $("#canvas");
     var ctx = document.getElementById("canvas").getContext("2d");
     var container = $("#app");
-    
+
     $("#mapname").html(map_data.name);
 
     cwidth = container.width();
     cheight = container.height();
-    
+
     map_canvas.attr("width",cwidth);
     map_canvas.attr("height",cheight);
-    
+
     $(window).resize(function(){
         cwidth = container.width();
         cheight = container.height();
@@ -26,11 +26,11 @@ $(document).ready(function() {
         map_canvas.attr("height",cheight);
         update_canvas(map_data);
     });
-    
+
     function clear_canvas(canvas, ctx) {
         ctx.clearRect(0, 0, canvas.width(), canvas.height());
     }
-    
+
     function drawLine(line, ctx) {
         ctx.beginPath();
         ctx.moveTo(line.start.x, line.start.y);
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        img.onload = function() { 
+        img.onload = function() {
             ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
         }
         var x = landmark.pos.x;
@@ -57,7 +57,7 @@ $(document).ready(function() {
         ctx.fillStyle = 'black';
         ctx.fillText(landmark.landmarkname, x, y);
     }
-    
+
     function update_canvas(obj) {
         lines = obj.lines;
         landmarks = obj.landmarks;
@@ -70,7 +70,6 @@ $(document).ready(function() {
             drawLandmark(landmarks[i], ctx);
         }
     }
-    
+
     update_canvas(map_data);
-    
 });

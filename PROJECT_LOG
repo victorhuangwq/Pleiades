@@ -45,3 +45,4 @@ Format as follows:
 2015-07-01 1100 1h 0h Database bug fixing
 2015-07-02 2100 0h 2.5h Implementing view functionality
 2015-07-03 1400 1h 1h Fixes bug with view not loading images
+2015-07-03 1500 1h 1h Implements Bitly URL link shortening

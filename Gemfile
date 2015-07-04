@@ -46,3 +46,6 @@ gem "tzinfo-data"
 
 # Bitly
 gem "bitly"
+
+#Twitter
+gem 'twitter'
