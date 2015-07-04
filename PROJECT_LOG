@@ -46,3 +46,5 @@ Format as follows:
 2015-07-02 2100 0h 2.5h Implementing view functionality
 2015-07-03 1400 1h 1h Fixes bug with view not loading images
 2015-07-03 1500 1h 1h Implements Bitly URL link shortening
+2015-07-04 1500 2h 0h Refining submit and view page
+2015-07-04 2100 3h 0h Developing beizer curve solution, database bug fixing and adding map download functionality.

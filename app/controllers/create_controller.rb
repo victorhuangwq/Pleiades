@@ -10,5 +10,6 @@ class CreateController < ApplicationController
     client = Bitly.client
     @url = client.shorten("http://pleiadesorbital.herokuapp.com/view/view?mapid="+String(@mid))
     @m.shortURL = @url.short_url
+    @m.save
   end
 end
