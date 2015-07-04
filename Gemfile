@@ -47,5 +47,10 @@ gem "tzinfo-data"
 # Bitly
 gem "bitly"
 
+#Allows Rails 4's optimal configuration
+#With Heroku
+
+gem 'rails_12factor'
+
 #Twitter
 gem 'twitter'
