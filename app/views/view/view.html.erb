@@ -28,16 +28,25 @@
     </nav>
 
     <div class="page-header text-center">
-        <h2>QuikMap To: <span id="mapname"></span></h2>
+        <h2>QuikMap To: <u><span id="mapname"></span></u></h2>
     </div>
 
-    <div class="row">
-        <div id="left" class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
-        <div id="app" class="col-lg-8 col-md-8 col-sm-11 col-xs-11 ui-widget-header" style="height:500px">
-            <canvas id="canvas" height="1200px" width="1200px"></canvas>
-        </div>
-        <div id="right" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-    </div>
+    <section>
+      <div class="row">
+          <div id="left" class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+          <div id="app" class="col-lg-8 col-md-8 col-sm-11 col-xs-11 ui-widget-header" style="height:500px">
+              <canvas id="canvas" height="1200px" width="1200px"></canvas>
+          </div>
+          <div id="right" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+      </div>
+      <div class="row col-lg-8 col-md-8 col-sm-11 col-xs-11 ui-widget-header">
+            <form class="form-inline text-center" >
+                <input type="text" class='form-control' id="copyLinkArea" value="<%= @map.shortURL %>">
+                <button class="btn btn-default" type="button" id="copyLinkButton"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Copy </button>
+                <a href="<%= @map.shortURL %>" class="btn btn-default" role="button" ><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Open </a>
+            </form>
+      </div>
+    </section>
 
     <div id="images">
         <%= image_tag("digital.svg", size:"50x50", id:"digitalimg") %>
