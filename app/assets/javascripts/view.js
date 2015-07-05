@@ -95,12 +95,18 @@ $(document).ready(function() {
 
     download_low.click(function(){
       var download_canvas = document.getElementById("canvas");
+
       download_canvas.width = 800;
       download_canvas.height = 600;
       update_canvas(map_data);
+      ctx.fillStyle = "#FFFFFF";
+      ctx.shadowColor = 'rgba(255,255,255,1)';
+      ctx.globalCompositeOperation="destination-over";
+      ctx.fillRect(0,0,800,600);
+
       var lowQuality = download_canvas.toDataURL("image/png", 0.1);
       downloadURI(lowQuality,"quikmap_" + map_data.name);
-      
+
       cwidth = container.width();
       cheight = container.height();
       map_canvas.attr("width",cwidth);
