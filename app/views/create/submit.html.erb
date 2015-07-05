@@ -31,7 +31,7 @@
       <form class="form-inline text-center" >
           <input type="text" class='form-control' id="copyLinkArea" value="<%= @url.short_url %>">
           <button class="btn btn-default" type="button" id="copyLinkButton"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Copy </button>
-          <a href="<%= @url.short_url %>" class="btn btn-default" role="button" ><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Open </a>
+          <a href="<%= @url.short_url %>" class="btn btn-default" role="button" target='_blank' ><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Open </a>
       </form>
     </p>
 

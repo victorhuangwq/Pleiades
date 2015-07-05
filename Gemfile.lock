@@ -39,6 +39,7 @@ GEM
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
+    bootstrap-switch-rails (3.3.3)
     buftok (0.2.0)
     builder (3.2.2)
     coffee-rails (4.1.0)
@@ -166,6 +167,7 @@ DEPENDENCIES
   autoprefixer-rails
   bitly
   bootstrap-sass (~> 3.3.4.1)
+  bootstrap-switch-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg

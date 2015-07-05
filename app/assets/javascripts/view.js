@@ -34,7 +34,8 @@ $(document).ready(function() {
     function drawLine(line, ctx) {
         ctx.beginPath();
         ctx.moveTo(line.start.x, line.start.y);
-        ctx.lineTo(line.end.x, line.end.y);
+        ctx.bezierCurveTo(line.ctrl1.x,line.ctrl1.y,
+          line.ctrl2.x,line.ctrl2.y,line.end.x,line.end.y);
         ctx.lineWidth= 7;
         ctx.lineCap ='round';
         ctx.linejoin ="round";

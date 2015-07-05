@@ -54,3 +54,6 @@ gem 'rails_12factor'
 
 #Twitter
 gem 'twitter'
+
+#Boostrap switch
+gem 'bootstrap-switch-rails'
