@@ -48,8 +48,13 @@ $(document).ready(function() {
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        img.onload = function() {
+        if (img.complete == true) { // check if image is already loaded
             ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        }
+        else { // load image first otherwise
+            img.onload = function() {
+                ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+            }
         }
         var x = landmark.pos.x;
         var y = landmark.pos.y + 40;
