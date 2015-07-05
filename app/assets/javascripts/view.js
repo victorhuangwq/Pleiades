@@ -95,8 +95,17 @@ $(document).ready(function() {
 
     download_low.click(function(){
       var download_canvas = document.getElementById("canvas");
+      download_canvas.width = 800;
+      download_canvas.height = 600;
+      update_canvas(map_data);
       var lowQuality = download_canvas.toDataURL("image/png", 0.1);
       downloadURI(lowQuality,"quikmap_" + map_data.name);
+      
+      cwidth = container.width();
+      cheight = container.height();
+      map_canvas.attr("width",cwidth);
+      map_canvas.attr("height",cheight);
+      update_canvas(map_data);
     });
 
     download_high.click(function(){
