@@ -34,7 +34,8 @@ $(document).ready(function() {
     function drawLine(line, ctx) {
         ctx.beginPath();
         ctx.moveTo(line.start.x, line.start.y);
-        ctx.lineTo(line.end.x, line.end.y);
+        ctx.bezierCurveTo(line.ctrl1.x,line.ctrl1.y,
+          line.ctrl2.x,line.ctrl2.y,line.end.x,line.end.y);
         ctx.lineWidth= 7;
         ctx.lineCap ='round';
         ctx.linejoin ="round";
@@ -47,8 +48,13 @@ $(document).ready(function() {
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        img.onload = function() {
+        if (img.complete == true) { // check if image is already loaded
             ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+        }
+        else { // load image first otherwise
+            img.onload = function() {
+                ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+            }
         }
         var x = landmark.pos.x;
         var y = landmark.pos.y + 40;
@@ -94,8 +100,23 @@ $(document).ready(function() {
 
     download_low.click(function(){
       var download_canvas = document.getElementById("canvas");
+
+      download_canvas.width = 800;
+      download_canvas.height = 600;
+      update_canvas(map_data);
+      ctx.fillStyle = "#FFFFFF";
+      ctx.shadowColor = 'rgba(255,255,255,1)';
+      ctx.globalCompositeOperation="destination-over";
+      ctx.fillRect(0,0,800,600);
+
       var lowQuality = download_canvas.toDataURL("image/png", 0.1);
       downloadURI(lowQuality,"quikmap_" + map_data.name);
+
+      cwidth = container.width();
+      cheight = container.height();
+      map_canvas.attr("width",cwidth);
+      map_canvas.attr("height",cheight);
+      update_canvas(map_data);
     });
 
     download_high.click(function(){
