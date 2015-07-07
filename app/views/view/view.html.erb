@@ -45,7 +45,7 @@
                 <b>QuikMap Link : </b>
                 <input type="text" class='form-control' id="copyLinkArea" value="<%= @map.shortURL %>">
                 <button class="btn btn-default" type="button" id="copyLinkButton"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Copy </button>
-                <div class="btn-group">
+                <div class="btn-group dropup">
                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Download
                   <span class="caret"></span>
@@ -54,6 +54,18 @@
                       <li><a id="download_low" download="image.jpg">Low Quality</a></li>
                       <li><a id="download_high">High Quality</a></li>
                     </ul>
+                </div>
+                <!-- Pseudo - Triangulation -->
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Where Am I? <span class="caret"></span>
+                  </button>
+                  <div id="no_close" class="dropdown-menu">
+                    <ul id="triangle_landmarks" class="list-unstyled">
+                    </ul>
+                    <li role="separator" class="divider"></li>
+                    &nbsp;&nbsp;&nbsp;<button id="triangle_submit" class="btn btn-default" type="button">Submit </button>
+                  </div>
                 </div>
             </form>
       </div>
