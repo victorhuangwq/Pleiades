@@ -7,6 +7,8 @@ $(document).ready(function() {
 
     map_data = JSON.parse(mapdata);
 
+    var golden_ratio = 1.61803398875;
+
     var map_canvas = $("#canvas");
     var ctx = document.getElementById("canvas").getContext("2d");
     var container = $("#app");
@@ -14,7 +16,7 @@ $(document).ready(function() {
     $("#mapname").html(map_data.name);
 
     cwidth = container.width();
-    cheight = container.height();
+    cheight = cwidth / golden_ratio;
 
     map_canvas.attr("width",cwidth);
     map_canvas.attr("height",cheight);
@@ -32,10 +34,19 @@ $(document).ready(function() {
     }
 
     function drawLine(line, ctx) {
+        linestartx = line.start.x * cwidth;
+        linestarty = line.start.y * cheight;
+        linectrl1x = line.ctrl1.x * cwidth;
+        linectrl1y = line.ctrl1.y * cheight;
+        linectrl2x = line.ctrl2.x * cwidth;
+        linectrl2y = line.ctrl2.y * cheight;
+        lineendx = line.end.x * cwidth;
+        lineendy = line.end.y * cheight;
+        
         ctx.beginPath();
-        ctx.moveTo(line.start.x, line.start.y);
-        ctx.bezierCurveTo(line.ctrl1.x,line.ctrl1.y,
-          line.ctrl2.x,line.ctrl2.y,line.end.x,line.end.y);
+        ctx.moveTo(linestartx, linestarty);
+        ctx.bezierCurveTo(linectrl1x,linectrl1y,
+          linectrl2x,linectrl2y,lineendx,lineendy);
         ctx.lineWidth= 7;
         ctx.lineCap ='round';
         ctx.linejoin ="round";
@@ -48,16 +59,17 @@ $(document).ready(function() {
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
+        var x = landmark.pos.x * cwidth;
+        var y = landmark.pos.y * cheight;
         if (img.complete == true) { // check if image is already loaded
-            ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+            ctx.drawImage(img, x - 25, y - 25, 50, 50);
         }
         else { // load image first otherwise
             img.onload = function() {
-                ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
+                ctx.drawImage(img, x - 25, y - 25, 50, 50);
             }
         }
-        var x = landmark.pos.x;
-        var y = landmark.pos.y + 40;
+        var y = y + 40;
         ctx.font = '' + (13) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
