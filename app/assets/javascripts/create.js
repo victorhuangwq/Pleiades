@@ -12,14 +12,16 @@ $(document).ready(function() {// Javascript object to store all map data
     //is_straight_line.bootstrapSwitch('setOnLabel','Straight Lines');
     //is_straight_line.bootstrapSwitch('setOffLabel','Freehand');
     //map_canvas properties
+    
+    var golden_ratio = 1.61803398875;
 
     var map_canvas = $('#canvas');
     var ctx = canvas.getContext("2d");
     var container = $("#app"); //container of map_canvas
 
     cwidth = container.width();
-
-    cheight = container.height();
+    cheight = cwidth / golden_ratio;
+    
     //canvas Debugging
     console.log("Canvas Properties");
     console.log("canvas container:" + cwidth);
@@ -227,6 +229,7 @@ $(document).ready(function() {// Javascript object to store all map data
             map_data.maxid += 1;
             undo_stack.push({action: "landmark", id: thisid});
             redo_stack.splice(0, redo_stack.length);
+            landmarkpos = {x: landmarkpos.x / cwidth*1.0, y: landmarkpos.y / cheight*1.0};
             addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
         }
     }
@@ -311,7 +314,7 @@ $(document).ready(function() {// Javascript object to store all map data
     function get_control_points(start,q1,q2,end){
 
       //Magic number, with golden ratio!
-      extend_coefficient = 0.5*1.61803398875;
+      extend_coefficient = 0.5*golden_ratio;
 
       function form_equation(q1,q2){
 
@@ -390,10 +393,10 @@ $(document).ready(function() {// Javascript object to store all map data
 
 
             addElement({type: "line", id: thisid,
-                        start: {x: startpos.x, y: startpos.y},
-                        ctrl1: {x: controlpoints[0].x, y:controlpoints[0].y},
-                        ctrl2:{x:controlpoints[1].x, y:controlpoints[1].y},
-                        end:{x: pos.x, y: pos.y}});
+                        start: {x: startpos.x / cwidth*1.0, y: startpos.y / cheight*1.0},
+                        ctrl1: {x: controlpoints[0].x / cwidth*1.0, y:controlpoints[0].y / cheight*1.0},
+                        ctrl2:{x:controlpoints[1].x / cwidth*1.0, y:controlpoints[1].y / cheight*1.0},
+                        end:{x: pos.x / cwidth*1.0, y: pos.y / cheight*1.0}});
 
             points = new Array();
             map_data.maxid += 1;
@@ -503,10 +506,10 @@ $(document).ready(function() {// Javascript object to store all map data
 
                     console.log(pos);
 
-                    tl = {x: (startp.x-rectApprox), y: (startp.y - (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox)};
-                    tr = {x: startp.x+rectApprox, y:startp.y};
-                    bl = {x: endp.x-rectApprox,y:endp.y};
-                    br = {x: endp.x +rectApprox, y:endp.y + (endp.x-startp.x)/(startp.y-endp.y)*2*rectApprox };
+                    tl = {x: (startp.x*cwidth-rectApprox), y: (startp.y*cheight - (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox)};
+                    tr = {x: startp.x*cwidth+rectApprox, y:startp.y*cheight};
+                    bl = {x: endp.x*cwidth-rectApprox,y:endp.y*cheight};
+                    br = {x: endp.x*cwidth +rectApprox, y:endp.y*cheight + (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox };
 
                     console.log(tl);
                     console.log(tr);
@@ -524,6 +527,8 @@ $(document).ready(function() {// Javascript object to store all map data
                         shortlistedlines.push(map_data.lines[i])
                     }
                 }
+                
+                // Checks for beziers
 
                 //Picks closest line
                 var shortestdistance = 999999999;
@@ -564,10 +569,19 @@ $(document).ready(function() {// Javascript object to store all map data
     }
 
     function drawLine(line, ctx) {
+        linestartx = line.start.x * cwidth;
+        linestarty = line.start.y * cheight;
+        linectrl1x = line.ctrl1.x * cwidth;
+        linectrl1y = line.ctrl1.y * cheight;
+        linectrl2x = line.ctrl2.x * cwidth;
+        linectrl2y = line.ctrl2.y * cheight;
+        lineendx = line.end.x * cwidth;
+        lineendy = line.end.y * cheight;
+        
         ctx.beginPath();
-        ctx.moveTo(line.start.x, line.start.y);
-        ctx.bezierCurveTo(line.ctrl1.x,line.ctrl1.y,
-          line.ctrl2.x,line.ctrl2.y,line.end.x,line.end.y);
+        ctx.moveTo(linestartx, linestarty);
+        ctx.bezierCurveTo(linectrl1x,linectrl1y,
+          linectrl2x,linectrl2y,lineendx,lineendy);
         ctx.lineWidth= 7;
         ctx.lineCap ='round';
         ctx.linejoin ="round";
@@ -580,9 +594,10 @@ $(document).ready(function() {// Javascript object to store all map data
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
-        var x = landmark.pos.x;
-        var y = landmark.pos.y + 40;
+        var x = landmark.pos.x * cwidth;
+        var y = landmark.pos.y * cheight;
+        ctx.drawImage(img, x - 25, y - 25, 50, 50);
+        var y = y + 40;
         ctx.font = '' + (13) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
