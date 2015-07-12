@@ -7,23 +7,21 @@ $(document).ready(function() {
 
     map_data = JSON.parse(mapdata);
 
-    var golden_ratio = 1.61803398875;
-
     var map_canvas = $("#canvas");
     var ctx = document.getElementById("canvas").getContext("2d");
     var container = $("#app");
 
     $("#mapname").html(map_data.name);
 
-    var cwidth = container.width();
-    var cheight = cwidth / golden_ratio;
+    cwidth = container.width();
+    cheight = container.height();
 
     map_canvas.attr("width",cwidth);
     map_canvas.attr("height",cheight);
 
     $(window).resize(function(){
         cwidth = container.width();
-        cheight = cwidth / golden_ratio;
+        cheight = container.height();
         map_canvas.attr("width",cwidth);
         map_canvas.attr("height",cheight);
         update_canvas(map_data);
@@ -34,19 +32,10 @@ $(document).ready(function() {
     }
 
     function drawLine(line, ctx) {
-        linestartx = line.start.x * cwidth;
-        linestarty = line.start.y * cheight;
-        linectrl1x = line.ctrl1.x * cwidth;
-        linectrl1y = line.ctrl1.y * cheight;
-        linectrl2x = line.ctrl2.x * cwidth;
-        linectrl2y = line.ctrl2.y * cheight;
-        lineendx = line.end.x * cwidth;
-        lineendy = line.end.y * cheight;
-        
         ctx.beginPath();
-        ctx.moveTo(linestartx, linestarty);
-        ctx.bezierCurveTo(linectrl1x,linectrl1y,
-          linectrl2x,linectrl2y,lineendx,lineendy);
+        ctx.moveTo(line.start.x, line.start.y);
+        ctx.bezierCurveTo(line.ctrl1.x,line.ctrl1.y,
+          line.ctrl2.x,line.ctrl2.y,line.end.x,line.end.y);
         ctx.lineWidth= 7;
         ctx.lineCap ='round';
         ctx.linejoin ="round";
@@ -59,18 +48,16 @@ $(document).ready(function() {
 
     function drawLandmark(landmark, ctx) {
         var img = document.getElementById(landmark.img);
-        var x = landmark.pos.x * cwidth;
-        var y = landmark.pos.y * cheight;
-        console.log(x + "," + y);
         if (img.complete == true) { // check if image is already loaded
-            ctx.drawImage(img, x - 25, y - 25, 50, 50);
+            ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
         }
         else { // load image first otherwise
             img.onload = function() {
-                ctx.drawImage(img, x - 25, y - 25, 50, 50);
+                ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
             }
         }
-        y = y + 40;
+        var x = landmark.pos.x;
+        var y = landmark.pos.y + 40;
         ctx.font = '' + (13) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
@@ -89,6 +76,8 @@ $(document).ready(function() {
             drawLandmark(landmarks[i], ctx);
         }
     }
+
+    update_canvas(map_data);
 
     var copy_link_button = $('#copyLinkButton');
     copy_link_button.disabled = !document.queryCommandSupported('copy');
@@ -168,7 +157,7 @@ $(document).ready(function() {
       landmark_list.append("<li>"+to_append+"</li>");
     }
 
-    $('#triangle_submit').click(function(event){
+    $('#triangle_submit').click(function(event){cd
           $($(':checkbox')).each(function () {
                  if (this.checked) {
                     //More to be done
@@ -176,10 +165,6 @@ $(document).ready(function() {
                  }
           });
     });
-    
-
-
-    update_canvas(map_data);
 
 
 });
