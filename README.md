@@ -31,36 +31,35 @@ In addition, large maps like Google Maps can only provide directions to a genera
 Also located in our GitHub Issues: [Pleiades Issues](https://github.com/XtrKiL/Pleiades/issues)
 
 ####Implemented User Stories(Features that are done)
-#####Select Scale of Map
+######Select Scale of Map
 As an event planner, I want to select the scale of the map I'm creating.
 > QuikMaps do not have a built in scale so event planners are able to freely create a map of any scale.
 
-#####No Additional Downloads
+######No Additional Downloads
 As a user, I want to be able to receive information without downloading anything else.
 > Being a web app, users do not need to download any apps to use the application.
 
-#####Fast Loading
+######Fast Loading
 As a user, I want the page to load fast so I can access them easily when walking around.
 > Currently, the page is implemented with minimal content needing to be loaded, only consisting of Bootstrap, JQuery and minimal images.
 
-#####Link Shortening
+######Link Shortening
 As an event planner, I want to be able to shorten my links easily to distribute them to people.
 > The app currently uses Bitly as the link shortening.
 
-#####Offline Access
+######Offline Access
 As a user, I want to be able to download the information easily for access offline.
 > The view page of the app allows for map download
 
-####To be done
-#####Give directions clearly
-As an event planner, I want to give directions to visitors in a clear way easily.
-*Big/General User story, will be broken down into solvable pieces*
+####User stories to be resolved
+######Give directions clearly
+As an event planner, I want to give directions to visitors in a clear way easily. *Big/General User story, will be broken down into solvable pieces*
 
-#####Approximate where I am on the QuikMap
+######Approximate where I am on the QuikMap
 As a map user, I want to be able to locate myself without the use of GPS.
 
-#####Good Mobile Interface
-As a user, I want to be able to view the information on my phone with a suitable layout.
+######Good Mobile Interface
+As a user, I want to be able to view the information on my phone with a suitable layout. *Big/General User story, will be broken down into solvable pieces*
 
 ##Features
 Technical features, some of them are weird to phrase as user stories
