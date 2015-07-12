@@ -1,5 +1,4 @@
-#Project ReadMe
-##Project Title: _HowToGo_
+#Project Title: _HowToGo_
 **Group name**: Pleiades
 
 **Group members**: Huang Weiqi Victor and Chua Hou
@@ -9,9 +8,8 @@
 2. Links
 3. User Stories
 4. Features
-***
 
-###Overview
+##Overview
 Our project aims to revolutionize the direction giving process by
 providing an online web app that allows event planners to quickly
 create customized maps and directions for guests to easily find
@@ -28,9 +26,8 @@ In addition, large maps like Google Maps can only provide directions to a genera
 * Milestone 2 video:[VideoHere](https://youtu.be/kokcFMfpR8c)
 * Our ignition slide:[SlideHere](http://puu.sh/i7TQv/c23bc5939d.png)
 * Ignition Video:[VideoHere](https://www.youtube.com/watch?v=QKuLLNVGvow)
-***
 
-###User Stories
+##User Stories
 Also located in our GitHub Issues: [Pleiades Issues](https://github.com/XtrKiL/Pleiades/issues)
 
 ####Implemented User Stories(Features that are done)
@@ -65,9 +62,7 @@ As a map user, I want to be able to locate myself without the use of GPS.
 #####Good Mobile Interface
 As a user, I want to be able to view the information on my phone with a suitable layout.
 
-***
-
-###Features
+##Features
 Technical features, some of them are weird to phrase as user stories
 ####Application Goals
 * Able to create any QuikMap in under 5 minutes by reducing map complexity
