@@ -7,20 +7,28 @@
 
     <div class="container-fluid">
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#myNavbar" aria-expanded="false" aria-controls="myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="/welcome/index">HOWTOGO</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="/create/create">Create</a></li>
-                <li><a href="/search/search">Search</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><p class="navbar-text">Pleiades Orbital 2015</p></li>
-            </ul>
-        </div>
-    </nav>
+              </div>
+              <div class="navbar-collapse collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="/create/create">Create</a></li>
+                  <li><a href="/search/search">Search</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><p class="navbar-text">Pleiades Orbital 2015</p></li>
+                </ul>
+             </div>
+          </div>
+      </nav>
 
     <div class="text-center">
     <p>
@@ -37,8 +45,8 @@
         <p>It's very simple to get started with HOWTOGO. Click above on the navigation bar or read the FAQ below for more information.</p>
     </div>
   -->
-    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-      <div class="col-sm-1 col-md-4">
+    <div class="hidden-xs row col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      <div class="col-sm-4 col-md-4">
         <div class="thumbnail text-center">
           <img src="https://cdn0.iconfinder.com/data/icons/huge-business-icons/256/Question.png" height="250" width="250">
           <div class="caption">
@@ -48,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-1 col-md-4">
+      <div class="col-sm-4 col-md-4">
         <div class="thumbnail text-center">
           <img src="https://cdn2.iconfinder.com/data/icons/budicon-time-location-2/16/1-location_-_compass_direction-512.png" height="250" width="250">
           <div class="caption">
@@ -58,13 +66,64 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-1 col-md-4">
+      <div class="col-sm-4 col-md-4">
         <div class="thumbnail text-center">
           <img src="https://cdn3.iconfinder.com/data/icons/food-drink/512/cake_A-512.png" height="250" width="250">
           <div class="caption">
             <h3>Find an event</h3>
             <p>Ask the one who directed you to HowToGo for the perma-link to their QuikMap.
               You can also search by clicking on the "Search" button above</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group hidden-sm hidden-md hidden-lg" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+              What is HOWTOGO
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            HOWTOGO allows event organisers to easily create maps to direct their guests.
+            Viewable on all devices, downloadable for offline use.
+        </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+              Giving directions
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <p>Please click on the "Create" button above and follow the instructions. Alternatively click here:</p>
+            <a href="/create/create" class="btn btn-default" role="button"> Create QuikMap </a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
+              Find an event
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Ask the one who directed you to HowToGo for the perma-link to their QuikMap.
+              You can also search by clicking on the "Search" button above
           </div>
         </div>
       </div>
