@@ -442,8 +442,8 @@ $(document).ready(function() {// Javascript object to store all map data
             for (var i = 0; i < map_data.landmarks.length; i++) {
                 var tl, br;
                 center = map_data.landmarks[i].pos;
-                tl = {x: center.x - 25, y: center.y - 25};
-                br = {x: center.x + 25, y: center.y + 38};
+                tl = {x: center.x * cwidth - 25, y: center.y * cheight - 25};
+                br = {x: center.x * cwidth + 25, y: center.y * cheight + 38};
 
                 if (pos.x < br.x && pos.x > tl.x) {
                     if (pos.y < br.y && pos.y > tl.y) {
@@ -463,6 +463,7 @@ $(document).ready(function() {// Javascript object to store all map data
         //Remove
         if (selected == 4) {
             var pos = getMousePos(e);
+            p = {x: pos.x * cwidth, y: pos.y * cheight};
             var todelete = null;
             for (var i = 0; i < map_data.landmarks.length; i++) {
                 var tl, tr, bl, br;
@@ -471,18 +472,20 @@ $(document).ready(function() {// Javascript object to store all map data
                 //Magic Numbers here: Take note!
 
                 console.log(pos);
+                
+                c = {x: centre.x * cwidth, y: centre.y * cheight};
 
-                tl = {x:centre.x-25,y:centre.y-25};
-                tr = {x:centre.x-25,y:centre.y+25};
-                bl = {x:centre.x+25,y:centre.y-38};
-                br = {x:centre.x+25,y:centre.y+38};
+                tl = {x:c.x-25,y:c.y-25};
+                tr = {x:c.x-25,y:c.y+25};
+                bl = {x:c.x+25,y:c.y-38};
+                br = {x:c.x+25,y:c.y+38};
 
                 console.log(tl);
                 console.log(tr);
                 console.log(bl);
                 console.log(br);
 
-                sum_of_area = triAF(tl,pos,bl)+triAF(bl,pos,br)+triAF(br,pos,tr)+triAF(pos,tr,tl);
+                sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
                 quadArea = quadAF(tr,tl,bl,br);
 
                 console.log(sum_of_area);
@@ -499,7 +502,7 @@ $(document).ready(function() {// Javascript object to store all map data
                 var shortlistedlines = [];
                 //Checks if the point is in any lines' hitbox
                 for(var i =0; i <map_data.lines.length; i++){
-                    var tl,tr,bl,br
+                    var tl,tr,bl,br;
 
                     startp = map_data.lines[i].start;
                     endp   = map_data.lines[i].end;
@@ -516,7 +519,7 @@ $(document).ready(function() {// Javascript object to store all map data
                     console.log(bl);
                     console.log(br);
 
-                    sum_of_area = triAF(tl,pos,bl)+triAF(bl,pos,br)+triAF(br,pos,tr)+triAF(pos,tr,tl);
+                    sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
                     quadArea = quadAF(tl,tr,br,bl);
 
                     console.log(quadArea);
@@ -533,8 +536,8 @@ $(document).ready(function() {// Javascript object to store all map data
                 //Picks closest line
                 var shortestdistance = 999999999;
                 for (var i = 0;i<shortlistedlines.length;i++) {
-                    if (shrtD(pos,shortlistedlines[i]) < shortestdistance) {
-                        shortestdistance = shrtD(pos,shortlistedlines[i])
+                    if (shrtD(p,shortlistedlines[i]) < shortestdistance) {
+                        shortestdistance = shrtD(p,shortlistedlines[i])
                         todelete = shortlistedlines[i];
                     }
                 }

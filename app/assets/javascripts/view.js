@@ -5,63 +5,22 @@ $(document).ready(function() {
 
     $("#images").hide();
 
-    map_data = JSON.parse(mapdata);
+    var map_data = JSON.parse(mapdata);
+
+    var golden_ratio = 1.61803398875;
 
     var map_canvas = $("#canvas");
     var ctx = document.getElementById("canvas").getContext("2d");
     var container = $("#app");
 
-    $("#mapname").html(map_data.name);
-
-    cwidth = container.width();
-    cheight = container.height();
-
-    map_canvas.attr("width",cwidth);
-    map_canvas.attr("height",cheight);
-
-    $(window).resize(function(){
-        cwidth = container.width();
-        cheight = container.height();
-        map_canvas.attr("width",cwidth);
-        map_canvas.attr("height",cheight);
-        update_canvas(map_data);
-    });
+    var cwidth = container.width();
+    var cheight = cwidth / golden_ratio;
+    map_canvas.attr("width", cwidth);
+    map_canvas.attr("height", cheight);
+    update_canvas(map_data);
 
     function clear_canvas(canvas, ctx) {
         ctx.clearRect(0, 0, canvas.width(), canvas.height());
-    }
-
-    function drawLine(line, ctx) {
-        ctx.beginPath();
-        ctx.moveTo(line.start.x, line.start.y);
-        ctx.bezierCurveTo(line.ctrl1.x,line.ctrl1.y,
-          line.ctrl2.x,line.ctrl2.y,line.end.x,line.end.y);
-        ctx.lineWidth= 7;
-        ctx.lineCap ='round';
-        ctx.linejoin ="round";
-        ctx.strokeStyle = "rgba(0, 153, 255, 0.5)";
-        ctx.shadowColor = 'rgba(224,255,255,1)';
-        ctx.shadowBlur = 30;
-        ctx.stroke();
-        ctx.closePath();
-    }
-
-    function drawLandmark(landmark, ctx) {
-        var img = document.getElementById(landmark.img);
-        if (img.complete == true) { // check if image is already loaded
-            ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
-        }
-        else { // load image first otherwise
-            img.onload = function() {
-                ctx.drawImage(img, landmark.pos.x - 25, landmark.pos.y - 25, 50, 50);
-            }
-        }
-        var x = landmark.pos.x;
-        var y = landmark.pos.y + 40;
-        ctx.font = '' + (13) + 'pt Helvetica';
-        ctx.textAlign = 'center';
-        ctx.fillStyle = 'black';
-        ctx.fillText(landmark.landmarkname, x, y);
     }
 
     function update_canvas(obj) {
@@ -77,7 +36,61 @@ $(document).ready(function() {
         }
     }
 
-    update_canvas(map_data);
+    $("#mapname").html(map_data.name);
+
+    $(window).resize(function() {
+        cwidth = container.width();
+        cheight = cwidth / golden_ratio;
+        console.log("Resize: " + cwidth + ", " + cheight);
+        map_canvas.attr("width", cwidth);
+        map_canvas.attr("height", cheight);
+        update_canvas(map_data);
+    });
+
+    function drawLine(line, ctx) {
+        linestartx = line.start.x * cwidth;
+        linestarty = line.start.y * cheight;
+        linectrl1x = line.ctrl1.x * cwidth;
+        linectrl1y = line.ctrl1.y * cheight;
+        linectrl2x = line.ctrl2.x * cwidth;
+        linectrl2y = line.ctrl2.y * cheight;
+        lineendx = line.end.x * cwidth;
+        lineendy = line.end.y * cheight;
+
+        ctx.beginPath();
+        ctx.moveTo(linestartx, linestarty);
+        ctx.bezierCurveTo(linectrl1x,linectrl1y,
+          linectrl2x,linectrl2y,lineendx,lineendy);
+        ctx.lineWidth= 7;
+        ctx.lineCap ='round';
+        ctx.linejoin ="round";
+        ctx.strokeStyle = "rgba(0, 153, 255, 0.5)";
+        ctx.shadowColor = 'rgba(224,255,255,1)';
+        ctx.shadowBlur = 30;
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    function drawLandmark(landmark, ctx) {
+        var img = document.getElementById(landmark.img);
+        var x = landmark.pos.x * cwidth;
+        var y = landmark.pos.y * cheight;
+        if (img.complete == true) { // check if image is already loaded
+            console.log("drawing at x: " + x + ", y: " + y)
+            ctx.drawImage(img, x - 25, y - 25, 50, 50);
+        }
+        else { // load image first otherwise
+            img.onload = function() {
+                console.log("drawing at x: " + x + ", y: " + y)
+                ctx.drawImage(img, x - 25, y - 25, 50, 50);
+            }
+        }
+        var ytext = y + 40;
+        ctx.font = '' + (13) + 'pt Helvetica';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'black';
+        ctx.fillText(landmark.landmarkname, x, ytext);
+    }
 
     var copy_link_button = $('#copyLinkButton');
     copy_link_button.disabled = !document.queryCommandSupported('copy');
@@ -150,14 +163,14 @@ $(document).ready(function() {
      event.stopPropagation();
     });
 
-    for(var i =0;i<map_data.landmarks.length;i++){
+    for(var i = 0; i < map_data.landmarks.length; i++){
       to_append = "<div class='checkbox'><label>&nbsp;&nbsp;&nbsp;<input type='checkbox' value='"+map_data.landmarks[i].id+"'>&nbsp;&nbsp;";
       to_append += map_data.landmarks[i].landmarkname;
       to_append += "</label></div>";
       landmark_list.append("<li>"+to_append+"</li>");
     }
 
-    $('#triangle_submit').click(function(event){cd
+    $('#triangle_submit').click(function(event){
           $($(':checkbox')).each(function () {
                  if (this.checked) {
                     //More to be done
@@ -165,6 +178,4 @@ $(document).ready(function() {
                  }
           });
     });
-
-
 });
