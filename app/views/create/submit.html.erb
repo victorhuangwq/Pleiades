@@ -5,6 +5,10 @@
 <body>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
 
+  <%= javascript_tag do %>
+      var id = <%= @mid %>;
+  <% end %>
+
   <%= javascript_include_tag "submit" %>
   <div class="container-fluid">
     <nav class="navbar navbar-default">
@@ -23,17 +27,13 @@
     </nav>
 
 	<div class="page-header text-center">
-		<h2>QuikMap Submitted!</h2>
+		<h2>QuikMap Has Been Submitted!</h2>
 	</div>
 
-    <p class="text-center">
-      The link to your QuikMap is:
-      <form class="form-inline text-center" >
-          <input type="text" class='form-control' id="copyLinkArea" value="<%= @url.short_url %>">
-          <button class="btn btn-default" type="button" id="copyLinkButton"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Copy </button>
-          <a href="<%= @url.short_url %>" class="btn btn-default" role="button" target='_blank' ><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Open </a>
-      </form>
-    </p>
+    <section class="text-center">
+    <p> Thanks for using HowToGo! You have created the <b><%= @mid %></b> map!</p>
+    <p> Please wait while we redirect to your QuikMap view Page</p>
+    </section>
 
 </div>
 
