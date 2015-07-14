@@ -12,7 +12,7 @@ $(document).ready(function() {// Javascript object to store all map data
     //is_straight_line.bootstrapSwitch('setOnLabel','Straight Lines');
     //is_straight_line.bootstrapSwitch('setOffLabel','Freehand');
     //map_canvas properties
-    
+
     var golden_ratio = 1.61803398875;
 
     var map_canvas = $('#canvas');
@@ -21,7 +21,7 @@ $(document).ready(function() {// Javascript object to store all map data
 
     cwidth = container.width();
     cheight = cwidth / golden_ratio;
-    
+
     //canvas Debugging
     console.log("Canvas Properties");
     console.log("canvas container:" + cwidth);
@@ -472,7 +472,7 @@ $(document).ready(function() {// Javascript object to store all map data
                 //Magic Numbers here: Take note!
 
                 console.log(pos);
-                
+
                 c = {x: centre.x * cwidth, y: centre.y * cheight};
 
                 tl = {x:c.x-25,y:c.y-25};
@@ -530,7 +530,7 @@ $(document).ready(function() {// Javascript object to store all map data
                         shortlistedlines.push(map_data.lines[i])
                     }
                 }
-                
+
                 // Checks for beziers
 
                 //Picks closest line
@@ -580,7 +580,7 @@ $(document).ready(function() {// Javascript object to store all map data
         linectrl2y = line.ctrl2.y * cheight;
         lineendx = line.end.x * cwidth;
         lineendy = line.end.y * cheight;
-        
+
         ctx.beginPath();
         ctx.moveTo(linestartx, linestarty);
         ctx.bezierCurveTo(linectrl1x,linectrl1y,
@@ -635,6 +635,7 @@ $(document).ready(function() {// Javascript object to store all map data
         e.preventDefault();
         map_data.name = $("#titleinput").val();
         $("#mapdatainput").val(JSON.stringify(map_data));
+        $('#title').val(map_data.name.toLowerCase());
         $("#submitform").submit();
     });
 
