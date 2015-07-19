@@ -48,6 +48,7 @@ $(document).ready(function() {
     });
 
     function drawLine(line, ctx) {
+
         linestartx = line.start.x * cwidth;
         linestarty = line.start.y * cheight;
         linectrl1x = line.ctrl1.x * cwidth;
@@ -75,6 +76,7 @@ $(document).ready(function() {
         var img = document.getElementById(landmark.img);
         var x = landmark.pos.x * cwidth;
         var y = landmark.pos.y * cheight;
+
         if (img.complete == true) { // check if image is already loaded
             console.log("drawing at x: " + x + ", y: " + y)
             ctx.drawImage(img, x - 25, y - 25, 50, 50);
@@ -171,11 +173,42 @@ $(document).ready(function() {
     }
 
     $('#triangle_submit').click(function(event){
-          $($(':checkbox')).each(function () {
+          update_canvas(map_data);
+          var polygon_points = [];
+          var id_list = [];
+
+          $(':checkbox').each(function () {
                  if (this.checked) {
                     //More to be done
                      console.log($(this).val());
+                     id_list.push(Number($(this).val()));
                  }
           });
+          if(id_list.length <= 1){
+            alert("You have selected lesser than 2 landmarks.This feature requires at least 2 landmarks to work")
+          }
+          else{
+            for( var i = 0; i < map_data.landmarks.length;i++){
+              if(id_list.indexOf(map_data.landmarks[i].id) >= 0)
+                polygon_points.push(map_data.landmarks[i].pos);
+            }
+
+            var x = 0;
+            var y = 0;
+
+            for(var i = 0;i < polygon_points.length;i++){
+              x += polygon_points[i].x;
+              y += polygon_points[i].y;
+            }
+
+            x = x/polygon_points.length*cwidth;
+            y = y/polygon_points.length*cheight;
+
+            ctx.beginPath();
+            //Gets the right size by calculating the harmonic mean
+            //Magic numbers here
+            ctx.arc(x,y,2/(1/cwidth+1/cheight)/30*golden_ratio,0,2*Math.PI);
+            ctx.stroke();
+          }
     });
 });
