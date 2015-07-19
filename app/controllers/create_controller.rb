@@ -4,7 +4,8 @@ class CreateController < ApplicationController
   end
   def submit
     @map_data = params[:map_data]
-    @m = Map.create map_data: @map_data
+    @title = params[:title]
+    @m = Map.create map_data: @map_data, title: @title
     @mid = @m.id
 
     client = Bitly.client

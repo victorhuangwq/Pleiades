@@ -34,27 +34,37 @@
 		<h1>Search for QuikMaps</h1>
 	</div>
 
-	<div class="row">
-	  <div class="col-lg-6">
-		<div class="input-group">
-		  <input type="text" class="form-control" placeholder="Search for QuikMaps">
-		  <span class="input-group-btn">
-			<button class="btn btn-default" type="button">Find! <span class="glyphicon glyphicon-search"></span></button>
-		  </span>
-		</div><!-- /input-group -->
-	  </div><!-- /.col-lg-6 -->
-	</div><!-- /.row -->
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+            <%= form_tag("/search/search", :method => "get", id: "search-form") do %>
+                <div class="input-group">
+                    <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search for QuikMaps" %>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Find! <span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            <% end %>
+        </div>
+    </div>
 
-	<div class="media well well-sm">
+	<div class="media well well-sm col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12" style="visibility:<%= @visibility %>">
 	  <div class="media-left media-middle">
 		<a href="#">
-		  <img class="media-object" src="..." alt="...">
 		</a>
 	  </div>
 	  <div class="media-body">
 		<h4 class="media-heading">Map Search Results</h4>
 	  </div>
 	</div>
+
+    <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+        <ul>
+            <% @maps.each do |map| %>
+                <li><%= map.title %>: <a href="<%=map.shortURL%>">Link</a></li>
+            <% end %>
+        </ul>
+    </div>
+
 </div>
 </body>
 </html>

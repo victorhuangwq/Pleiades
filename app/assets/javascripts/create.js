@@ -597,7 +597,7 @@ $(document).ready(function() {// Javascript object to store all map data
         e.preventDefault();
         map_data.name = $("#titleinput").val();
         $("#mapdatainput").val(JSON.stringify(map_data));
-        $('#title').val(map_data.name.toLowerCase());
+        $('#titlehiddeninput').val(map_data.name);
         $("#submitform").submit();
     });
 
