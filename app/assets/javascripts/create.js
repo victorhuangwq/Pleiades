@@ -22,11 +22,6 @@ $(document).ready(function() {// Javascript object to store all map data
     cwidth = container.width();
     cheight = cwidth / golden_ratio;
 
-    //canvas Debugging
-    console.log("Canvas Properties");
-    console.log("canvas container:" + cwidth);
-    console.log("canvas container:" + cheight);
-
     map_canvas.attr("width",cwidth);
     map_canvas.attr("height",cheight);
 
@@ -389,9 +384,6 @@ $(document).ready(function() {// Javascript object to store all map data
               controlpoints = get_control_points(startpos,quarter1,quarter2,pos);
             }
 
-            console.log(controlpoints[0],controlpoints[1]);
-
-
             addElement({type: "line", id: thisid,
                         start: {x: startpos.x / cwidth*1.0, y: startpos.y / cheight*1.0},
                         ctrl1: {x: controlpoints[0].x / cwidth*1.0, y:controlpoints[0].y / cheight*1.0},
@@ -462,41 +454,21 @@ $(document).ready(function() {// Javascript object to store all map data
 
         //Remove
         if (selected == 4) {
-            var pos = getMousePos(e);
-            p = {x: pos.x * cwidth, y: pos.y * cheight};
+            var p = getMousePos(e);
             var todelete = null;
             for (var i = 0; i < map_data.landmarks.length; i++) {
-                var tl, tr, bl, br;
-                centre = map_data.landmarks[i].pos;
+                var center = map_data.landmarks[i].pos;
+                var tl = {x: center.x * cwidth - 25, y: center.y * cheight - 25};
+                var br = {x: center.x * cwidth + 25, y: center.y * cheight + 38};
 
-                //Magic Numbers here: Take note!
-
-                console.log(pos);
-
-                c = {x: centre.x * cwidth, y: centre.y * cheight};
-
-                tl = {x:c.x-25,y:c.y-25};
-                tr = {x:c.x-25,y:c.y+25};
-                bl = {x:c.x+25,y:c.y-38};
-                br = {x:c.x+25,y:c.y+38};
-
-                console.log(tl);
-                console.log(tr);
-                console.log(bl);
-                console.log(br);
-
-                sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
-                quadArea = quadAF(tr,tl,bl,br);
-
-                console.log(sum_of_area);
-                console.log(quadArea);
-
-                if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
-                    todelete = map_data.landmarks[i];
+                if (p.x < br.x && p.x > tl.x) {
+                    if (p.y < br.y && p.y > tl.y) {
+                        todelete = map_data.landmarks[i];
+                    }
                 }
             }
 
-            // If there are no landmarks to be removed then look for closest line
+            //If there are no landmarks to be removed then look for closest line
             if (todelete == null) {
 
                 var shortlistedlines = [];
@@ -507,23 +479,13 @@ $(document).ready(function() {// Javascript object to store all map data
                     startp = map_data.lines[i].start;
                     endp   = map_data.lines[i].end;
 
-                    console.log(pos);
-
                     tl = {x: (startp.x*cwidth-rectApprox), y: (startp.y*cheight - (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox)};
                     tr = {x: startp.x*cwidth+rectApprox, y:startp.y*cheight};
                     bl = {x: endp.x*cwidth-rectApprox,y:endp.y*cheight};
                     br = {x: endp.x*cwidth +rectApprox, y:endp.y*cheight + (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox };
 
-                    console.log(tl);
-                    console.log(tr);
-                    console.log(bl);
-                    console.log(br);
-
                     sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
                     quadArea = quadAF(tl,tr,br,bl);
-
-                    console.log(quadArea);
-                    console.log(sum_of_area);
 
                     //Catches floating point errors
                     if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
