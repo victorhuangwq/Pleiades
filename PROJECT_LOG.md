@@ -64,3 +64,4 @@ Date|Time|#Hours Victor|#Hours ChuaHou|Aspect
 2015-07-19|1100|0h|2h|Completing search functionality
 2015-07-19|1900|0.5h|0h|Formatting project log and debugging heroku database
 2015-07-19|2100|2.5h|0h|Designing and implementing triangulation/polygonation functionality
+2015-07-20|1830|0.5h|0h|Making view page responsive
