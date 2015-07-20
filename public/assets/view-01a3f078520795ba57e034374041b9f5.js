@@ -41,6 +41,9 @@ $(document).ready(function() {
     $(window).resize(function() {
         cwidth = container.width();
         cheight = cwidth / golden_ratio;
+        if(cwidth < 300){
+          console.log("hi");
+        }
         console.log("Resize: " + cwidth + ", " + cheight);
         map_canvas.attr("width", cwidth);
         map_canvas.attr("height", cheight);
@@ -48,6 +51,8 @@ $(document).ready(function() {
     });
 
     function drawLine(line, ctx) {
+
+        var scaling_factor = cwidth/1000;
 
         linestartx = line.start.x * cwidth;
         linestarty = line.start.y * cheight;
@@ -62,12 +67,13 @@ $(document).ready(function() {
         ctx.moveTo(linestartx, linestarty);
         ctx.bezierCurveTo(linectrl1x,linectrl1y,
           linectrl2x,linectrl2y,lineendx,lineendy);
-        ctx.lineWidth= 7;
+
+        ctx.lineWidth= 1 + 6*scaling_factor;
         ctx.lineCap ='round';
         ctx.linejoin ="round";
         ctx.strokeStyle = "rgba(0, 153, 255, 0.5)";
         ctx.shadowColor = 'rgba(224,255,255,1)';
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10 + 20*scaling_factor;
         ctx.stroke();
         ctx.closePath();
     }
@@ -77,18 +83,21 @@ $(document).ready(function() {
         var x = landmark.pos.x * cwidth;
         var y = landmark.pos.y * cheight;
 
+        //Scaling Icon for Visibility
+        var size = 45*(cwidth/800)
+
         if (img.complete == true) { // check if image is already loaded
             console.log("drawing at x: " + x + ", y: " + y)
-            ctx.drawImage(img, x - 25, y - 25, 50, 50);
+            ctx.drawImage(img, x - size/2, y - size/2, size, size);
         }
         else { // load image first otherwise
             img.onload = function() {
                 console.log("drawing at x: " + x + ", y: " + y)
-                ctx.drawImage(img, x - 25, y - 25, 50, 50);
+                ctx.drawImage(img, x - size/2, y - size/2, size, size);
             }
         }
-        var ytext = y + 40;
-        ctx.font = '' + (13) + 'pt Helvetica';
+        var ytext = y + 16 + size/2;
+        ctx.font = '' + (8 + 5*size/45) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
         ctx.fillText(landmark.landmarkname, x, ytext);

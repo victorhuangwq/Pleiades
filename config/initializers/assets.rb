@@ -9,3 +9,4 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( create.js )
 Rails.application.config.assets.precompile += %w( submit.js )
 Rails.application.config.assets.precompile += %w( view.js )
+Rails.application.config.assets.precompile += %w( welcome.js )

@@ -84,7 +84,7 @@ $(document).ready(function() {
         var y = landmark.pos.y * cheight;
 
         //Scaling Icon for Visibility
-        var size = 55*(cwidth/1000)
+        var size = 45*(cwidth/800)
 
         if (img.complete == true) { // check if image is already loaded
             console.log("drawing at x: " + x + ", y: " + y)
@@ -96,8 +96,8 @@ $(document).ready(function() {
                 ctx.drawImage(img, x - size/2, y - size/2, size, size);
             }
         }
-        var ytext = y + 15 + size/2;
-        ctx.font = '' + (9 + 4*size/55) + 'pt Helvetica';
+        var ytext = y + 16 + size/2;
+        ctx.font = '' + (8 + 5*size/45) + 'pt Helvetica';
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
         ctx.fillText(landmark.landmarkname, x, ytext);

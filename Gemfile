@@ -57,3 +57,6 @@ gem 'twitter'
 
 #Boostrap switch
 gem 'bootstrap-switch-rails'
+
+#Bootstrap tour
+gem 'introjs-rails'
