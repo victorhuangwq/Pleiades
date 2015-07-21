@@ -60,7 +60,9 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
         <ul>
             <% @maps.each do |map| %>
+            <% if map.title != "" %>
                 <li><%= map.title %>: <a href="<%=map.shortURL%>">Link</a></li>
+            <% end %>
             <% end %>
         </ul>
     </div>
