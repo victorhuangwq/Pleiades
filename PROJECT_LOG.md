@@ -6,7 +6,7 @@ Total Hours for Huang Weiqi Victor: 66.5
 
 Total Hours for Chua Hou: 60.5
 
-Date|Time|#Hours Victor|#Hours ChuaHou|Aspect
+Date|Time|# Hours Victor|# Hours Hou|Aspect
 ---|---|---|---|---
 2015-05-11|0830|8h|8h|Lift-off Day-1
 2015-05-11|1900|3h|0h|Learning Basic HTML&CSS
