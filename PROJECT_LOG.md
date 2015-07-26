@@ -67,3 +67,4 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-20|1830|2h|0h|Making view page responsive
 2015-07-20|2300|1h|0h|Adding introJs to ruby on rails, and testing.
 2015-07-26|1730|2h|0h|Adding introduction tour to welcome and create page
+2015-07-26|1400|0h|7h|Adds Bezier detection ability
