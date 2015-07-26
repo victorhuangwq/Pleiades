@@ -92,7 +92,7 @@ The creation application has been implemented with the following features:
 
 ######Secondary features (most likely implemented)
 * [x] Downloadable QuikMaps for offline usage
-* [ ] A searchable database of QuikMaps
+* [x] A searchable database of QuikMaps
   > Users can search to see if another QuikMap to the same destination has been created previously.
 
 * [ ] Google Location API integration, linking the QuikMap to a certain location
