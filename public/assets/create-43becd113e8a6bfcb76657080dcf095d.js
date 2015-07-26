@@ -530,23 +530,38 @@ $(document).ready(function() {// Javascript object to store all map data
             //If there are no landmarks to be removed then look for closest line
             if (todelete == null) {
 
-                var closest = 25;
-                for (var i = 0; i < map_data.lines.length; i++) {
-                    var line = map_data.lines[i];
-                    var bez = new Bezier(line.start.x * cwidth, line.start.y * cheight,
-                                        line.ctrl1.x * cwidth, line.ctrl1.y * cheight,
-                                        line.ctrl2.x * cwidth, line.ctrl2.y * cheight,
-                                        line.end.x * cwidth, line.end.y * cheight);
-                    var points = bez.getLUT();
-                    for (var j = 0; j < points.length; j++) {
-                        var dist = Math.sqrt(Math.pow(p.x - points[j].x, 2) + Math.pow(p.y - points[j].y, 2));
-                        if (dist < closest) {
-                            closest = dist;
-                            todelete = line;
-                        }
+                var shortlistedlines = [];
+                //Checks if the point is in any lines' hitbox
+                for(var i =0; i <map_data.lines.length; i++){
+                    var tl,tr,bl,br;
+
+                    startp = map_data.lines[i].start;
+                    endp   = map_data.lines[i].end;
+
+                    tl = {x: (startp.x*cwidth-rectApprox), y: (startp.y*cheight - (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox)};
+                    tr = {x: startp.x*cwidth+rectApprox, y:startp.y*cheight};
+                    bl = {x: endp.x*cwidth-rectApprox,y:endp.y*cheight};
+                    br = {x: endp.x*cwidth +rectApprox, y:endp.y*cheight + (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox };
+
+                    sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
+                    quadArea = quadAF(tl,tr,br,bl);
+
+                    //Catches floating point errors
+                    if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
+                        shortlistedlines.push(map_data.lines[i])
                     }
                 }
 
+                // Checks for beziers
+
+                //Picks closest line
+                var shortestdistance = 999999999;
+                for (var i = 0;i<shortlistedlines.length;i++) {
+                    if (shrtD(p,shortlistedlines[i]) < shortestdistance) {
+                        shortestdistance = shrtD(p,shortlistedlines[i])
+                        todelete = shortlistedlines[i];
+                    }
+                }
             }
 
             if (todelete != null) {
@@ -644,5 +659,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#titlehiddeninput').val(map_data.name);
         $("#submitform").submit();
     });
+
+
 
 });
