@@ -11,5 +11,7 @@ echo "Restarting heroku dynos..."
 heroku restart
 echo "Cleaning assets..."
 rake assets:clean
+git add -A
+git commit -m "Cleaned assets..."
 echo "Pushing to origin..."
 git push origin

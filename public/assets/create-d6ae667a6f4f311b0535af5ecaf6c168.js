@@ -3,16 +3,75 @@
 
 $(document).ready(function() {// Javascript object to store all map data
 
+    //Intro Js QuikMap creation introduction
+    console.log(introTrue);
+    var createguide = introJs();
+    createguide.setOptions({
+      steps: [
+          {
+            intro: 'This is the QuikMap creation page'
+          },
+          {
+            element:"#nameMap",
+            intro: "Name your map after its destination. \
+              This is so that other people can search for it easily"
+          },
+          {
+            element:"#canvas",
+            intro:"The map canvas"
+          },
+          {
+            element:"#toolbar",
+            intro:"The toolbar, with all the tools you need to \
+              create your own QuikMap. Click on them to know what they do"
+          },
+          {
+            intro:"Now some tips on how to draw a QuikMap"
+          },
+          {
+            element:"#drawbutton",
+            intro:"<strong>Firstly</strong>, draw the routes/paths \
+              from your starting point to your endpoint"
+          },
+          {
+            element:"#landmarkbutton",
+            intro:"<strong>Secondly</strong>, add in the landmarks that\
+              you can see as you travel along your route. Usually\
+               <ul>\
+                 <li><b>3</b> per junction</li>\
+                 <li><b>2</b> per lane</li>\
+               </ul>"
+          },
+          {
+            element:"#submitbutton",
+            intro:"<strong>Lastly</strong>, remember to submit your QuikMap, so that you can share it!"
+          }
+      ],
+      doneLabel: 'Done',
+      tooltipPosition: 'auto',
+      positionPrecedence: ['left', 'right', 'bottom', 'top'],
+      disableInteraction: false
+    });
+
+    if(introTrue){
+      createguide.start();
+    }
+
+    $('#howtousebutton').click(function(){
+      console.log("???");
+      createguide.goToStep(6).start();
+    });
+
+
+    //bootstrapSwitch
     $('#isStraight').bootstrapSwitch('state',false);
     $('#isStraight').bootstrapSwitch("onText",'Straight');
     $('#isStraight').bootstrapSwitch("offText",'Curvy');
     $('#isStraight').bootstrapSwitch("onColor",'primary');
     $('#isStraight').bootstrapSwitch("offColor",'info');
-    //$("name='isStraight'").bootstrapSwitch('setOnLabel','abc');
-    //is_straight_line.bootstrapSwitch('setOnLabel','Straight Lines');
-    //is_straight_line.bootstrapSwitch('setOffLabel','Freehand');
+
     //map_canvas properties
-    
+
     var golden_ratio = 1.61803398875;
 
     var map_canvas = $('#canvas');
@@ -21,11 +80,6 @@ $(document).ready(function() {// Javascript object to store all map data
 
     cwidth = container.width();
     cheight = cwidth / golden_ratio;
-    
-    //canvas Debugging
-    console.log("Canvas Properties");
-    console.log("canvas container:" + cwidth);
-    console.log("canvas container:" + cheight);
 
     map_canvas.attr("width",cwidth);
     map_canvas.attr("height",cheight);
@@ -389,9 +443,6 @@ $(document).ready(function() {// Javascript object to store all map data
               controlpoints = get_control_points(startpos,quarter1,quarter2,pos);
             }
 
-            console.log(controlpoints[0],controlpoints[1]);
-
-
             addElement({type: "line", id: thisid,
                         start: {x: startpos.x / cwidth*1.0, y: startpos.y / cheight*1.0},
                         ctrl1: {x: controlpoints[0].x / cwidth*1.0, y:controlpoints[0].y / cheight*1.0},
@@ -462,85 +513,40 @@ $(document).ready(function() {// Javascript object to store all map data
 
         //Remove
         if (selected == 4) {
-            var pos = getMousePos(e);
-            p = {x: pos.x * cwidth, y: pos.y * cheight};
+            var p = getMousePos(e);
             var todelete = null;
             for (var i = 0; i < map_data.landmarks.length; i++) {
-                var tl, tr, bl, br;
-                centre = map_data.landmarks[i].pos;
+                var center = map_data.landmarks[i].pos;
+                var tl = {x: center.x * cwidth - 25, y: center.y * cheight - 25};
+                var br = {x: center.x * cwidth + 25, y: center.y * cheight + 38};
 
-                //Magic Numbers here: Take note!
-
-                console.log(pos);
-                
-                c = {x: centre.x * cwidth, y: centre.y * cheight};
-
-                tl = {x:c.x-25,y:c.y-25};
-                tr = {x:c.x-25,y:c.y+25};
-                bl = {x:c.x+25,y:c.y-38};
-                br = {x:c.x+25,y:c.y+38};
-
-                console.log(tl);
-                console.log(tr);
-                console.log(bl);
-                console.log(br);
-
-                sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
-                quadArea = quadAF(tr,tl,bl,br);
-
-                console.log(sum_of_area);
-                console.log(quadArea);
-
-                if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
-                    todelete = map_data.landmarks[i];
+                if (p.x < br.x && p.x > tl.x) {
+                    if (p.y < br.y && p.y > tl.y) {
+                        todelete = map_data.landmarks[i];
+                    }
                 }
             }
 
-            // If there are no landmarks to be removed then look for closest line
+            //If there are no landmarks to be removed then look for closest line
             if (todelete == null) {
 
-                var shortlistedlines = [];
-                //Checks if the point is in any lines' hitbox
-                for(var i =0; i <map_data.lines.length; i++){
-                    var tl,tr,bl,br;
-
-                    startp = map_data.lines[i].start;
-                    endp   = map_data.lines[i].end;
-
-                    console.log(pos);
-
-                    tl = {x: (startp.x*cwidth-rectApprox), y: (startp.y*cheight - (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox)};
-                    tr = {x: startp.x*cwidth+rectApprox, y:startp.y*cheight};
-                    bl = {x: endp.x*cwidth-rectApprox,y:endp.y*cheight};
-                    br = {x: endp.x*cwidth +rectApprox, y:endp.y*cheight + (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox };
-
-                    console.log(tl);
-                    console.log(tr);
-                    console.log(bl);
-                    console.log(br);
-
-                    sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
-                    quadArea = quadAF(tl,tr,br,bl);
-
-                    console.log(quadArea);
-                    console.log(sum_of_area);
-
-                    //Catches floating point errors
-                    if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
-                        shortlistedlines.push(map_data.lines[i])
+                var closest = 25;
+                for (var i = 0; i < map_data.lines.length; i++) {
+                    var line = map_data.lines[i];
+                    var bez = new Bezier(line.start.x * cwidth, line.start.y * cheight,
+                                        line.ctrl1.x * cwidth, line.ctrl1.y * cheight,
+                                        line.ctrl2.x * cwidth, line.ctrl2.y * cheight,
+                                        line.end.x * cwidth, line.end.y * cheight);
+                    var points = bez.getLUT();
+                    for (var j = 0; j < points.length; j++) {
+                        var dist = Math.sqrt(Math.pow(p.x - points[j].x, 2) + Math.pow(p.y - points[j].y, 2));
+                        if (dist < closest) {
+                            closest = dist;
+                            todelete = line;
+                        }
                     }
                 }
-                
-                // Checks for beziers
 
-                //Picks closest line
-                var shortestdistance = 999999999;
-                for (var i = 0;i<shortlistedlines.length;i++) {
-                    if (shrtD(p,shortlistedlines[i]) < shortestdistance) {
-                        shortestdistance = shrtD(p,shortlistedlines[i])
-                        todelete = shortlistedlines[i];
-                    }
-                }
             }
 
             if (todelete != null) {
@@ -580,7 +586,7 @@ $(document).ready(function() {// Javascript object to store all map data
         linectrl2y = line.ctrl2.y * cheight;
         lineendx = line.end.x * cwidth;
         lineendy = line.end.y * cheight;
-        
+
         ctx.beginPath();
         ctx.moveTo(linestartx, linestarty);
         ctx.bezierCurveTo(linectrl1x,linectrl1y,
@@ -635,9 +641,8 @@ $(document).ready(function() {// Javascript object to store all map data
         e.preventDefault();
         map_data.name = $("#titleinput").val();
         $("#mapdatainput").val(JSON.stringify(map_data));
+        $('#titlehiddeninput').val(map_data.name);
         $("#submitform").submit();
     });
-
-
 
 });
