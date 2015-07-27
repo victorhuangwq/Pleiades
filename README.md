@@ -87,7 +87,7 @@ The creation application has been implemented with the following features:
     > QuikMaps contain a roughly drawn map and direction info that can be easily shared
 
 * [x] Link-based sharing - no login, links will direct to specific pages
-* [ ] Viewable on desktop and mobile (Mobile interface will be made suitable for mobile)
+* [x] Viewable on desktop and mobile (Mobile interface will be made suitable for mobile)
 * [x] Triangulation to allow users to find where they are relative to the map
 
 ######Secondary features (most likely implemented)
