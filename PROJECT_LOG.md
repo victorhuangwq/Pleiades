@@ -2,9 +2,9 @@ Project Hours Log
 
 Github Contributions: https://github.com/XtrKiL/Pleiades/graphs/contributors
 
-Total Hours for Huang Weiqi Victor: 91
+Total Hours for Huang Weiqi Victor: 96
 
-Total Hours for Chua Hou: 90.5
+Total Hours for Chua Hou: 95.5
 
 Date|Time|# Hours Victor|# Hours Hou|Aspect
 ---|---|---|---|---
@@ -68,3 +68,5 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-20|2300|1h|0h|Adding introJs to ruby on rails, and testing.
 2015-07-26|1730|2h|0h|Adding introduction tour to welcome and create page
 2015-07-26|1400|0h|7h|Adds Bezier detection ability
+2015-07-27|1000|3h|3h|Multiple bug fixes, adds ability to add points instead of landmarks, polishes mobile interface
+2015-07-27|1400|2h|2h|More bug fixes, adds social media integration
