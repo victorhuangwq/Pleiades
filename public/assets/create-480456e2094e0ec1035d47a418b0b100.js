@@ -3,14 +3,81 @@
 
 $(document).ready(function() {// Javascript object to store all map data
 
+    $("#mobile").hide();
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+     // You are in mobile browser
+        $("#notinmobile").hide();
+        $("#mobile").show();
+    }
+
+    //Intro Js QuikMap creation introduction
+    console.log(introTrue);
+    var createguide = introJs();
+    createguide.setOptions({
+      steps: [
+          {
+            intro: 'This is the QuikMap creation page'
+          },
+          {
+            element:"#nameMap",
+            intro: "Name your map after its destination. \
+              This is so that other people can search for it easily"
+          },
+          {
+            element:"#canvas",
+            intro:"The map canvas"
+          },
+          {
+            element:"#toolbar",
+            intro:"The toolbar, with all the tools you need to \
+              create your own QuikMap. Click on them to know what they do"
+          },
+          {
+            intro:"Now some tips on how to draw a QuikMap"
+          },
+          {
+            element:"#drawbutton",
+            intro:"<strong>Firstly</strong>, draw the routes/paths \
+              from your starting point to your endpoint"
+          },
+          {
+            element:"#landmarkbutton",
+            intro:"<strong>Secondly</strong>, add in the landmarks that\
+              you can see as you travel along your route. Usually\
+               <ul>\
+                 <li><b>3</b> per junction</li>\
+                 <li><b>2</b> per lane</li>\
+               </ul>"
+          },
+          {
+            element:"#submitbutton",
+            intro:"<strong>Lastly</strong>, remember to submit your QuikMap, so that you can share it!"
+          }
+      ],
+      doneLabel: 'Done',
+      tooltipPosition: 'auto',
+      positionPrecedence: ['left', 'right', 'bottom', 'top'],
+      disableInteraction: false
+    });
+
+    if(introTrue){
+      createguide.start();
+    }
+
+    $('#howtousebutton').click(function(){
+      console.log("???");
+      createguide.goToStep(6).start();
+    });
+
+
+    //bootstrapSwitch
     $('#isStraight').bootstrapSwitch('state',false);
     $('#isStraight').bootstrapSwitch("onText",'Straight');
     $('#isStraight').bootstrapSwitch("offText",'Curvy');
     $('#isStraight').bootstrapSwitch("onColor",'primary');
     $('#isStraight').bootstrapSwitch("offColor",'info');
-    //$("name='isStraight'").bootstrapSwitch('setOnLabel','abc');
-    //is_straight_line.bootstrapSwitch('setOnLabel','Straight Lines');
-    //is_straight_line.bootstrapSwitch('setOffLabel','Freehand');
+
     //map_canvas properties
 
     var golden_ratio = 1.61803398875;
@@ -471,38 +538,23 @@ $(document).ready(function() {// Javascript object to store all map data
             //If there are no landmarks to be removed then look for closest line
             if (todelete == null) {
 
-                var shortlistedlines = [];
-                //Checks if the point is in any lines' hitbox
-                for(var i =0; i <map_data.lines.length; i++){
-                    var tl,tr,bl,br;
-
-                    startp = map_data.lines[i].start;
-                    endp   = map_data.lines[i].end;
-
-                    tl = {x: (startp.x*cwidth-rectApprox), y: (startp.y*cheight - (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox)};
-                    tr = {x: startp.x*cwidth+rectApprox, y:startp.y*cheight};
-                    bl = {x: endp.x*cwidth-rectApprox,y:endp.y*cheight};
-                    br = {x: endp.x*cwidth +rectApprox, y:endp.y*cheight + (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox };
-
-                    sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
-                    quadArea = quadAF(tl,tr,br,bl);
-
-                    //Catches floating point errors
-                    if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
-                        shortlistedlines.push(map_data.lines[i])
+                var closest = 25;
+                for (var i = 0; i < map_data.lines.length; i++) {
+                    var line = map_data.lines[i];
+                    var bez = new Bezier(line.start.x * cwidth, line.start.y * cheight,
+                                        line.ctrl1.x * cwidth, line.ctrl1.y * cheight,
+                                        line.ctrl2.x * cwidth, line.ctrl2.y * cheight,
+                                        line.end.x * cwidth, line.end.y * cheight);
+                    var points = bez.getLUT();
+                    for (var j = 0; j < points.length; j++) {
+                        var dist = Math.sqrt(Math.pow(p.x - points[j].x, 2) + Math.pow(p.y - points[j].y, 2));
+                        if (dist < closest) {
+                            closest = dist;
+                            todelete = line;
+                        }
                     }
                 }
 
-                // Checks for beziers
-
-                //Picks closest line
-                var shortestdistance = 999999999;
-                for (var i = 0;i<shortlistedlines.length;i++) {
-                    if (shrtD(p,shortlistedlines[i]) < shortestdistance) {
-                        shortestdistance = shrtD(p,shortlistedlines[i])
-                        todelete = shortlistedlines[i];
-                    }
-                }
             }
 
             if (todelete != null) {
@@ -600,7 +652,5 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#titlehiddeninput').val(map_data.name);
         $("#submitform").submit();
     });
-
-
 
 });

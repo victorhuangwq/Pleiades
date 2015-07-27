@@ -3,6 +3,11 @@ canvas {
   border: 2px solid #DFDFDF;
   background-color: #F7F7F7;
 }
+
+/* line 9, /Users/davidson/Projects/Pleiades/app/assets/stylesheets/create.css.scss */
+#howtousebutton {
+  white-space: normal;
+}
 /* line 4, /Users/davidson/Projects/Pleiades/app/assets/stylesheets/view.css.scss */
 #usertools {
   padding: 20px;
