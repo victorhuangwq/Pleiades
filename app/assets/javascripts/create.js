@@ -437,7 +437,12 @@ $(document).ready(function() {// Javascript object to store all map data
       function form_equation(q1,q2){
 
         function equation(x){
-          gradient = (q2.y - q1.y)/(q2.x-q1.x);
+            var REALLYFUCKINGHIGHVALUE = 9999999999999;
+            if(q1.x == q2.x) {
+                gradient = REALLYFUCKINGHIGHVALUE;
+            } else {
+                  gradient = (q2.y - q1.y)/(q2.x - q1.x);
+              }
           c = q1.y - gradient*q1.x;
           return gradient*x + c;
         }
@@ -473,6 +478,7 @@ $(document).ready(function() {// Javascript object to store all map data
           ctx.lineTo(pos.x,pos.y);
 
           points.push(pos);
+          console.log(pos);
 
           ctx.lineWidth= 7;
           ctx.lineCap ='round';
@@ -501,10 +507,13 @@ $(document).ready(function() {// Javascript object to store all map data
 
             }
             else{
-              quarter1 = points[Math.floor((points.length)/4)];
-              quarter2 = points[Math.floor((points.length)*3/4)];
 
-              controlpoints = get_control_points(startpos,quarter1,quarter2,pos);
+                  quarter1 = points[Math.floor((points.length)/4)];
+                  console.log("q1: " + quarter1.x + ", " + quarter1.y);
+                  quarter2 = points[Math.floor((points.length)*3/4)];
+                  console.log("q2: " + quarter2.x + ", " + quarter2.y);
+
+                  controlpoints = get_control_points(startpos,quarter1,quarter2,pos);
             }
 
             addElement({type: "line", id: thisid,
