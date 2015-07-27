@@ -491,8 +491,13 @@ $(document).ready(function() {// Javascript object to store all map data
             var pos = {x: e.pageX, y: e.pageY};
             popover = $("#landmarkpopover");
             popover.show();
-            popover.css('left', (pos.x + 5) + 'px');
-            popover.css('top', (pos.y) + 'px');
+            if (pos.y > 2 * cheight / 3) {
+                popover.css('left', (pos.x + 5) + 'px');
+                popover.css('top', (pos.y - 300) + 'px');
+            } else {
+                popover.css('left', (pos.x + 5) + 'px');
+                popover.css('top', (pos.y) + 'px');
+            }
             landmarkpos = getMousePos(e);
         }
 
