@@ -78,6 +78,12 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#isStraight').bootstrapSwitch("onColor",'primary');
     $('#isStraight').bootstrapSwitch("offColor",'info');
 
+    $('#isLandmark').bootstrapSwitch('state',false);
+    $('#isLandmark').bootstrapSwitch("onText",'Landmark');
+    $('#isLandmark').bootstrapSwitch("offText",'Points');
+    $('#isLandmark').bootstrapSwitch("onColor",'primary');
+    $('#isLandmark').bootstrapSwitch("offColor",'primary');
+
     //map_canvas properties
 
     var golden_ratio = 1.61803398875;
@@ -272,7 +278,14 @@ $(document).ready(function() {// Javascript object to store all map data
      */
     $(document).click( function() {
         if (selected != 3 && selected != 1) {
+            $("#pointpopover").hide();
             $("#landmarkpopover").hide();
+        } else if (selected == 3){
+            if (!$("#isLandmark").bootstrapSwitch("state")) {
+                $("#landmarkpopover").hide();
+            } else {
+                $("#pointpopover").hide();
+            }
         }
     });
 
@@ -295,6 +308,46 @@ $(document).ready(function() {// Javascript object to store all map data
             addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
         }
     }
+
+    $("#startbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "Start";
+        }
+        createLandmark("startimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
+
+    $("#endbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "End";
+        }
+        createLandmark("endimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
+
+    $("#trainbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "Station";
+        }
+        createLandmark("trainimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
+
+    $("#busbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "Bus Stop";
+        }
+        createLandmark("busimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
 
     $('#digitalbutton').click( function() {
         name = $("#landmarkinput").val();
@@ -486,11 +539,18 @@ $(document).ready(function() {// Javascript object to store all map data
         //Adding landmarks
         if (selected == 3) {
             var pos = {x: e.pageX, y: e.pageY};
-            popover = $("#landmarkpopover");
+            var adj;
+            if ($("#isLandmark").bootstrapSwitch("state")) {
+                adj = 300;
+                popover = $("#landmarkpopover");
+            } else {
+                adj = 200;
+                popover = $("#pointpopover");
+            }
             popover.show();
             if (pos.y > 2 * cheight / 3) {
                 popover.css('left', (pos.x + 5) + 'px');
-                popover.css('top', (pos.y - 300) + 'px');
+                popover.css('top', (pos.y - adj) + 'px');
             } else {
                 popover.css('left', (pos.x + 5) + 'px');
                 popover.css('top', (pos.y) + 'px');
@@ -517,7 +577,17 @@ $(document).ready(function() {// Javascript object to store all map data
             }
 
             if (tochangeindex != -1) {
-                popover = $("#landmarkpopover");
+                $("#pointpopover").hide();
+                $("#landmarkpopover").hide();
+                var popover;
+                if (map_data.landmarks[tochangeindex].img != "startimg" &&
+                    map_data.landmarks[tochangeindex].img != "endimg" &&
+                    map_data.landmarks[tochangeindex].img != "trainimg" &&
+                    map_data.landmarks[tochangeindex].img != "busimg") {
+                    popover = $("#landmarkpopover");
+                } else {
+                    popover = $("#pointpopover");
+                }
                 popover.show();
                 popover.css('left', (pagepos.x + 5) + 'px');
                 popover.css('top', (pagepos.y) + 'px');

@@ -89,6 +89,9 @@
               <h4>Add Landmark</h4>
               <p>
                 Click anywhere to add landmark. Select desired name and icon.
+                Click below to switch between adding landmarks and important points.
+                </p>
+                <input type="checkbox" id='isLandmark' checked>
             </div>
             <div id="removediv">
               <h4>Remove</h4>
@@ -124,9 +127,36 @@
         </form>
     	</div>
 
+        <div id="pointpopover" class="popover" style="width:150px">
+            <div class="text-center">
+                <p style="font-size:13px">Type in the name and click on the icon.</p>
+        	    <input style="font-size:13px" id="pointinput" type="text" class="form-control" placeholder="Point Name" aria-describedby="basic-addon1"/>
+                <div class="row">
+                    <button id="startbutton" type="button" class="btn btn-default btn-lg text-center" style="width:70px; height:70px">
+                        <%= image_tag("start.svg", size:"40x40", id:"startimg") %>
+                        <p style="font-size:12px">Start</p>
+                    </button>
+                    <button id="endbutton" type="button" class="btn btn-default btn-lg text-center" style="width:70px; height:70px">
+                        <%= image_tag("end.svg", size:"40x40", id:"endimg") %>
+                        <p style="font-size:12px">End</p>
+                    </button>
+                </div>
+                <div class="row">
+                    <button id="trainbutton" type="button" class="btn btn-default btn-lg text-center" style="width:70px; height:70px">
+                        <%= image_tag("station.svg", size:"40x40", id:"trainimg") %>
+                        <p style="font-size:12px">Station</p>
+                    </button>
+                    <button id="busbutton" type="button" class="btn btn-default btn-lg text-center" style="width:70px; height:70px">
+                        <%= image_tag("busstop.svg", size:"40x40", id:"busimg") %>
+                        <p style="font-size:12px">Bus Stop</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <div id="landmarkpopover" class="popover" style="width:150px">
             <div class="text-center">
-                <p style="font-size:13px">Type in the name of your landmark and click on the correct category.</p>
+                <p style="font-size:13px">Type in the name and click on the icon.</p>
         	    <input style="font-size:13px" id="landmarkinput" type="text" class="form-control" placeholder="Landmark Name" aria-describedby="basic-addon1"/>
                 <div class="row">
                     <button id="digitalbutton" type="button" class="btn btn-default btn-lg text-center" style="width:70px; height:70px">
