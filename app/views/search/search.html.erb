@@ -68,7 +68,7 @@
         <div class = "list-group">
           <% @maps.each do |map| %>
           <% if map.title != "" %>
-            <a href="\view\view?=<%=map.id%>" class = "list-group-item"><span class="col-lg-9 col-md-9 col-sm-9">QuikMap To: <b><%=map.title %></b></span>
+            <a href="\view\view?mapid=<%=map.id%>" class = "list-group-item"><span class="col-lg-9 col-md-9 col-sm-9">QuikMap To: <b><%=map.title %></b></span>
               <span>Created: <%=map.created_at.strftime('%a %d %b %Y') %></span></a>
           <% end %>
           <% end %>
