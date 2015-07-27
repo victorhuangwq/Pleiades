@@ -123,8 +123,10 @@ $(document).ready(function() {
     var download_high = $('#download_high');
 
     function download_prep(canvas){
-      canvas.width = 800;
-      canvas.height = 600;
+      canvas.width = 1000;
+      canvas.height = 1000/golden_ratio;
+      cwidth = 1000;
+      cheight = 1000/golden_ratio;
       update_canvas(map_data);
       ctx.fillStyle = "#FFFFFF";
       ctx.shadowColor = 'rgba(255,255,255,1)';
@@ -140,7 +142,8 @@ $(document).ready(function() {
       downloadURI(lowQuality,"quikmap_" + map_data.name +"_l");
 
       cwidth = container.width();
-      cheight = container.height();
+      cheight = cwidth / golden_ratio;
+
       map_canvas.attr("width",cwidth);
       map_canvas.attr("height",cheight);
 
@@ -154,7 +157,8 @@ $(document).ready(function() {
       downloadURI(highQuality,"quikmap_" + map_data.name +"_h");
 
       cwidth = container.width();
-      cheight = container.height();
+      cheight = cwidth / golden_ratio;
+
       map_canvas.attr("width",cwidth);
       map_canvas.attr("height",cheight);
       update_canvas(map_data);
