@@ -70,3 +70,4 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-26|1400|0h|7h|Adds Bezier detection ability
 2015-07-27|1000|3h|3h|Multiple bug fixes, adds ability to add points instead of landmarks, polishes mobile interface
 2015-07-27|1400|2h|2h|More bug fixes, adds social media integration
+2015-07-27|1600|1h|1h|More bug fixes, peer evaluation
