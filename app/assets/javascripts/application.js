@@ -16,3 +16,4 @@
 //= require bootstrap-sprockets
 //= require bootstrap-switch
 //= require introjs
+//= require social-share-button

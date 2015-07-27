@@ -60,3 +60,6 @@ gem 'bootstrap-switch-rails'
 
 #Bootstrap tour
 gem 'introjs-rails'
+
+#Social media sharing
+gem 'social-share-button'

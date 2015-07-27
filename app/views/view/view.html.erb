@@ -39,7 +39,14 @@
         <h2>QuikMap To: <u><span id="mapname"></span></u></h2>
     </div>
 
-    <div class=" row">
+    <div class="text-center">
+        <p><strong>Share your map!</strong></p>
+        <%= social_share_button_tag("QuikMap", :popup => true, :url => @map.shortURL) %>
+    </div>
+
+    <hr>
+
+    <div class="row">
         <!--<div id="left" class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>-->
         <div id="app" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ui-widget-header">
             <canvas id="canvas" height="1000px" width="1000px"></canvas>
