@@ -88,7 +88,7 @@ The creation application has been implemented with the following features:
 
 * [x] Link-based sharing - no login, links will direct to specific pages
 * [ ] Viewable on desktop and mobile (Mobile interface will be made suitable for mobile)
-* [ ] Triangulation to allow users to find where they are relative to the map
+* [x] Triangulation to allow users to find where they are relative to the map
 
 ######Secondary features (most likely implemented)
 * [x] Downloadable QuikMaps for offline usage
