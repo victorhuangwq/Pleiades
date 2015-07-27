@@ -83,12 +83,17 @@ The creation application has been implemented with the following features:
 
 ####Planned Features
 ######Core Features
-* [ ] QuikMap Creation
+* [x] QuikMap Creation
     > QuikMaps contain a roughly drawn map and direction info that can be easily shared
 
-* [x] Link-based sharing - no login, links will direct to specific pages
+* [x] Link-based sharing
+		> no login, links will direct to specific pages
+
 * [x] Viewable on desktop and mobile (Mobile interface will be made suitable for mobile)
+		> Responsive for desktop and mobile. Currently no create page for phone still
+
 * [x] Triangulation to allow users to find where they are relative to the map
+		> Where am I button on the view page approximates where the user is
 
 ######Secondary features (most likely implemented)
 * [x] Downloadable QuikMaps for offline usage
@@ -98,7 +103,7 @@ The creation application has been implemented with the following features:
 * [ ] Google Location API integration, linking the QuikMap to a certain location
     > Eg. If the destination is a shop in ABC Mall, we can link the google map location to ABC mall. So users can use GMaps to go to ABC Mall, and then use QuikMap to navigate to the shop
 
-* [ ] Facebook, Twitter and Google integration, for the sharing of the created QuikMaps
+* [x] Facebook, Twitter and Google integration, for the sharing of the created QuikMaps
 * [x] Link shortening using bit.ly or alternatives
 
 ######Tertiary features (to be KIVed)
