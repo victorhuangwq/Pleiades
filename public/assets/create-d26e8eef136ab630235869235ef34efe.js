@@ -3,8 +3,19 @@
 
 $(document).ready(function() {// Javascript object to store all map data
 
-    //Intro Js QuikMap creation introduction
+
     console.log(introTrue);
+
+    $("#mobile").hide();
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+     // You are in mobile browser
+        $("#notinmobile").hide();
+        $("#mobile").show();
+        introTrue = false;
+    }
+
+    //Intro Js QuikMap creation introduction
     var createguide = introJs();
     createguide.setOptions({
       steps: [
@@ -69,6 +80,12 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#isStraight').bootstrapSwitch("offText",'Curvy');
     $('#isStraight').bootstrapSwitch("onColor",'primary');
     $('#isStraight').bootstrapSwitch("offColor",'info');
+
+    $('#isLandmark').bootstrapSwitch('state',false);
+    $('#isLandmark').bootstrapSwitch("onText",'Landmark');
+    $('#isLandmark').bootstrapSwitch("offText",'Points');
+    $('#isLandmark').bootstrapSwitch("onColor",'primary');
+    $('#isLandmark').bootstrapSwitch("offColor",'primary');
 
     //map_canvas properties
 
@@ -264,7 +281,14 @@ $(document).ready(function() {// Javascript object to store all map data
      */
     $(document).click( function() {
         if (selected != 3 && selected != 1) {
+            $("#pointpopover").hide();
             $("#landmarkpopover").hide();
+        } else if (selected == 3){
+            if (!$("#isLandmark").bootstrapSwitch("state")) {
+                $("#landmarkpopover").hide();
+            } else {
+                $("#pointpopover").hide();
+            }
         }
     });
 
@@ -287,6 +311,46 @@ $(document).ready(function() {// Javascript object to store all map data
             addElement({type: "landmark", id: thisid, landmarkname: name, img: img, pos: landmarkpos});
         }
     }
+
+    $("#startbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "Start";
+        }
+        createLandmark("startimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
+
+    $("#endbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "End";
+        }
+        createLandmark("endimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
+
+    $("#trainbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "Station";
+        }
+        createLandmark("trainimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
+
+    $("#busbutton").click( function() {
+        name = $("#pointinput").val();
+        if (name == "") {
+            name = "Bus Stop";
+        }
+        createLandmark("busimg", name);
+        $("#pointinput").val("");
+        $("#pointpopover").hide();
+    });
 
     $('#digitalbutton').click( function() {
         name = $("#landmarkinput").val();
@@ -478,10 +542,22 @@ $(document).ready(function() {// Javascript object to store all map data
         //Adding landmarks
         if (selected == 3) {
             var pos = {x: e.pageX, y: e.pageY};
-            popover = $("#landmarkpopover");
+            var adj;
+            if ($("#isLandmark").bootstrapSwitch("state")) {
+                adj = 300;
+                popover = $("#landmarkpopover");
+            } else {
+                adj = 200;
+                popover = $("#pointpopover");
+            }
             popover.show();
-            popover.css('left', (pos.x + 5) + 'px');
-            popover.css('top', (pos.y) + 'px');
+            if (pos.y > 2 * cheight / 3) {
+                popover.css('left', (pos.x + 5) + 'px');
+                popover.css('top', (pos.y - adj) + 'px');
+            } else {
+                popover.css('left', (pos.x + 5) + 'px');
+                popover.css('top', (pos.y) + 'px');
+            }
             landmarkpos = getMousePos(e);
         }
 
@@ -504,7 +580,17 @@ $(document).ready(function() {// Javascript object to store all map data
             }
 
             if (tochangeindex != -1) {
-                popover = $("#landmarkpopover");
+                $("#pointpopover").hide();
+                $("#landmarkpopover").hide();
+                var popover;
+                if (map_data.landmarks[tochangeindex].img != "startimg" &&
+                    map_data.landmarks[tochangeindex].img != "endimg" &&
+                    map_data.landmarks[tochangeindex].img != "trainimg" &&
+                    map_data.landmarks[tochangeindex].img != "busimg") {
+                    popover = $("#landmarkpopover");
+                } else {
+                    popover = $("#pointpopover");
+                }
                 popover.show();
                 popover.css('left', (pagepos.x + 5) + 'px');
                 popover.css('top', (pagepos.y) + 'px');
@@ -530,38 +616,23 @@ $(document).ready(function() {// Javascript object to store all map data
             //If there are no landmarks to be removed then look for closest line
             if (todelete == null) {
 
-                var shortlistedlines = [];
-                //Checks if the point is in any lines' hitbox
-                for(var i =0; i <map_data.lines.length; i++){
-                    var tl,tr,bl,br;
-
-                    startp = map_data.lines[i].start;
-                    endp   = map_data.lines[i].end;
-
-                    tl = {x: (startp.x*cwidth-rectApprox), y: (startp.y*cheight - (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox)};
-                    tr = {x: startp.x*cwidth+rectApprox, y:startp.y*cheight};
-                    bl = {x: endp.x*cwidth-rectApprox,y:endp.y*cheight};
-                    br = {x: endp.x*cwidth +rectApprox, y:endp.y*cheight + (endp.x*cwidth-startp.x*cwidth)*(startp.y*cheight-endp.y*cheight)*2*rectApprox };
-
-                    sum_of_area = triAF(tl,p,bl)+triAF(bl,p,br)+triAF(br,p,tr)+triAF(p,tr,tl);
-                    quadArea = quadAF(tl,tr,br,bl);
-
-                    //Catches floating point errors
-                    if (quadArea -0.1 <sum_of_area && sum_of_area < quadArea +0.1) {
-                        shortlistedlines.push(map_data.lines[i])
+                var closest = 25;
+                for (var i = 0; i < map_data.lines.length; i++) {
+                    var line = map_data.lines[i];
+                    var bez = new Bezier(line.start.x * cwidth, line.start.y * cheight,
+                                        line.ctrl1.x * cwidth, line.ctrl1.y * cheight,
+                                        line.ctrl2.x * cwidth, line.ctrl2.y * cheight,
+                                        line.end.x * cwidth, line.end.y * cheight);
+                    var points = bez.getLUT();
+                    for (var j = 0; j < points.length; j++) {
+                        var dist = Math.sqrt(Math.pow(p.x - points[j].x, 2) + Math.pow(p.y - points[j].y, 2));
+                        if (dist < closest) {
+                            closest = dist;
+                            todelete = line;
+                        }
                     }
                 }
 
-                // Checks for beziers
-
-                //Picks closest line
-                var shortestdistance = 999999999;
-                for (var i = 0;i<shortlistedlines.length;i++) {
-                    if (shrtD(p,shortlistedlines[i]) < shortestdistance) {
-                        shortestdistance = shrtD(p,shortlistedlines[i])
-                        todelete = shortlistedlines[i];
-                    }
-                }
             }
 
             if (todelete != null) {
@@ -659,7 +730,5 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#titlehiddeninput').val(map_data.name);
         $("#submitform").submit();
     });
-
-
 
 });
