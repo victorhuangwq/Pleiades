@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/cuterxy/social-share-button.git
+  revision: 35e1920af4ae6eeb91bed0eaa8da625f236aee54
+  specs:
+    social-share-button (0.1.9)
+      coffee-rails
+      sass-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -127,9 +135,6 @@ GEM
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     simple_oauth (0.3.1)
-    social-share-button (0.1.8)
-      coffee-rails
-      sass-rails
     spring (1.3.6)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -182,7 +187,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
-  social-share-button
+  social-share-button (~> 0.1.8)!
   spring
   turbolinks
   twitter

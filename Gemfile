@@ -62,4 +62,4 @@ gem 'bootstrap-switch-rails'
 gem 'introjs-rails'
 
 #Social media sharing
-gem 'social-share-button'
+gem 'social-share-button', '~> 0.1.8', git: 'https://github.com/cuterxy/social-share-button.git'
