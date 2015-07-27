@@ -494,15 +494,15 @@ $(document).ready(function() {// Javascript object to store all map data
             redo_stack.splice(0, redo_stack.length);
 
 
-            var controlpoints, quarter1,quarter2;
+            var controlpoints, quarter1, quarter2;
             if($('#isStraight').bootstrapSwitch("state")){
 
               controlpoints = [startpos,pos];
 
             }
             else{
-              quarter1 = points[Math.floor((points.length)/4)]
-              quarter2 = points[Math.floor((points.length)*3/4)]
+              quarter1 = points[Math.floor((points.length)/4)];
+              quarter2 = points[Math.floor((points.length)*3/4)];
 
               controlpoints = get_control_points(startpos,quarter1,quarter2,pos);
             }
