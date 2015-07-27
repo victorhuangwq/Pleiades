@@ -10,7 +10,7 @@ $(document).ready(function() {
         <hr/>Use the <b>arrow keys</b> for navigation or hit <b>ESC</b> to exit the tour immediately.'
         },
         {
-          element:"#compass",
+          //element:"#compass",
           intro: "QuikMaps are simplified maps that gets the direction across to your guests and friends"
         },
         {
@@ -19,7 +19,7 @@ $(document).ready(function() {
         },
         {
           element: "#searchbutton",
-          intro: "Click on <strong>search</strong> to search existing QuikMaps"
+          intro: "Click on <strong>search</strong> to search existing QuikMaps",
         },
         {
           element: "#createbutton",
@@ -27,8 +27,8 @@ $(document).ready(function() {
         }
     ],
     doneLabel: 'Create QuikMap',
-    tooltipPosition: 'auto',
-    positionPrecedence: ['left', 'right', 'bottom', 'top']
+    //tooltipPosition: 'auto',
+    //positionPrecedence: ['bottom','left', 'right', 'top']
   });
 
   introguide.oncomplete(function(){
@@ -38,6 +38,7 @@ $(document).ready(function() {
   $('#tour').click(function(){
     //introJs().setOptions('doneLabel','Next page');
     introguide.start();
+    $('#myNavbar').collapse('false');
   });
 
 });

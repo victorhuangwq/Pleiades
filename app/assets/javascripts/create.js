@@ -3,16 +3,19 @@
 
 $(document).ready(function() {// Javascript object to store all map data
 
+
+    console.log(introTrue);
+
     $("#mobile").hide();
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      // You are in mobile browser
         $("#notinmobile").hide();
         $("#mobile").show();
+        introTrue = false;
     }
 
     //Intro Js QuikMap creation introduction
-    console.log(introTrue);
     var createguide = introJs();
     createguide.setOptions({
       steps: [
