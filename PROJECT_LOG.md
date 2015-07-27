@@ -71,3 +71,5 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-27|1000|3h|3h|Multiple bug fixes, adds ability to add points instead of landmarks, polishes mobile interface
 2015-07-27|1400|2h|2h|More bug fixes, adds social media integration
 2015-07-27|1600|1h|1h|More bug fixes, peer evaluation
+2015-07-27|1930|0h|1.5h|Adds tags to search
+2015-07-27|1930|2h|0h|Attempts to improve introduction tour
