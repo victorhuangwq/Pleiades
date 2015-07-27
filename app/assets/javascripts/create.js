@@ -723,7 +723,7 @@ $(document).ready(function() {// Javascript object to store all map data
             $("#undobutton").attr("disabled", true);
         } else {
             $("#undobutton").attr("disabled", false);
-        };
+        }
     }
 
     $("#submitbutton").click(function(e) {
