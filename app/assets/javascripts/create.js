@@ -664,6 +664,8 @@ $(document).ready(function() {// Javascript object to store all map data
     }
 
     function drawLine(line, ctx) {
+        var scaling_factor = cwidth/1000;
+
         linestartx = line.start.x * cwidth;
         linestarty = line.start.y * cheight;
         linectrl1x = line.ctrl1.x * cwidth;
@@ -677,12 +679,13 @@ $(document).ready(function() {// Javascript object to store all map data
         ctx.moveTo(linestartx, linestarty);
         ctx.bezierCurveTo(linectrl1x,linectrl1y,
           linectrl2x,linectrl2y,lineendx,lineendy);
-        ctx.lineWidth= 7;
+
+        ctx.lineWidth= 1 + 6 * scaling_factor;
         ctx.lineCap ='round';
         ctx.linejoin ="round";
         ctx.strokeStyle = "rgba(0, 153, 255, 0.5)";
         ctx.shadowColor = 'rgba(224,255,255,1)';
-        ctx.shadowBlur = 30;
+        ctx.shadowBlur = 10 + 20 * scaling_factor;
         ctx.stroke();
         ctx.closePath();
     }
