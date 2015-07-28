@@ -73,3 +73,5 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-27|1600|1h|1h|More bug fixes, peer evaluation
 2015-07-27|1930|0h|1.5h|Adds tags to search
 2015-07-27|1930|2h|0h|Attempts to improve introduction tour
+2015-07-27|1400|1h|0h|Improving introduction tour
+2015-07-27|1400|0h|1h|Making tags searchable, and ordering search results
