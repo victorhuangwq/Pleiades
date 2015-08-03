@@ -43,6 +43,9 @@
                         <button class="btn btn-default" type="submit">Find! <span class="glyphicon glyphicon-search"></span></button>
                     </span>
                 </div>
+                <div>
+                    <%= text_field_tag :tags, params[:tags], class: "form-control", style: "display:table-cell; width:100%", placeholder: "Tags separated by commas" %>
+                </div>
             <% end %>
         </div>
     </div>
