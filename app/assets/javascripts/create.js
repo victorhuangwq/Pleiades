@@ -446,9 +446,9 @@ $(document).ready(function() {// Javascript object to store all map data
       function form_equation(q1,q2){
 
         function equation(x){
-            var REALLYFUCKINGHIGHVALUE = 9999999999999;
+            var highvalue = 9999999999999;
             if(q1.x == q2.x) {
-                gradient = REALLYFUCKINGHIGHVALUE;
+                gradient = highvalue;
             } else {
                   gradient = (q2.y - q1.y)/(q2.x - q1.x);
               }
