@@ -130,6 +130,8 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#drawdiv').hide();
     $('#landmarkdiv').hide();
     $('#removediv').hide();
+    $('#undodiv').hide();
+    $('#redodiv').hide();
     $('#undobutton').attr("disabled", true);
     $('#redobutton').attr("disabled", true);
 
@@ -154,7 +156,7 @@ $(document).ready(function() {// Javascript object to store all map data
     });
 
     $('#undobutton').click( function() {
-        selected = 0;
+        selected = 5;
         var actiontoundo = undo_stack.pop();
 
         if (actiontoundo.action == "line") {
@@ -213,7 +215,7 @@ $(document).ready(function() {// Javascript object to store all map data
     });
 
     $('#redobutton').click( function() {
-        selected = 0;
+        selected = 6;
         var actiontoredo = redo_stack.pop();
         if (actiontoredo.action == "line") {
             var thisid = actiontoredo.data.id;
@@ -260,6 +262,8 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#drawdiv').hide();
         $('#landmarkdiv').hide();
         $('#removediv').hide();
+        $('#undodiv').hide();
+        $('#redodiv').hide();
 
         switch (selected) {
         case 1:
@@ -278,6 +282,11 @@ $(document).ready(function() {// Javascript object to store all map data
             $('#removebutton').attr("disabled", true);
             $('#removediv').show();
             break;
+        case 5:
+            $('#undodiv').show();
+            break;
+        case 6:
+            $('#redodiv').show();
         }
     });
 
