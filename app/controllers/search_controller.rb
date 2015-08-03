@@ -3,10 +3,10 @@ class SearchController < ApplicationController
         @visibility = "hidden"
         if params[:search]
             @visibility = "visible"
-            @maps = Map.search(params[:search]).order("created_at DESC");
+            @maps = Map.search(params[:search], params[:tags]);
         else
             @dummy = Map.create title: ""
-            @maps = [@dummy]
+            @maps = [[@dummy, 0]]
         end
     end
 end
