@@ -101,7 +101,18 @@ The creation application has been implemented with the following features:
 * Online sharing
         * Saving QuikMap in Heroku Postgres database
 
+######Milestone Three
+Alongside improving those in Milestone Two, the following features have been implemented:
+* Link-based Sharing
+* Responsive Page
+* Triangulation for location approximation
+* Downloadable QuikMaps
+* Searchable database
+* Link Shortening, especially for services with word count
+* Social-Media Sharing
+
 ####Planned Features
+A Checkbox with a cross inside refers to a completed feature.
 ######Core Features
 * [x] QuikMap Creation
     > QuikMaps contain a roughly drawn map and direction info that can be easily shared
