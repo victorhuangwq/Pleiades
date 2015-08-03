@@ -6,7 +6,7 @@ class SearchController < ApplicationController
             @maps = Map.search(params[:search], params[:tags]);
         else
             @dummy = Map.create title: ""
-            @maps = [@dummy]
+            @maps = [[@dummy, 0]]
         end
     end
 end
