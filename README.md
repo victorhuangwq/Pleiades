@@ -72,8 +72,15 @@ As an event creator, I want to check if there are existing maps that are to the 
 > The QuikMap database can be searched by end location, and/or by tags, under the search page
 
 ####User stories for future work
-######Give directions clearly
-As an event planner, I want to give directions to visitors in a clear way easily. *Big/General User story, will be broken down into solvable pieces*
+
+######Give directions that do not include unnecessary information
+As an event planner, I want to give directions that don't include additional confusing information that makes my maps hard to read.
+
+######Give directions that show clearly where to go
+As an event planner, I want to give directions that show directly the route the user has to take without needing to read a complete map to figure out
+
+######Give directions that users can easily use no matter where they start from
+As an event planner, I want to give directions that will allow users to start from wherever they currently are instead of finding their way to a fixed starting point
 
 ######Account Creation
 As an user/event planner who uses HowToGo frequently, I want to have an account that helps me track all the maps I favourited or made.

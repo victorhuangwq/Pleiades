@@ -1,0 +1,37 @@
+Proposed Level of Achievement Write-up
+
+Our team proposes that we should be granted the Project Gemini (Intermediate)
+level of achievement. It can be seen from the log that we have worked
+consistently throughout the past few months on our Orbital project, and have had
+many meetings to work together on the project. We have also met together to
+complete the peer evaluations.
+
+For Mission Controls, both of us have physically attended the Mission Controls
+and applied what we learnt from Bootstrap, which is the base of all our CSS
+and JS formatting, JQuery which we used to all our Javascript app programming,
+Google (which we did not apply since it was not a technical Mission Control),
+and Web Security, which we will soon apply to sanitize our inputs and prevent
+attacks on our web app.
+
+Our app is a web application with creation and retrieval of maps from a
+database. We have not implemented deletion yet, but we believe that the local
+app programming of map creation and viewing is equivalent in difficulty to that.
+
+We also implemented multiple extensions, which is part of the Gemini requirements.
+Our app is also based on Ruby on Rails instead of Google App Engine, allowing us
+greater flexibility with the Rails MVC and using Javascript / HTML. We also have
+social media integration in sharing our maps, and applied the above Mission
+Control technologies in our project. Through our use of Bootstrap, our website
+displays well and responsively in different screen sizes as well as mobile
+devices.
+
+An additional feature we added which is suggested for Apollo is our use of Git
+version control from the very start of the project.
+
+Regarding usability testing, due to time constraints, we have only been able to
+conduct limited informal tests with friends who happened to be nearby when we
+were working on our project.
+
+Despite this, we believe that what we have done above should be enough to be
+granted Project Gemini, and we hope that you think the same and will give us a
+minimum of 2.5/4 stars.
