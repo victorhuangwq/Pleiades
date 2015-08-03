@@ -2,9 +2,9 @@ Project Hours Log
 
 Github Contributions: https://github.com/XtrKiL/Pleiades/graphs/contributors
 
-Total Hours for Huang Weiqi Victor: 109
+Total Hours for Huang Weiqi Victor: 110
 
-Total Hours for Chua Hou: 111
+Total Hours for Chua Hou: 112
 
 Date|Time|# Hours Victor|# Hours Hou|Aspect
 ---|---|---|---|---
@@ -77,5 +77,5 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-27|1400|1h|0h|Improving introduction tour
 2015-07-27|1400|0h|1h|Making tags searchable, and ordering search results
 2015-07-29|1900|2h|2h|Mission Control - Web Security by NUS Greyhats
-2015-08-03|2000|4h|0h|Working on milestone 3
+2015-08-03|2000|5h|1h|Working on milestone 3
 2015-08-03|2000|0h|4h|Working on tag system and UI polishing
