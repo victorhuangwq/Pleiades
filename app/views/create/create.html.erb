@@ -29,7 +29,7 @@
               <li><a href="/search/search">Search</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><p class="navbar-text">Pleiades Orbital 2015</p></li>
+              <li><p class="navbar-text text-center"><strong>Pleiades Orbital 2015</strong></p></li>
             </ul>
          </div>
       </div>
@@ -64,10 +64,10 @@
                 <span class="glyphicon glyphicon-remove" aria-hidden="true" style="font-size:36px"></span>
             </button>
             <button id="undobutton" type="button" class="btn btn-info btn-lg" title="Undo">
-                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="font-size:36px"></span>
+                <%= image_tag("undo.svg", size:"36x36", :style => "-webkit-filter: invert(1); filter: invert(1);") %>
             </button>
             <button id="redobutton" type="button" class="btn btn-info btn-lg" title="Redo">
-                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="font-size:36px"></span>
+                <%= image_tag("redo.svg", size:"36x36", :style => "-webkit-filter: invert(1); filter: invert(1);") %>
             </button>
 
             <hr/>
@@ -123,9 +123,10 @@
 				<li>Click submit below!</li>
 			 </ol>-->
         <hr/>
-        <form action="/create/submit" method="post" id="submitform">
+        <form action="/create/submit" method="post" id="submitform" class="text-center">
             <input id="mapdatainput" type="hidden" name="map_data" value=""/>
             <input id="titlehiddeninput" type="hidden" name="title" value=""/>
+            <input id="tagsinput" type="text" name="tags" value="" placeholder="Write your tags here"/>
             <button id="submitbutton" type="submit" class="btn btn-lg btn-default btn-success text-center">Submit!</button>
         </form>
     	</div>

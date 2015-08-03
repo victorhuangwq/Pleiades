@@ -24,7 +24,7 @@
               <li><a href="/search/search">Search</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><p class="navbar-text">Pleiades Orbital 2015</p></li>
+              <li><p class="navbar-text text-center"><strong>Pleiades Orbital 2015</strong></p></li>
             </ul>
          </div>
       </div>
@@ -43,6 +43,9 @@
                         <button class="btn btn-default" type="submit">Find! <span class="glyphicon glyphicon-search"></span></button>
                     </span>
                 </div>
+                <div>
+                    <%= text_field_tag :tags, params[:tags], class: "form-control", style: "display:table-cell; width:100%", placeholder: "Tags separated by commas" %>
+                </div>
             <% end %>
         </div>
     </div>
@@ -58,18 +61,13 @@
 	</div>
 
     <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
-        <!--<ul>
-            <% @maps.each do |map| %>
-            <% if map.title != "" %>
-                <li><%= map.title %>: <a href="<%=map.shortURL%>">Link</a></li>
-            <% end %>
-            <% end %>
-        </ul> -->
         <div class = "list-group">
           <% @maps.each do |map| %>
-          <% if map.title != "" %>
-            <a href="\view\view?mapid=<%=map.id%>" class = "list-group-item "><span class="col-lg-9 col-md-9 col-sm-12 col-xs-12">QuikMap To: <b><%=map.title %></b></span>
-              <span>Created: <%=map.created_at.strftime('%a %d %b %Y') %></span></a>
+          <% if map[0].title != "" %>
+            <a href="\view\view?mapid=<%=map[0].id%>" class = "list-group-item"><span class="col-lg-6 col-md-6 col-sm-12 col-xs-12">QuikMap To: <b><%=map[0].title %></b></span>
+              <span class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Created: <%=map[0].created_at.strftime('%a %d %b %Y') %></span>
+              <span>Tags: <%=map[0].all_tags%>
+            </a>
           <% end %>
           <% end %>
         </div>
