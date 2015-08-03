@@ -75,3 +75,4 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-27|1930|2h|0h|Attempts to improve introduction tour
 2015-07-27|1400|1h|0h|Improving introduction tour
 2015-07-27|1400|0h|1h|Making tags searchable, and ordering search results
+2015-07-29|1900|2h|2h|Mission Control - Web Security by NUS Greyhats

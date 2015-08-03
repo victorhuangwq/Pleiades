@@ -47,16 +47,19 @@ As a user, I want the page to load fast so I can access them easily when walking
 As an event planner, I want to be able to shorten my links easily to distribute them to people.
 > The app currently uses Bitly as the link shortening.
 
+######Approximate where I am on the QuikMap
+As a map user, I want to be able to locate myself without the use of GPS.
+> On the View page of the page, you can use the "Where Am I?" button to approximate where you are on the map! It asks the users to list down the landmarks they can see around them to approximate
+
 ######Offline Access
 As a user, I want to be able to download the information easily for access offline.
 > The view page of the app allows for map download
 
+
+
 ####User stories to be resolved
 ######Give directions clearly
 As an event planner, I want to give directions to visitors in a clear way easily. *Big/General User story, will be broken down into solvable pieces*
-
-######Approximate where I am on the QuikMap
-As a map user, I want to be able to locate myself without the use of GPS.
 
 ######Good Mobile Interface
 As a user, I want to be able to view the information on my phone with a suitable layout. *Big/General User story, will be broken down into solvable pieces*
