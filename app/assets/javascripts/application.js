@@ -16,5 +16,4 @@
 //= require bootstrap-sprockets
 //= require bootstrap-switch
 //= require introjs
-//= require hopscotch
 //= require social-share-button

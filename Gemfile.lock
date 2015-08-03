@@ -63,7 +63,6 @@ GEM
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     hike (1.2.3)
-    hopscotch-rails (0.1.2.1)
     http (0.6.4)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
@@ -180,7 +179,6 @@ DEPENDENCIES
   bitly
   bootstrap-sass (~> 3.3.4.1)
   bootstrap-switch-rails
-  hopscotch-rails
   introjs-rails
   jbuilder (~> 2.0)
   jquery-rails
