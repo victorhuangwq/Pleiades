@@ -16,15 +16,15 @@ $(document).ready(function() {
         },
         {
           element:"#myNavbar",
-          intro: "Either <b>Search</b> for an existing QuikMap to your destination, or <b>Create</b> one of your own!"
+          intro: "Either <b>Search</b> for an existing QuikMap to your destination, or <b>Create</b> one of your own."
         },
         {
           element: "#searchbutton",
-          intro: "Click on <strong>search</strong> to search existing QuikMaps",
+          intro: "Click on <strong>Search</strong> to search existing QuikMaps",
         },
         {
           element: "#createbutton",
-          intro: "Now let's dive into how to create a QuikMaps"
+          intro: "Now let's try creating a QuikMap"
         }
     ],
     doneLabel: 'Create QuikMap',
