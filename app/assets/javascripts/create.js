@@ -25,7 +25,7 @@ $(document).ready(function() {// Javascript object to store all map data
           },
           {
             element:"#canvas",
-            intro:"<h3>The Map Canvas</h3><hr/>"
+            intro:"<h3>The Map Canvas</h3><hr/>You will be drawing your map here."
           },
           {
             element:"#toolbar",
@@ -46,22 +46,17 @@ $(document).ready(function() {// Javascript object to store all map data
             intro:"<strong>Secondly</strong>, draw the routes/paths \
               from your starting point to your endpoint using the draw tool:<br>\
               <center><span class='glyphicon glyphicon-pencil' aria-hidden='true' style='font-size:36px'></span></center><hr\>\
-              <strong>After which</strong>, add your start and end point!<br><br>\
+              <strong>After which</strong>, add your start and end point.<br><br>\
               <center><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:36px'></span></center>",
           },
           {
             element:"#editpane",
             intro:"<strong>Next</strong>, add in the landmarks that\
-              you can see as you travel along your route. <br><br> Usually\
-                 <ul>\
-                   <li><b>2</b> per lane</li>\
-                   <li><b>1</b> (more) per junction</li>\
-                 </ul>\
-               "
+              you can see as you travel along your route."
           },
           {
             element:"#submitbutton",
-            intro:"<strong>Lastly</strong>, submit your QuikMap, so that you can share it!"
+            intro:"<strong>Lastly</strong>, submit your QuikMap, so that you can share it."
           }
       ],
       doneLabel: 'Done',

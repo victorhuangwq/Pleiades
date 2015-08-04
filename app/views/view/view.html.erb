@@ -40,7 +40,7 @@
     </div>
 
     <div class="text-center">
-        <p><strong>Share your map!</strong>
+        <p><strong>Share your map:</strong>
         <%= social_share_button_tag("See my QuikMap at:", :popup => true, :url => @map.shortURL, via: 'howtogopleiades') %></p>
     </div>
 
@@ -56,30 +56,30 @@
 
     <div class="row col-lg-8 col-md-8 col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-1 ui-widget-header" id="usertools">
           <form class="form-inline text-center">
-              <b>QuikMap ShortLink : </b>
+              <b>Shortened link: </b>
               <input type="text" class='form-control' id="copyLinkArea" value="<%= @map.shortURL %>">
               <button class="btn btn-default" type="button" id="copyLinkButton"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Copy </button>
               <div class="btn-group dropup">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  Download Map
+                  Download map
                 <span class="caret"></span>
                 </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a id="download_low" download="image.jpg">Low Quality</a></li>
-                    <li><a id="download_high">High Quality</a></li>
+                    <li><a id="download_low" download="image.jpg">Low quality</a></li>
+                    <li><a id="download_high">High quality</a></li>
                   </ul>
               </div>
               <!-- Pseudo - Triangulation -->
               <div class="btn-group dropup">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Where Am I? <span class="caret"></span>
+                  Find yourself <span class="caret"></span>
                 </button>
                 <div id="no_close" class="dropdown-menu">
-                  <p style ="padding:5px"> Enter landmarks that you see around you.</p>
+                  <p style ="padding:5px"> Enter landmarks that you can see around you</p>
                   <ul id="triangle_landmarks" class="list-unstyled">
                   </ul>
                   <li role="separator" class="divider"></li>
-                  &nbsp;&nbsp;&nbsp;<button id="triangle_submit" class="btn btn-default" type="button">Submit </button>
+                  &nbsp;&nbsp;&nbsp;<button id="triangle_submit" class="btn btn-default" type="button">Submit</button>
                 </div>
               </div>
           </form>

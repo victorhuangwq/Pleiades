@@ -8808,6 +8808,21 @@ button.close {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
+
+/* line 24, /Users/davidson/Projects/Pleiades/app/assets/stylesheets/application.css.sass */
+.introjs-tooltipReferenceLayer {
+  visibility: hidden;
+}
+
+/* line 28, /Users/davidson/Projects/Pleiades/app/assets/stylesheets/application.css.sass */
+.introjs-helperNumberLayer {
+  visibility: visible;
+}
+
+/* line 32, /Users/davidson/Projects/Pleiades/app/assets/stylesheets/application.css.sass */
+.introjs-tooltip {
+  visibility: visible;
+}
 .introjs-overlay{position:absolute;z-index:999999;background-color:#000;opacity:0;background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.4)),color-stop(100%,rgba(0,0,0,0.9)));background:-webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);background:-webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.4) 0, rgba(0,0,0,0.9) 100%);background:radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#e6000000',GradientType=1);-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50);-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.introjs-fixParent{z-index:auto!important;opacity:1.0!important;position:absolute!important;-webkit-transform:none!important;-ms-transform:none!important;transform:none!important}.introjs-showElement,tr.introjs-showElement>td,tr.introjs-showElement>th{z-index:9999999!important}.introjs-disableInteraction{z-index:99999999!important;position:absolute}.introjs-relativePosition,tr.introjs-showElement>td,tr.introjs-showElement>th{position:relative}.introjs-helperLayer{position:absolute;z-index:9999998;background-color:#FFF;background-color:rgba(255,255,255,.9);border:1px solid #777;border:1px solid rgba(0,0,0,.5);border-radius:4px;box-shadow:0 2px 15px rgba(0,0,0,.4);-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.introjs-tooltipReferenceLayer{position:absolute;z-index:10000000;background-color:transparent;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.introjs-helperLayer *,.introjs-helperLayer *:before,.introjs-helperLayer *:after{-ms-box-sizing:content-box;-o-box-sizing:content-box;box-sizing:content-box}.introjs-helperNumberLayer{position:absolute;top:-16px;left:-16px;z-index:9999999999!important;padding:2px;font-family:Arial,verdana,tahoma;font-size:13px;font-weight:bold;color:white;text-align:center;text-shadow:1px 1px 1px rgba(0,0,0,.3);background:#ff3019;background:-webkit-linear-gradient(top,#ff3019 0,#cf0404 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff3019),color-stop(100%,#cf0404));background:-webkit-linear-gradient(top, #ff3019 0, #cf0404 100%);background:linear-gradient(to bottom,#ff3019 0,#cf0404 100%);width:20px;height:20px;line-height:20px;border:3px solid white;border-radius:50%;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019',endColorstr='#cf0404',GradientType=0);filter:progid:DXImageTransform.Microsoft.Shadow(direction=135,strength=2,color=ff0000);box-shadow:0 2px 5px rgba(0,0,0,.4)}.introjs-arrow{border:5px solid white;content:'';position:absolute}.introjs-arrow.top{top:-10px;border-top-color:transparent;border-right-color:transparent;border-bottom-color:white;border-left-color:transparent}.introjs-arrow.top-right{top:-10px;right:10px;border-top-color:transparent;border-right-color:transparent;border-bottom-color:white;border-left-color:transparent}.introjs-arrow.top-middle{top:-10px;left:50%;margin-left:-5px;border-top-color:transparent;border-right-color:transparent;border-bottom-color:white;border-left-color:transparent}.introjs-arrow.right{right:-10px;top:10px;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:white}.introjs-arrow.right-bottom{bottom:10px;right:-10px;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:white}.introjs-arrow.bottom{bottom:-10px;border-top-color:white;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent}.introjs-arrow.left{left:-10px;top:10px;border-top-color:transparent;border-right-color:white;border-bottom-color:transparent;border-left-color:transparent}.introjs-arrow.left-bottom{left:-10px;bottom:10px;border-top-color:transparent;border-right-color:white;border-bottom-color:transparent;border-left-color:transparent}.introjs-tooltip{position:absolute;padding:10px;background-color:white;min-width:200px;max-width:300px;border-radius:3px;box-shadow:0 1px 10px rgba(0,0,0,.4);-webkit-transition:opacity .1s ease-out;transition:opacity .1s ease-out}.introjs-tooltipbuttons{text-align:right;white-space:nowrap}.introjs-button{position:relative;overflow:visible;display:inline-block;padding:.3em .8em;border:1px solid #d4d4d4;margin:0;text-decoration:none;text-shadow:1px 1px 0 #fff;font:11px/normal sans-serif;color:#333;white-space:nowrap;cursor:pointer;outline:0;background-color:#ececec;background-image:-webkit-gradient(linear,0 0,0 100%,from(#f4f4f4),to(#ececec));background-image:-webkit-linear-gradient(#f4f4f4, #ececec);background-image:linear-gradient(#f4f4f4,#ececec);-webkit-background-clip:padding;-moz-background-clip:padding;-o-background-clip:padding-box;border-radius:.2em;zoom:1;*display:inline;margin-top:10px}.introjs-button:hover{border-color:#bcbcbc;text-decoration:none;box-shadow:0 1px 1px #e3e3e3}.introjs-button:focus,.introjs-button:active{background-image:-webkit-gradient(linear,0 0,0 100%,from(#ececec),to(#f4f4f4));background-image:-webkit-linear-gradient(#ececec, #f4f4f4);background-image:linear-gradient(#ececec,#f4f4f4)}.introjs-button::-moz-focus-inner{padding:0;border:0}.introjs-skipbutton{margin-right:5px;color:#7a7a7a}.introjs-prevbutton{border-radius:.2em 0 0 .2em;border-right:0}.introjs-nextbutton{border-radius:0 .2em .2em 0}.introjs-disabled,.introjs-disabled:hover,.introjs-disabled:focus{color:#9a9a9a;border-color:#d4d4d4;box-shadow:none;cursor:default;background-color:#f4f4f4;background-image:none;text-decoration:none}.introjs-bullets{text-align:center}.introjs-bullets ul{clear:both;margin:15px auto 0;padding:0;display:inline-block}.introjs-bullets ul li{list-style:none;float:left;margin:0 2px}.introjs-bullets ul li a{display:block;width:6px;height:6px;background:#ccc;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;text-decoration:none}.introjs-bullets ul li a:hover{background:#999}.introjs-bullets ul li a.active{background:#999}.introjs-progress{overflow:hidden;height:10px;margin:10px 0 5px 0;border-radius:4px;background-color:#ecf0f1}.introjs-progressbar{float:left;width:0;height:100%;font-size:10px;line-height:10px;text-align:center;background-color:#08c}.introjsFloatingElement{position:absolute;height:0;width:0;left:50%;top:50%}
 /*
 
@@ -8839,7 +8854,7 @@ button.close {
           80x64
 
 */
-/* line 32, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 32, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-baidu {
   display: inline-block;
   width: 16px;
@@ -8847,7 +8862,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") 0px 0px no-repeat;
 }
 
-/* line 33, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 33, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-delicious {
   display: inline-block;
   width: 16px;
@@ -8855,7 +8870,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -16px 0px no-repeat;
 }
 
-/* line 34, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 34, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-douban {
   display: inline-block;
   width: 16px;
@@ -8863,7 +8878,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") 0px -16px no-repeat;
 }
 
-/* line 35, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 35, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-email {
   display: inline-block;
   width: 16px;
@@ -8871,7 +8886,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -16px -16px no-repeat;
 }
 
-/* line 36, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 36, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-facebook {
   display: inline-block;
   width: 16px;
@@ -8879,7 +8894,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -32px 0px no-repeat;
 }
 
-/* line 37, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 37, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-flickr {
   display: inline-block;
   width: 16px;
@@ -8887,7 +8902,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -32px -16px no-repeat;
 }
 
-/* line 38, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 38, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-google_bookmark {
   display: inline-block;
   width: 16px;
@@ -8895,7 +8910,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") 0px -32px no-repeat;
 }
 
-/* line 39, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 39, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-google_plus {
   display: inline-block;
   width: 16px;
@@ -8903,7 +8918,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -16px -32px no-repeat;
 }
 
-/* line 40, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 40, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-kaixin001 {
   display: inline-block;
   width: 16px;
@@ -8911,7 +8926,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -32px -32px no-repeat;
 }
 
-/* line 41, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 41, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-pinterest {
   display: inline-block;
   width: 16px;
@@ -8919,7 +8934,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -48px 0px no-repeat;
 }
 
-/* line 42, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 42, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-plurk {
   display: inline-block;
   width: 16px;
@@ -8927,7 +8942,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -48px -16px no-repeat;
 }
 
-/* line 43, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 43, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-qq {
   display: inline-block;
   width: 16px;
@@ -8935,7 +8950,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -48px -32px no-repeat;
 }
 
-/* line 44, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 44, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-renren {
   display: inline-block;
   width: 16px;
@@ -8943,7 +8958,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") 0px -48px no-repeat;
 }
 
-/* line 45, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 45, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-tqq {
   display: inline-block;
   width: 16px;
@@ -8951,7 +8966,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -16px -48px no-repeat;
 }
 
-/* line 46, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 46, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-tumblr {
   display: inline-block;
   width: 16px;
@@ -8959,7 +8974,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -32px -48px no-repeat;
 }
 
-/* line 47, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 47, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-twitter {
   display: inline-block;
   width: 16px;
@@ -8967,7 +8982,7 @@ button.close {
   background: url("/assets/sprites/social-share-button.png") -48px -48px no-repeat;
 }
 
-/* line 48, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+/* line 48, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
 .social-share-button-weibo {
   display: inline-block;
   width: 16px;
@@ -8976,7 +8991,7 @@ button.close {
 }
 
 @media only screen and (-webkit-device-pixel-ratio: 2) {
-  /* line 51, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 51, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-baidu {
     display: inline-block;
     width: 16px;
@@ -8985,7 +9000,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 52, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 52, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-delicious {
     display: inline-block;
     width: 16px;
@@ -8994,7 +9009,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 53, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 53, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-douban {
     display: inline-block;
     width: 16px;
@@ -9003,7 +9018,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 54, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 54, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-email {
     display: inline-block;
     width: 16px;
@@ -9012,7 +9027,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 55, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 55, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-facebook {
     display: inline-block;
     width: 16px;
@@ -9021,7 +9036,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 56, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 56, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-flickr {
     display: inline-block;
     width: 16px;
@@ -9030,7 +9045,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 57, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 57, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-google_bookmark {
     display: inline-block;
     width: 16px;
@@ -9039,7 +9054,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 58, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 58, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-google_plus {
     display: inline-block;
     width: 16px;
@@ -9048,7 +9063,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 59, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 59, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-kaixin001 {
     display: inline-block;
     width: 16px;
@@ -9057,7 +9072,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 60, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 60, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-pinterest {
     display: inline-block;
     width: 16px;
@@ -9066,7 +9081,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 61, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 61, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-plurk {
     display: inline-block;
     width: 16px;
@@ -9075,7 +9090,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 62, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 62, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-qq {
     display: inline-block;
     width: 16px;
@@ -9084,7 +9099,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 63, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 63, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-renren {
     display: inline-block;
     width: 16px;
@@ -9093,7 +9108,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 64, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 64, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-tqq {
     display: inline-block;
     width: 16px;
@@ -9102,7 +9117,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 65, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 65, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-tumblr {
     display: inline-block;
     width: 16px;
@@ -9111,7 +9126,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 66, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 66, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-twitter {
     display: inline-block;
     width: 16px;
@@ -9120,7 +9135,7 @@ button.close {
     background-size: 80px 64px;
   }
 
-  /* line 67, /Users/davidson/.rvm/gems/ruby-2.2.1/gems/social-share-button-0.1.8/app/assets/stylesheets/social-share-button.scss */
+  /* line 67, /Users/davidson/.rvm/gems/ruby-2.2.1/bundler/gems/social-share-button-35e1920af4ae/app/assets/stylesheets/social-share-button.scss */
   .social-share-button-weibo {
     display: inline-block;
     width: 16px;
