@@ -25,7 +25,7 @@ $(document).ready(function() {// Javascript object to store all map data
           },
           {
             element:"#canvas",
-            intro:"<h3>The Map Canvas</h3><hr/>"
+            intro:"<h3>The Map Canvas</h3><hr/>You will be drawing your map here."
           },
           {
             element:"#toolbar",
@@ -46,22 +46,17 @@ $(document).ready(function() {// Javascript object to store all map data
             intro:"<strong>Secondly</strong>, draw the routes/paths \
               from your starting point to your endpoint using the draw tool:<br>\
               <center><span class='glyphicon glyphicon-pencil' aria-hidden='true' style='font-size:36px'></span></center><hr\>\
-              <strong>After which</strong>, add your start and end point!<br><br>\
+              <strong>After which</strong>, add your start and end point.<br><br>\
               <center><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:36px'></span></center>",
           },
           {
             element:"#editpane",
             intro:"<strong>Next</strong>, add in the landmarks that\
-              you can see as you travel along your route. <br><br> Usually\
-                 <ul>\
-                   <li><b>2</b> per lane</li>\
-                   <li><b>1</b> (more) per junction</li>\
-                 </ul>\
-               "
+              you can see as you travel along your route."
           },
           {
             element:"#submitbutton",
-            intro:"<strong>Lastly</strong>, submit your QuikMap, so that you can share it!"
+            intro:"<strong>Lastly</strong>, submit your QuikMap, so that you can share it."
           }
       ],
       doneLabel: 'Done',
@@ -80,7 +75,7 @@ $(document).ready(function() {// Javascript object to store all map data
 
 
     //bootstrapSwitch
-    $('#isStraight').bootstrapSwitch('state',false);
+    $('#isStraight').bootstrapSwitch('state',true);
     $('#isStraight').bootstrapSwitch("onText",'Straight');
     $('#isStraight').bootstrapSwitch("offText",'Curvy');
     $('#isStraight').bootstrapSwitch("onColor",'primary');
@@ -130,6 +125,8 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#drawdiv').hide();
     $('#landmarkdiv').hide();
     $('#removediv').hide();
+    $('#undodiv').hide();
+    $('#redodiv').hide();
     $('#undobutton').attr("disabled", true);
     $('#redobutton').attr("disabled", true);
 
@@ -154,7 +151,7 @@ $(document).ready(function() {// Javascript object to store all map data
     });
 
     $('#undobutton').click( function() {
-        selected = 0;
+        selected = 5;
         var actiontoundo = undo_stack.pop();
 
         if (actiontoundo.action == "line") {
@@ -213,7 +210,7 @@ $(document).ready(function() {// Javascript object to store all map data
     });
 
     $('#redobutton').click( function() {
-        selected = 0;
+        selected = 6;
         var actiontoredo = redo_stack.pop();
         if (actiontoredo.action == "line") {
             var thisid = actiontoredo.data.id;
@@ -260,6 +257,8 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#drawdiv').hide();
         $('#landmarkdiv').hide();
         $('#removediv').hide();
+        $('#undodiv').hide();
+        $('#redodiv').hide();
 
         switch (selected) {
         case 1:
@@ -278,6 +277,11 @@ $(document).ready(function() {// Javascript object to store all map data
             $('#removebutton').attr("disabled", true);
             $('#removediv').show();
             break;
+        case 5:
+            $('#undodiv').show();
+            break;
+        case 6:
+            $('#redodiv').show();
         }
     });
 
@@ -446,9 +450,9 @@ $(document).ready(function() {// Javascript object to store all map data
       function form_equation(q1,q2){
 
         function equation(x){
-            var REALLYFUCKINGHIGHVALUE = 9999999999999;
+            var highvalue = 9999999999999;
             if(q1.x == q2.x) {
-                gradient = REALLYFUCKINGHIGHVALUE;
+                gradient = highvalue;
             } else {
                   gradient = (q2.y - q1.y)/(q2.x - q1.x);
               }
