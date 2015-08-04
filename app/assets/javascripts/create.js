@@ -247,6 +247,16 @@ $(document).ready(function() {// Javascript object to store all map data
         update_canvas(map_data);
     });
 
+    $('#isStraight').on('switchChange.bootstrapSwitch', function(event, state) {
+      if (!state) {
+        console.log("show");
+        $("#curvydiv").show();
+      } else {
+        console.log("hide");
+        $("#curvydiv").hide();
+      }
+    });
+
     $('#toolbar').click( function() {
 
         $('#selectbutton').attr("disabled", false);
@@ -259,6 +269,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#removediv').hide();
         $('#undodiv').hide();
         $('#redodiv').hide();
+        $("#curvydiv").hide();
 
         switch (selected) {
         case 1:
@@ -267,6 +278,9 @@ $(document).ready(function() {// Javascript object to store all map data
             break;
         case 2:
             $('#drawbutton').attr("disabled", true);
+            if (!$('#isStraight').bootstrapSwitch("state")) {
+              $("#curvydiv").show();
+            }
             $('#drawdiv').show();
             break;
         case 3:
