@@ -65,7 +65,7 @@
           <% @maps.each do |map| %>
           <% if map[0].title != "" %>
             <a href="\view\view?mapid=<%=map[0].id%>" class = "list-group-item"><span class="col-lg-6 col-md-6 col-sm-12 col-xs-12">QuikMap To: <b><%=map[0].title %></b></span>
-              <span class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Created: <%=map[0].created_at.strftime('%a %d %b %Y') %></span>
+              <span class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Created: <%=map[0].created_at.strftime('%d %b %Y') %></span>
               <span>Tags: <%=map[0].all_tags%>
             </a>
           <% end %>

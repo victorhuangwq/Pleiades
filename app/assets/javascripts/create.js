@@ -75,7 +75,7 @@ $(document).ready(function() {// Javascript object to store all map data
 
 
     //bootstrapSwitch
-    $('#isStraight').bootstrapSwitch('state',false);
+    $('#isStraight').bootstrapSwitch('state',true);
     $('#isStraight').bootstrapSwitch("onText",'Straight');
     $('#isStraight').bootstrapSwitch("offText",'Curvy');
     $('#isStraight').bootstrapSwitch("onColor",'primary');
