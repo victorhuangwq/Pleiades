@@ -28,7 +28,7 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-06-07|2000|1h|1h|Peer Evaluation
 2015-06-09|1330|2h|2h|Debugging JS
 2015-06-10|1000|3h|3h|Re-setup server / Debugging Rails
-2015-06-10|1800|3h|3h|Mission Control - Google Great experience!
+2015-06-10|1800|3h|3h|Mission Control - The great Google experience!
 2015-06-16|2100|1h|0h|Reading up on HTML5 canvas
 2015-06-16|2200|0h|1h|Reading up on JSON
 2015-06-17|0800|2h|2h|Creating canvas and basic line drawing functionality
