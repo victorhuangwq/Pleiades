@@ -20,47 +20,48 @@ $(document).ready(function() {// Javascript object to store all map data
     createguide.setOptions({
       steps: [
           {
-            intro: 'This is the QuikMap creation page'
-          },
-          {
-            element:"#nameMap",
-            intro: "Name your map after its destination. \
-              This is so that other people can search for it easily"
+            intro: '<h3>The QuikMap Create Page</h3><hr/> \
+            Where concise direction giving QuikMaps are made'
           },
           {
             element:"#canvas",
-            intro:"The map canvas"
+            intro:"<h3>The Map Canvas</h3><hr/>You will be drawing your map here."
           },
           {
             element:"#toolbar",
-            intro:"The toolbar, with all the tools you need to \
+            intro:"<h3>The Toolbar</h3><hr/>It contains all the tools you need to \
               create your own QuikMap. Click on them to know what they do"
           },
           {
-            intro:"Now some tips on how to draw a QuikMap"
+            intro:"<h3>Tips to draw a Good QuikMap</h3>"
           },
           {
-            element:"#drawbutton",
-            intro:"<strong>Firstly</strong>, draw the routes/paths \
-              from your starting point to your endpoint"
+            element:"#nameMap",
+            intro: "<strong>Firstly</strong>, name your map after its destination. \
+              E.g. Pizzahut near Chinatown MRT \
+              or E.g. John Tan's Wedding Reception "
           },
           {
-            element:"#landmarkbutton",
-            intro:"<strong>Secondly</strong>, add in the landmarks that\
-              you can see as you travel along your route. Usually\
-               <ul>\
-                 <li><b>3</b> per junction</li>\
-                 <li><b>2</b> per lane</li>\
-               </ul>"
+            element:"#editpane",
+            intro:"<strong>Secondly</strong>, draw the routes/paths \
+              from your starting point to your endpoint using the draw tool:<br>\
+              <center><span class='glyphicon glyphicon-pencil' aria-hidden='true' style='font-size:36px'></span></center><hr\>\
+              <strong>After which</strong>, add your start and end point.<br><br>\
+              <center><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:36px'></span></center>",
+          },
+          {
+            element:"#editpane",
+            intro:"<strong>Next</strong>, add in the landmarks that\
+              you can see as you travel along your route."
           },
           {
             element:"#submitbutton",
-            intro:"<strong>Lastly</strong>, remember to submit your QuikMap, so that you can share it!"
+            intro:"<strong>Lastly</strong>, submit your QuikMap, so that you can share it."
           }
       ],
       doneLabel: 'Done',
       tooltipPosition: 'auto',
-      positionPrecedence: ['left', 'right', 'bottom', 'top'],
+      positionPrecedence: ['bottom','left', 'right', 'top'],
       disableInteraction: false
     });
 
@@ -69,13 +70,12 @@ $(document).ready(function() {// Javascript object to store all map data
     }
 
     $('#howtousebutton').click(function(){
-      console.log("???");
-      createguide.goToStep(6).start();
+        createguide.goToStep(5).start();
     });
 
 
     //bootstrapSwitch
-    $('#isStraight').bootstrapSwitch('state',false);
+    $('#isStraight').bootstrapSwitch('state',true);
     $('#isStraight').bootstrapSwitch("onText",'Straight');
     $('#isStraight').bootstrapSwitch("offText",'Curvy');
     $('#isStraight').bootstrapSwitch("onColor",'primary');
@@ -125,27 +125,33 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#drawdiv').hide();
     $('#landmarkdiv').hide();
     $('#removediv').hide();
+    $('#undodiv').hide();
+    $('#redodiv').hide();
     $('#undobutton').attr("disabled", true);
     $('#redobutton').attr("disabled", true);
 
     $('#selectbutton').click( function() {
         selected = 1;
+      $('#blankdiv').hide();
     });
 
     $('#drawbutton').click( function() {
         selected = 2;
+        $('#blankdiv').hide();
     });
 
     $('#landmarkbutton').click( function() {
         selected = 3;
+        $('#blankdiv').hide();
     });
 
     $('#removebutton').click( function() {
         selected = 4;
+        $('#blankdiv').hide();
     });
 
     $('#undobutton').click( function() {
-        selected = 0;
+        selected = 5;
         var actiontoundo = undo_stack.pop();
 
         if (actiontoundo.action == "line") {
@@ -204,7 +210,7 @@ $(document).ready(function() {// Javascript object to store all map data
     });
 
     $('#redobutton').click( function() {
-        selected = 0;
+        selected = 6;
         var actiontoredo = redo_stack.pop();
         if (actiontoredo.action == "line") {
             var thisid = actiontoredo.data.id;
@@ -251,6 +257,8 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#drawdiv').hide();
         $('#landmarkdiv').hide();
         $('#removediv').hide();
+        $('#undodiv').hide();
+        $('#redodiv').hide();
 
         switch (selected) {
         case 1:
@@ -269,6 +277,11 @@ $(document).ready(function() {// Javascript object to store all map data
             $('#removebutton').attr("disabled", true);
             $('#removediv').show();
             break;
+        case 5:
+            $('#undodiv').show();
+            break;
+        case 6:
+            $('#redodiv').show();
         }
     });
 
@@ -437,9 +450,9 @@ $(document).ready(function() {// Javascript object to store all map data
       function form_equation(q1,q2){
 
         function equation(x){
-            var REALLYFUCKINGHIGHVALUE = 9999999999999;
+            var highvalue = 9999999999999;
             if(q1.x == q2.x) {
-                gradient = REALLYFUCKINGHIGHVALUE;
+                gradient = highvalue;
             } else {
                   gradient = (q2.y - q1.y)/(q2.x - q1.x);
               }
