@@ -8,6 +8,7 @@
 2. Links
 3. User Stories
 4. Features
+5. Proposed Level of Achievement
 
 ##Overview
 Our project aims to revolutionize the direction giving process by
@@ -21,16 +22,16 @@ When people are navigating, especially in an indoors area, be it an office build
 
 In addition, large maps like Google Maps can only provide directions to a general location. For example, to ABC Road but Google Map does not display the location of any shop around there, and this is where HowToGo comes in. It directs people to <b>specific</b> locations.(Provided that they can get to the general location, like a MRT Station)
 
-####Ignition Links
+##Links
 * Our [Application](http://pleiadesorbital.herokuapp.com)
 * Milestone 2 video: [Link](https://youtu.be/kokcFMfpR8c)
-* Our ignition slide: [Link](http://puu.sh/i7TQv/c23bc5939d.png)
+* Ignition slide: [Link](http://puu.sh/i7TQv/c23bc5939d.png)
 * Ignition Video: [Link](https://www.youtube.com/watch?v=QKuLLNVGvow)
 
 ##User Stories
 Also located in our GitHub Issues: [Pleiades Issues](https://github.com/XtrKiL/Pleiades/issues)
 
-####Implemented User Stories(Features that are done)
+####Implemented User Stories (Features that are done)
 ######Select Scale of Map
 As an event planner, I want to select the scale of the map I'm creating.
 > QuikMaps do not have a built in scale so event planners are able to freely create a map of any scale.
@@ -149,27 +150,64 @@ A Checkbox with a cross inside refers to a completed feature.
 * [ ] A way to make QuikMaps on the go, on the phones
     > Pretty hard to draw a map on a phone. Need to think of an alternative method.
 
+##Proposed Level of Achievement
+Our team proposes that we should be granted the Project Gemini (Intermediate)
+level of achievement. It can be seen from the log that we have worked
+consistently throughout the past few months on our Orbital project, and have had
+many meetings to work together on the project. We have also met together to
+complete the peer evaluations.
+
+For Mission Controls, both of us have physically attended the Mission Controls
+and applied what we learnt from Bootstrap, which is the base of all our CSS
+and JS formatting, JQuery which we used to all our Javascript app programming,
+Google (which we did not apply since it was not a technical Mission Control),
+and Web Security, which we will soon apply to sanitize our inputs and prevent
+attacks on our web app.
+
+Our app is a web application with creation and retrieval of maps from a
+database. We have not implemented deletion yet, but we believe that the local
+app programming of map creation and viewing is equivalent in difficulty to that.
+
+We also implemented multiple extensions, which is part of the Gemini requirements.
+Our app is also based on Ruby on Rails instead of Google App Engine, allowing us
+greater flexibility with the Rails MVC and using Javascript / HTML. We also have
+social media integration in sharing our maps, and applied the above Mission
+Control technologies in our project. Through our use of Bootstrap, our website
+displays well and responsively in different screen sizes as well as mobile
+devices.
+
+An additional feature we added which is suggested for Apollo is our use of Git
+version control from the very start of the project.
+
+Regarding usability testing, due to time constraints, we have only been able to
+conduct limited informal tests with friends who happened to be nearby when we
+were working on our project.
+
+Despite this, we believe that what we have done above should be enough to be
+granted Project Gemini, and we hope that you think the same and will give us a
+minimum of 3 stars (you know you want to give us 4).
+
 ###References used
 ####For learning
-- INVEST [Wiki](https://en.wikipedia.org/wiki/INVEST_(mnemonic))
-- Codeacademy for [Ruby, Javascript, CSS](https://www.codecademy.com/)
-- A Primer on Bezier Curves [Here](http://pomax.github.io/bezierinfo/)
-- Bezier Curves on HTML5 Canvas [Here](http://www.sitepoint.com/html5-canvas-draw-bezier-curves/)
-- How to check if point is in rectangle? [Here](http://math.stackexchange.com/questions/190111/how-to-check-if-a-point-is-inside-a-rectangle)
-- Google Style Guide [Here](https://google-styleguide.googlecode.com/svn/trunk/cppguide.html)
+- INVEST Wikipedia <https://en.wikipedia.org/wiki/INVEST_(mnemonic)>
+- Codeacademy for Ruby, Javascript, CSS <https://www.codecademy.com/>
+- A Primer on Bezier Curves <http://pomax.github.io/bezierinfo/>
+- Bezier Curves on HTML5 Canvas <http://www.sitepoint.com/html5-canvas-draw-bezier-curves/>
+- How to check if point is in rectangle? <http://math.stackexchange.com/questions/190111/how-to-check-if-a-point-is-inside-a-rectangle>
+- Google Style Guide <https://google-styleguide.googlecode.com/svn/trunk/cppguide.html>
 
 #####For app development
-- Rails [Guides](http://guides.rubyonrails.org)
--	Heroku Getting Started with [Ruby](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction)
--	Mozilla Canvas [API] (https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
--	GitHub Markdown [Syntax] (https://guides.github.com/features/mastering-markdown/)
--	Bootstrap [References](http://getbootstrap.com/)
-- W3Schools [HTML,JQuery, CSS, JSON](http://www.w3schools.com/)
-- JQuery [Learning Centre](https://learn.jquery.com/)
-- introJS [Github](http://usablica.github.io/intro.js/)
-- Bitly for rails [Github](https://github.com/philnash/bitly)
-- Postgres [docs](http://www.postgresql.org/docs/)
-- Bezier.js [Github](http://pomax.github.io/bezierjs/)
-- Bootstrap swithc [website](http://www.bootstrap-switch.org/)
-- Social Share Button [Github](https://github.com/huacnlee/social-share-button)
-- DataURI [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs)
+- Rails Guides <http://guides.rubyonrails.org>
+-	Heroku Getting Started with Ruby <https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction>
+-	Mozilla Canvas API <https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API>
+-	GitHub Markdown Syntax <https://guides.github.com/features/mastering-markdown/>
+-	Bootstrap <http://getbootstrap.com/>
+- W3Schools HTML,JQuery, CSS, JSON <http://www.w3schools.com/>
+- JQuery Learning Centre <https://learn.jquery.com/>
+- introJS Github <http://usablica.github.io/intro.js/>
+- Bitly for rails Github <https://github.com/philnash/bitly>
+- Postgres docs <http://www.postgresql.org/docs/>
+- Bezier.js Github <http://pomax.github.io/bezierjs/>
+- Bootstrap switch <http://www.bootstrap-switch.org/>
+- Social Share Button Github <https://github.com/huacnlee/social-share-button>
+- DataURI Mozilla <https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs>
