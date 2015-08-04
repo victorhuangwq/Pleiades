@@ -131,7 +131,7 @@ $(document).ready(function() {
       ctx.fillStyle = "#FFFFFF";
       ctx.shadowColor = 'rgba(255,255,255,1)';
       ctx.globalCompositeOperation="destination-over";
-      ctx.fillRect(0,0,800,600);
+      ctx.fillRect(0,0,cwidth,cheight);
 
     }
 
