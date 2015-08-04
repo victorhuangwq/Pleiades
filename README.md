@@ -126,13 +126,13 @@ A Checkbox with a cross inside refers to a completed feature.
     > QuikMaps contain a roughly drawn map and direction info that can be easily shared
 
 * [x] Link-based sharing
-                > no login, links will direct to specific pages
+    > no login, links will direct to specific pages
 
 * [x] Viewable on desktop and mobile (Mobile interface will be made suitable for mobile)
-                > Responsive for desktop and mobile. Currently no create page for phone still
+    > Responsive for desktop and mobile. Currently no create page for phone still
 
 * [x] Triangulation to allow users to find where they are relative to the map
-                > Where am I button on the view page approximates where the user is
+    > Where am I button on the view page approximates where the user is
 
 ######Secondary features (most likely implemented)
 * [x] Downloadable QuikMaps for offline usage
@@ -186,3 +186,28 @@ were working on our project.
 Despite this, we believe that what we have done above should be enough to be
 granted Project Gemini, and we hope that you think the same and will give us a
 minimum of 3 stars (you know you want to give us 4).
+
+###References used
+####For learning
+- INVEST Wikipedia <https://en.wikipedia.org/wiki/INVEST_(mnemonic)>
+- Codeacademy for Ruby, Javascript, CSS <https://www.codecademy.com/>
+- A Primer on Bezier Curves <http://pomax.github.io/bezierinfo/>
+- Bezier Curves on HTML5 Canvas <http://www.sitepoint.com/html5-canvas-draw-bezier-curves/>
+- How to check if point is in rectangle? <http://math.stackexchange.com/questions/190111/how-to-check-if-a-point-is-inside-a-rectangle>
+- Google Style Guide <https://google-styleguide.googlecode.com/svn/trunk/cppguide.html>
+
+#####For app development
+- Rails Guides <http://guides.rubyonrails.org>
+-	Heroku Getting Started with Ruby <https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction>
+-	Mozilla Canvas API <https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API>
+-	GitHub Markdown Syntax <https://guides.github.com/features/mastering-markdown/>
+-	Bootstrap <http://getbootstrap.com/>
+- W3Schools HTML,JQuery, CSS, JSON <http://www.w3schools.com/>
+- JQuery Learning Centre <https://learn.jquery.com/>
+- introJS Github <http://usablica.github.io/intro.js/>
+- Bitly for rails Github <https://github.com/philnash/bitly>
+- Postgres docs <http://www.postgresql.org/docs/>
+- Bezier.js Github <http://pomax.github.io/bezierjs/>
+- Bootstrap switch <http://www.bootstrap-switch.org/>
+- Social Share Button Github <https://github.com/huacnlee/social-share-button>
+- DataURI Mozilla <https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs>
