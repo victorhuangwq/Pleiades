@@ -25,7 +25,7 @@ $(document).ready(function() {// Javascript object to store all map data
           },
           {
             element:"#canvas",
-            intro:"<h3>The Map Canvas</h3><hr/>"
+            intro:"<h3>The Map Canvas</h3><hr/>You will be drawing your map here."
           },
           {
             element:"#toolbar",
