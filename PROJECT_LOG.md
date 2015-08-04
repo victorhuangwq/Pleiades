@@ -79,3 +79,4 @@ Date|Time|# Hours Victor|# Hours Hou|Aspect
 2015-07-29|1900|2h|2h|Mission Control - Web Security by NUS Greyhats
 2015-08-03|2000|5h|1h|Working on milestone 3
 2015-08-03|2000|0h|4h|Working on tag system and UI polishing
+2015-08-04|1900|4h|4h|Working on milestone 3, bug fixes, polishing and additional features
