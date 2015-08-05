@@ -2,9 +2,9 @@ Project Hours Log
 
 Github Contributions: https://github.com/XtrKiL/Pleiades/graphs/contributors
 
-Total Hours for Huang Weiqi Victor: 110
+Total Hours for Huang Weiqi Victor: 114
 
-Total Hours for Chua Hou: 112
+Total Hours for Chua Hou: 116
 
 Date|Time|# Hours Victor|# Hours Hou|Aspect
 ---|---|---|---|---
