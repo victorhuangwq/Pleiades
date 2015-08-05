@@ -150,6 +150,59 @@ A Checkbox with a cross inside refers to a completed feature.
 * [ ] A way to make QuikMaps on the go, on the phones
     > Pretty hard to draw a map on a phone. Need to think of an alternative method.
 
+###User interview / Actual User
+These are some of the comments and feedbacks given, and our actions taken
+\ reasoning why no changes were made. Only the first letter of the surnames
+are included, to prevent identification of the users who have not requested
+credit.
+
+With Sean Yeo:
+* Difference between points and landmarks not clearly explained
+    > Added explanation
+
+* Provblems with tour
+  - Highlighting of toolbar area not large enough to see the description when buttons are clicked.
+  - Tour tips about adding landmarks are unclear.
+  - Pointing to the user to the map canvas in unintuitive.
+  > Fixed point about landmark tips and pointing the user to the map canvas.
+
+* Transparency issues with saving images
+  > Fixed
+
+* Shortcuts for undo and redo
+  > Added keyboard shortcuts (Ctrl-Z, Ctrl-Y) for undo and redo
+
+* Unable to edit after submissions
+  > Currently not possible because there is no account system in place. KIVed
+
+With Bill C.:
+* Freehand drawing should be allowed. Takes time to draw many different Straight
+  lines or curvy lines.
+  > From the start of the project, we have decided against allowing freehand  drawing for two main reasons,
+    1. Freehand drawing can increase the complexity
+    of the map, which is against the ideals of a QuikMap, which is to be simple.
+    2. Freehand drawing increases storage needs, making page loading slow, as
+      they cannot be (easily) stored as equations.
+
+With Keene L.:
+* Submitting created Quikmap does not work.
+  > Oops, accident. We have fixed the heroku database issue
+
+With Matthew Chia:
+* Undo and redo buttons do not use the traditional icons, not intuitive
+  > Icons changed
+
+* When two landmarks of the same name are added, the Where Am I function
+should differentiate them.
+  > Simple Fix. Say "Google" landmark appears twice, the second one will
+    append the type, like "(Services)" or "F&B" depending on the image used.
+
+* Add labels on all the create page buttons, so that it is easier for first time
+users
+  > We felt that the icons are representative of the buttons, and additional
+    wording might make the UI feel cluttered.
+
+
 ##Proposed Level of Achievement
 Our team proposes that we should be granted the Project Gemini (Intermediate)
 level of achievement. It can be seen from the log that we have worked
