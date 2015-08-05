@@ -25,6 +25,7 @@ In addition, large maps like Google Maps can only provide directions to a genera
 ##Links
 * Our [Application](http://pleiadesorbital.herokuapp.com)
 * Milestone 2 video: [Link](https://youtu.be/kokcFMfpR8c)
+* Milestone 3 video: [Link](https://youtu.be/JFd1wN9bBV0)
 * Ignition slide: [Link](http://puu.sh/i7TQv/c23bc5939d.png)
 * Ignition Video: [Link](https://www.youtube.com/watch?v=QKuLLNVGvow)
 
