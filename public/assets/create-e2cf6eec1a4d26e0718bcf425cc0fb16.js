@@ -52,11 +52,60 @@ $(document).ready(function() {// Javascript object to store all map data
           {
             element:"#editpane",
             intro:"<strong>Next</strong>, add in the landmarks that\
-              you can see as you travel along your route."
+              you can see as you travel along your route.\
+              <br><br>\
+              <center><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:36px'></span></center>"
+          },
+          {
+            element:"#tagsinput",
+            intro:"Give your map some tags, such as coffee, bag shop, shoe shop"
           },
           {
             element:"#submitbutton",
             intro:"<strong>Lastly</strong>, submit your QuikMap, so that you can share it."
+          }
+      ],
+      doneLabel: 'Done',
+      tooltipPosition: 'auto',
+      positionPrecedence: ['bottom','left', 'right', 'top'],
+      disableInteraction: false
+    });
+
+    var maptips = introJs();
+    maptips.setOptions({
+      steps: [
+          {
+            intro:"<h3>Tips to draw a Good QuikMap</h3>"
+          },
+          {
+            element:"#nameMap",
+            intro: "<strong>Firstly</strong>, name your map after its destination. \
+              E.g. Pizzahut near Chinatown MRT \
+              or E.g. John Tan's Wedding Reception "
+          },
+          {
+            element:"#editpane",
+            intro:"<strong>Secondly</strong>, draw the routes/paths \
+              from your starting point to your endpoint using the draw tool:<br>\
+              <center><span class='glyphicon glyphicon-pencil' aria-hidden='true' style='font-size:36px'></span></center><hr\>\
+              <strong>After which</strong>, add your start and end point.<br><br>\
+              <center><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:36px'></span></center>",
+          },
+          {
+            element:"#editpane",
+            intro:"<strong>Next</strong>, add in the landmarks that\
+              you can see as you travel along your route.\
+              <br><br>\
+              <center><span class='glyphicon glyphicon-map-marker' aria-hidden='true' style='font-size:36px'></span></center>"
+          },
+          {
+            element:"#tagsinput",
+            intro:"Give your map some tags, such as coffee, bag shop, shoe shop"
+          },
+          {
+            element:"#submitbutton",
+            intro:"<strong>Lastly</strong>, submit your QuikMap,\
+            so that you can share it."
           }
       ],
       doneLabel: 'Done',
@@ -70,7 +119,7 @@ $(document).ready(function() {// Javascript object to store all map data
     }
 
     $('#howtousebutton').click(function(){
-        createguide.goToStep(5).start();
+        maptips.start();
     });
 
 
@@ -150,10 +199,27 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#blankdiv').hide();
     });
 
-    $('#undobutton').click( function() {
+    $('#undobutton').click(function() {
         selected = 5;
-        var actiontoundo = undo_stack.pop();
+        undo();
+    });
 
+    $('#redobutton').click(function(){
+        selected = 6;
+        redo();
+    });
+
+    $(document).keydown(function(e){
+      if( e.which === 90 && e.ctrlKey ){
+        if(!$('#undobutton').attr('disabled')) undo();
+      }
+      else if( e.which === 89 && e.ctrlKey ){
+        if(!$('#redobutton').attr('disabled')) redo();
+      }
+    });
+
+    var undo = function() {
+        var actiontoundo = undo_stack.pop();
         if (actiontoundo.action == "line") {
             var line_data;
             var to_remove = 0;
@@ -207,10 +273,9 @@ $(document).ready(function() {// Javascript object to store all map data
             }
         }
         update_canvas(map_data);
-    });
+    }
 
-    $('#redobutton').click( function() {
-        selected = 6;
+    var redo = function() {
         var actiontoredo = redo_stack.pop();
         if (actiontoredo.action == "line") {
             var thisid = actiontoredo.data.id;
@@ -245,8 +310,9 @@ $(document).ready(function() {// Javascript object to store all map data
             }
         }
         update_canvas(map_data);
-    });
+    }
 
+    /**
     $('#isStraight').on('switchChange.bootstrapSwitch', function(event, state) {
       if (!state) {
         console.log("show");
@@ -256,7 +322,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#curvydiv").hide();
       }
     });
-
+**/
     $('#toolbar').click( function() {
 
         $('#selectbutton').attr("disabled", false);
@@ -498,7 +564,6 @@ $(document).ready(function() {// Javascript object to store all map data
         }
     });
 
-
     map_canvas.on('mousemove',function(e){
         if(penDown === true){
           var pos = getMousePos(e);
@@ -529,10 +594,9 @@ $(document).ready(function() {// Javascript object to store all map data
 
             var controlpoints, quarter1, quarter2;
             if($('#isStraight').bootstrapSwitch("state")){
-
               controlpoints = [startpos,pos];
-
             }
+
             else{
 
                   quarter1 = points[Math.floor((points.length)/4)];

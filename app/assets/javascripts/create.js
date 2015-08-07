@@ -312,6 +312,7 @@ $(document).ready(function() {// Javascript object to store all map data
         update_canvas(map_data);
     }
 
+    /**
     $('#isStraight').on('switchChange.bootstrapSwitch', function(event, state) {
       if (!state) {
         console.log("show");
@@ -321,7 +322,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $("#curvydiv").hide();
       }
     });
-
+**/
     $('#toolbar').click( function() {
 
         $('#selectbutton').attr("disabled", false);
