@@ -114,7 +114,6 @@ $(document).ready(function() {// Javascript object to store all map data
       disableInteraction: false
     });
 
-
     if(introTrue){
       createguide.start();
     }
@@ -135,7 +134,7 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#isLandmark').bootstrapSwitch("onText",'Landmark');
     $('#isLandmark').bootstrapSwitch("offText",'Points');
     $('#isLandmark').bootstrapSwitch("onColor",'primary');
-    $('#isLandmark').bootstrapSwitch("offColor",'primary');
+    $('#isLandmark').bootstrapSwitch("offColor",'warning');
 
     //map_canvas properties
 
@@ -200,10 +199,27 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#blankdiv').hide();
     });
 
-    $('#undobutton').click( function() {
+    $('#undobutton').click(function() {
         selected = 5;
-        var actiontoundo = undo_stack.pop();
+        undo();
+    });
 
+    $('#redobutton').click(function(){
+        selected = 6;
+        redo();
+    });
+
+    $(document).keydown(function(e){
+      if( e.which === 90 && e.ctrlKey ){
+        if(!$('#undobutton').attr('disabled')) undo();
+      }
+      else if( e.which === 89 && e.ctrlKey ){
+        if(!$('#redobutton').attr('disabled')) redo();
+      }
+    });
+
+    var undo = function() {
+        var actiontoundo = undo_stack.pop();
         if (actiontoundo.action == "line") {
             var line_data;
             var to_remove = 0;
@@ -257,10 +273,9 @@ $(document).ready(function() {// Javascript object to store all map data
             }
         }
         update_canvas(map_data);
-    });
+    }
 
-    $('#redobutton').click( function() {
-        selected = 6;
+    var redo = function() {
         var actiontoredo = redo_stack.pop();
         if (actiontoredo.action == "line") {
             var thisid = actiontoredo.data.id;
@@ -295,7 +310,8 @@ $(document).ready(function() {// Javascript object to store all map data
             }
         }
         update_canvas(map_data);
-    });
+    }
+
 
     $('#isStraight').on('switchChange.bootstrapSwitch', function(event, state) {
       if (!state) {
@@ -548,7 +564,6 @@ $(document).ready(function() {// Javascript object to store all map data
         }
     });
 
-
     map_canvas.on('mousemove',function(e){
         if(penDown === true){
           var pos = getMousePos(e);
@@ -579,10 +594,9 @@ $(document).ready(function() {// Javascript object to store all map data
 
             var controlpoints, quarter1, quarter2;
             if($('#isStraight').bootstrapSwitch("state")){
-
               controlpoints = [startpos,pos];
-
             }
+
             else{
 
                   quarter1 = points[Math.floor((points.length)/4)];
