@@ -157,11 +157,11 @@ These are some of the comments and feedbacks given, and our actions taken
 are included, to prevent identification of the users who have not requested
 credit.
 
-With Sean Yeo:
+Interviewee One:
 * Difference between points and landmarks not clearly explained
     > Added explanation
 
-* Provblems with tour
+* Problems with tour
   - Highlighting of toolbar area not large enough to see the description when buttons are clicked.
   - Tour tips about adding landmarks are unclear.
   - Pointing to the user to the map canvas in unintuitive.
@@ -176,7 +176,7 @@ With Sean Yeo:
 * Unable to edit after submissions
   > Currently not possible because there is no account system in place. KIVed
 
-With Bill C.:
+Interviewee Two
 * Freehand drawing should be allowed. Takes time to draw many different Straight
   lines or curvy lines.
   > From the start of the project, we have decided against allowing freehand  drawing for two main reasons,
@@ -185,11 +185,11 @@ With Bill C.:
     2. Freehand drawing increases storage needs, making page loading slow, as
       they cannot be (easily) stored as equations.
 
-With Keene L.:
+Interviewee Three
 * Submitting created Quikmap does not work.
   > Oops, accident. We have fixed the heroku database issue
 
-With Matthew Chia:
+Interviewee Four
 * Undo and redo buttons do not use the traditional icons, not intuitive
   > Icons changed
 
