@@ -26,6 +26,7 @@ $(document).ready(function() {
     function update_canvas(obj) {
         lines = obj.lines;
         landmarks = obj.landmarks;
+        texts = obj.texts;
         clear_canvas(map_canvas, ctx);
 
         for (var i = 0; i < lines.length; i++) {
@@ -33,6 +34,9 @@ $(document).ready(function() {
         }
         for (var i = 0; i < landmarks.length; i++) {
             drawLandmark(landmarks[i], ctx);
+        }
+        for(var i = 0; i <texts.length; i++){
+          drawText(texts[i],ctx);
         }
     }
 
@@ -101,6 +105,13 @@ $(document).ready(function() {
         ctx.textAlign = 'center';
         ctx.fillStyle = 'black';
         ctx.fillText(landmark.landmarkname, x, ytext);
+    }
+
+    function drawText(text,ctx){
+      ctx.font = '' + (13) + 'pt Helvetica';
+      ctx.textAlign = 'center';
+      ctx.fillStyle = 'black';
+      ctx.fillText(text.textvalue,text.pos.x,text.pos.y);
     }
 
     var copy_link_button = $('#copyLinkButton');
