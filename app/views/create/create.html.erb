@@ -69,6 +69,9 @@
             <button id="redobutton" type="button" class="btn btn-info btn-lg" title="Redo">
                 <%= image_tag("redo.svg", size:"36x36", :style => "-webkit-filter: invert(1); filter: invert(1);") %>
             </button>
+            <button id="textbutton" type="button" class="btn btn-info btn-lg" title="Redo">
+                <span class="glyphicon glyphicon-font" aria-hidden="true" style="font-size:36px"></span>
+            </button>
 
             <hr/>
             <div id = "blankdiv">
@@ -174,6 +177,12 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div id="textpopover" class ="popover" style="width:150px">
+          <input style="font-size:13px" id="textinput" type="text" class="form-control" placeholder="Add Text" aria-describedby="basic-addon1"/>
+            <button id="textbutton" type="button" class="btn btn-success" style="width:148px">
+              Enter
+          </button>
         </div>
 
         <div id="landmarkpopover" class="popover" style="width:150px">

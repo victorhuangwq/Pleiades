@@ -160,7 +160,7 @@ $(document).ready(function() {// Javascript object to store all map data
     });
 
     //map_data properties
-    var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: []};
+    var map_data = {name:"Untitled", maxid: 0, lines:[], landmarks: [], texts:[]};
     var undo_stack = new Array();
     var redo_stack = new Array();
     var tochangeindex = null;
@@ -207,6 +207,10 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#redobutton').click(function(){
         selected = 6;
         redo();
+    });
+    $('#textbutton').click(function(){
+        selected = 7;
+        $('#blankdiv').hide();
     });
 
     $(document).keydown(function(e){
@@ -362,12 +366,55 @@ $(document).ready(function() {// Javascript object to store all map data
             break;
         case 6:
             $('#redodiv').show();
+        case 7:
+            $('#textdiv').show();
         }
     });
 
     /**
      * Toolbar button code ends here
      */
+
+     /**
+     * Add text code
+     */
+     $(document).click( function() {
+         if (selected != 7 && selected != 1) {
+             $("#textpopover").hide();
+         }
+     });
+
+     function createText(textvalue) {
+        console.log("abc");
+         if (selected == 1) {
+             // edit text
+             var oldvalue = map_data.text[tochangeindex].textvalue;
+             map_data.text[tochangeindex].textvalue = textvalue;
+             undo_stack.push({action: "changetext", id: map_data.text[tochangeindex].id, oldvalue: oldvalue});
+             redo_stack.splice(0, redo_stack.length);
+             update_canvas(map_data);
+         } else { // new text
+             var thisid = map_data.maxid;
+             map_data.maxid += 1;
+             undo_stack.push({action: "text", id: thisid});
+             redo_stack.splice(0, redo_stack.length);
+             console.log(textpos)
+             addElement({type: "text", id: thisid, textvalue: textvalue, pos: textpos});
+         }
+     }
+
+     $("#textbutton").click( function() {
+        console.log("def");
+         textvalue = $("#textinput").val();
+         if (name == "") {
+
+         }
+         else{
+           createText(textvalue);
+         }
+         $("#textinput").val("");
+         $("#textpopover").hide();
+     });
 
     /**
      * Landmark popup code
@@ -406,6 +453,7 @@ $(document).ready(function() {// Javascript object to store all map data
     }
 
     $("#startbutton").click( function() {
+      console.log("dasdsa");
         name = $("#pointinput").val();
         if (name == "") {
             name = "Start";
@@ -620,7 +668,7 @@ $(document).ready(function() {// Javascript object to store all map data
 
 
 
-    var landmarkpos;
+    var landmarkpos, textpos;
 
     //Area formulas for triangle
     triAF = function(p1,p2,p3){
@@ -659,6 +707,16 @@ $(document).ready(function() {// Javascript object to store all map data
                 popover.css('top', (pos.y) + 'px');
             }
             landmarkpos = getMousePos(e);
+        }
+
+        //Adding text
+        if(selected == 7){
+          var pos = {x: e.pageX, y: e.pageY};
+          popover = $('#textpopover')
+          popover.show();
+          popover.css('left',pos.x +'px')
+          popover.css('top', pos.y + 'px')
+          textpos = getMousePos(e);
         }
 
         // Selecting landmarks
@@ -756,6 +814,10 @@ $(document).ready(function() {// Javascript object to store all map data
         if (elem.type == "landmark") {
             map_data.landmarks.push(elem);
         }
+        if(elem.type == "text"){
+          console.log("hello");
+            map_data.texts.push(elem);
+        }
         update_canvas(map_data);
     }
 
@@ -802,9 +864,18 @@ $(document).ready(function() {// Javascript object to store all map data
         ctx.fillText(landmark.landmarkname, x, y);
     }
 
+    function drawText(text,ctx){
+      console.log("hello");
+      ctx.font = '' + (13) + 'pt Helvetica';
+      ctx.textAlign = 'center';
+      ctx.fillStyle = 'black';
+      ctx.fillText(text.textvalue,text.pos.x,text.pos.y);
+    }
+
     function update_canvas(obj) {
         lines = obj.lines;
         landmarks = obj.landmarks;
+        texts = obj.texts;
         clear_canvas(map_canvas, ctx);
 
         for (var i = 0; i < lines.length; i++) {
@@ -812,6 +883,10 @@ $(document).ready(function() {// Javascript object to store all map data
         }
         for (var i = 0; i < landmarks.length; i++) {
             drawLandmark(landmarks[i], ctx);
+        }
+        for (var i = 0; i < texts.length; i++){
+            drawText(texts[i], ctx);
+            console.log("hello");
         }
 
         if (redo_stack.length == 0) {
