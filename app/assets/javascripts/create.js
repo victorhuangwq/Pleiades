@@ -385,7 +385,6 @@ $(document).ready(function() {// Javascript object to store all map data
      });
 
      function createText(textvalue) {
-        console.log("abc");
          if (selected == 1) {
              // edit text
              var oldvalue = map_data.text[tochangeindex].textvalue;
@@ -403,15 +402,9 @@ $(document).ready(function() {// Javascript object to store all map data
          }
      }
 
-     $("#textbutton").click( function() {
-        console.log("def");
+     $("#enterText").click( function() {
          textvalue = $("#textinput").val();
-         if (name == "") {
-
-         }
-         else{
-           createText(textvalue);
-         }
+         createText(textvalue);
          $("#textinput").val("");
          $("#textpopover").hide();
      });
@@ -815,7 +808,6 @@ $(document).ready(function() {// Javascript object to store all map data
             map_data.landmarks.push(elem);
         }
         if(elem.type == "text"){
-          console.log("hello");
             map_data.texts.push(elem);
         }
         update_canvas(map_data);
@@ -865,7 +857,6 @@ $(document).ready(function() {// Javascript object to store all map data
     }
 
     function drawText(text,ctx){
-      console.log("hello");
       ctx.font = '' + (13) + 'pt Helvetica';
       ctx.textAlign = 'center';
       ctx.fillStyle = 'black';
@@ -886,7 +877,6 @@ $(document).ready(function() {// Javascript object to store all map data
         }
         for (var i = 0; i < texts.length; i++){
             drawText(texts[i], ctx);
-            console.log("hello");
         }
 
         if (redo_stack.length == 0) {
