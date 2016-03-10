@@ -176,6 +176,7 @@ $(document).ready(function() {// Javascript object to store all map data
     $('#removediv').hide();
     $('#undodiv').hide();
     $('#redodiv').hide();
+    $('#textdiv').hide();
     $('#undobutton').attr("disabled", true);
     $('#redobutton').attr("disabled", true);
 
@@ -224,6 +225,20 @@ $(document).ready(function() {// Javascript object to store all map data
 
     var undo = function() {
         var actiontoundo = undo_stack.pop();
+        if (actiontoundo.action == "text") {
+                var text_data;
+                var to_remove = 0;
+                for (i = 0; i < map_data.texts.length; i++) {
+                        if(map_data.texts[i].id == actiontoundo.id) {
+                                text_data = map_data.texts[i];
+                                to_remove = i;
+                                break;
+                        }
+                }
+                map_data.texts.splice(to_remove, 1);
+                redo_stack.push({action: "text", data: text_data});
+        }
+
         if (actiontoundo.action == "line") {
             var line_data;
             var to_remove = 0;
@@ -281,6 +296,11 @@ $(document).ready(function() {// Javascript object to store all map data
 
     var redo = function() {
         var actiontoredo = redo_stack.pop();
+        if (actiontoredo.action == "text") {
+                var thisid = actiontoredo.data.id;
+                undo_stack.push({action:"text", id:thisid});
+                map_data.texts.push(actiontoredo.data);
+        }
         if (actiontoredo.action == "line") {
             var thisid = actiontoredo.data.id;
             undo_stack.push({action:"line", id:thisid});
@@ -340,6 +360,7 @@ $(document).ready(function() {// Javascript object to store all map data
         $('#undodiv').hide();
         $('#redodiv').hide();
         $("#curvydiv").hide();
+        $('#textdiv').hide();
 
         switch (selected) {
         case 1:
@@ -748,7 +769,7 @@ $(document).ready(function() {// Javascript object to store all map data
             }
         }
 
-        //Remove
+        // Remove
         if (selected == 4) {
             var p = getMousePos(e);
             var todelete = null;
@@ -762,6 +783,17 @@ $(document).ready(function() {// Javascript object to store all map data
                         todelete = map_data.landmarks[i];
                     }
                 }
+            }
+
+            for (var i = 0; i < map_data.texts.length; i++) {
+                    var center = map_data.texts[i].pos;
+                    var tl = {x: center.x - 25, y: center.y - 25};
+                    var br = {x: center.x + 25, y: center.y + 25};
+                    if (p.x < br.x && p.x > tl.x) {
+                        if (p.y < br.y && p.y > tl.y) {
+                            todelete = map_data.texts[i];
+                        }
+                    }
             }
 
             //If there are no landmarks to be removed then look for closest line
@@ -793,6 +825,9 @@ $(document).ready(function() {// Javascript object to store all map data
                 }
                 if (todelete.type == "landmark") {
                     map_data.landmarks.splice(map_data.landmarks.indexOf(todelete),1)
+                }
+                if (todelete.type == "text") {
+                        map_data.texts.splice(map_data.texts.indexOf(todelete),1);
                 }
                 update_canvas(map_data);
             }
